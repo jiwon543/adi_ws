@@ -1,0 +1,2 @@
+Control:Decision:Perception
+-DCATKIN_DEVEL_PREFIX=/root/adi_ws/devel -DCMAKE_INSTALL_PREFIX=/root/adi_ws/install -G Unix Makefiles
