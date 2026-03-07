@@ -1,8 +1,0 @@
-prefix=/root/adi_ws/install
-
-Name: Control
-Description: Description of Control
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

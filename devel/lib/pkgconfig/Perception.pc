@@ -1,8 +1,0 @@
-prefix=/root/adi_ws/devel
-
-Name: Perception
-Description: Description of Perception
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
