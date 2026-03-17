@@ -1,0 +1,11 @@
+<launch>
+    
+    <arg name="markerSize" default="0.1"/>
+    <arg name="camera"   default="/camera/rgb"/>
+    <arg name="markerID" default="535"/>
+
+    <include file="$(find aruco_ros)/launch/marker_publisher.launch"/>
+
+    <node pkg="detect_ar" type="move_to_ar" name="move_to_ar" output="screen"/>
+    <param name = "marker_id" value = "$(arg markerID)">
+</launch>

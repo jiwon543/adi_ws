@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="roundabout_node" pkg="limo_mission" type="roundabout_node">
+  <param name="detect_x_min" type="double" value="0.2" />
+  <param name="detect_x_max" type="double" value="0.8" />
+  <param name="obstacle_threshold" type="int" value="3" />
+  <param name="steering_gain" type="double" value="1.0" />
+</node>
+\endverbatim
+

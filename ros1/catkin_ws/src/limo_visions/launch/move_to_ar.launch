@@ -1,0 +1,4 @@
+<launch>
+    
+    <node pkg="limo_visions" exec="move_to_ar" name="move_to_ar" output="screen"/>
+</launch>

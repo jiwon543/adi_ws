@@ -14,10 +14,7 @@ docker exec -it adi-noetic-dev bash
 # 4. vscode컨테이너 접속 연동
  4-1. Ctrl+Shift+P 
  4-2. Dev Containers: Attach to Running Containers
- 4-3. File -> Open Folder -> /roo/adi_ws 열기
+ 4-3. File -> Open Folder -> /root/adi_ws 열기
 
-# (기타) adi-noetic-dev 컨테이너만 중지 및 삭제
-docker rm -f adi-noetic-dev
-
-# (기타) runtime에 nvidia 안붙을 경우
-docker context use default
+# Error response from daemon: ~~ [[gpu]] 경고 뜰 경우
+new local terminal# docker context use default

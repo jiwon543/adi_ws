@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="limo_examples" pkg="limo_examples" type="limo_examples">
+  <param name="canny_min_threshold" type="int" value="0" />
+  <param name="canny_max_threshold" type="int" value="360" />
+</node>
+\endverbatim
+

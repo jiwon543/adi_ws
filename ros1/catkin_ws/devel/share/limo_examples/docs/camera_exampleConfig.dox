@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~canny_min_threshold" : \b [int] Minimum threshold for Canny Edge Detection min: 0, default: 0, max: 360
+- \b "~canny_max_threshold" : \b [int] Maximum threshold for Canny Edge Detection min: 0, default: 360, max: 360
+

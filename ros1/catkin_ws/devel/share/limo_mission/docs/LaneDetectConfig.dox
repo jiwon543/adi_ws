@@ -1,0 +1,21 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~lane_h_low" : \b [int] Lane H channel low threshold min: 0, default: 0, max: 180
+- \b "~lane_h_high" : \b [int] Lane H channel high threshold min: 0, default: 180, max: 180
+- \b "~lane_l_low" : \b [int] Lane L channel low threshold min: 0, default: 180, max: 255
+- \b "~lane_l_high" : \b [int] Lane L channel high threshold min: 0, default: 255, max: 255
+- \b "~lane_s_low" : \b [int] Lane S channel low threshold min: 0, default: 0, max: 255
+- \b "~lane_s_high" : \b [int] Lane S channel high threshold min: 0, default: 60, max: 255
+- \b "~roi_top" : \b [int] Far ROI top position (look-ahead) min: 0, default: 280, max: 480
+- \b "~roi_mid" : \b [int] ROI split point (far/near boundary) min: 0, default: 380, max: 480
+- \b "~roi_bottom" : \b [int] Near ROI bottom position min: 0, default: 480, max: 480
+- \b "~base_speed" : \b [double] Base driving speed min: 0.0, default: 0.3, max: 1.0
+- \b "~kp" : \b [double] Proportional gain for steering min: 0.0, default: 0.008, max: 0.05
+- \b "~kd" : \b [double] Derivative gain for smoother response min: 0.0, default: 0.004, max: 0.05
+- \b "~max_steering" : \b [double] Maximum steering angle min: 0.0, default: 0.5, max: 1.0
+- \b "~lookahead_weight" : \b [double] Weight of far ROI for curve prediction (0.0-0.7) min: 0.0, default: 0.3, max: 0.7
+- \b "~curve_speed_factor" : \b [double] Speed reduction factor in curves (0.3-0.8) min: 0.0, default: 0.5, max: 1.0
+- \b "~lane_offset" : \b [int] Offset from lane when only one lane visible (pixels) min: 50, default: 150, max: 300
+

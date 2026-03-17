@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="limo_examples" pkg="limo_examples" type="limo_examples">
+  <param name="min_angle_deg" type="double" value="-0.5" />
+  <param name="max_angle_deg" type="double" value="0.5" />
+</node>
+\endverbatim
+
