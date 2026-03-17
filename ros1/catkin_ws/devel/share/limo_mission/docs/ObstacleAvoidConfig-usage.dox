@@ -1,0 +1,14 @@
+\subsubsection usage Usage
+\verbatim
+<node name="obstacle_avoid_node" pkg="limo_mission" type="obstacle_avoid_node">
+  <param name="scan_angle" type="double" value="35.0" />
+  <param name="num_sectors" type="int" value="8" />
+  <param name="safe_distance" type="double" value="1.2" />
+  <param name="stop_distance" type="double" value="0.4" />
+  <param name="avoid_speed" type="double" value="0.2" />
+  <param name="max_steering" type="double" value="0.5" />
+  <param name="steering_gain" type="double" value="0.02" />
+  <param name="clear_threshold" type="int" value="20" />
+</node>
+\endverbatim
+

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- ttyTHS1 for NVIDIA nano serial port-->
+    <!-- ttyUSB0 for IPC USB serial port -->
+    <arg name="port_name" default="ttyTHS0" />
+    <arg name="use_mcnamu" default="false" />
+    <arg name="pub_odom_tf" default="true" />
+    <arg name="open_rviz" default="false" doc="Open RViz visualization"/>
+
+    <!-- LIMO Base Driver -->
+    <include file="$(find limo_base)/launch/limo_base.launch">
+        <arg name="port_name" default="$(arg port_name)" />
+        <arg name="use_mcnamu" default="$(arg use_mcnamu)" />
+        <arg name="pub_odom_tf" default="$(arg pub_odom_tf)" />
+    </include>
+
+    <!-- YDLidar -->
+    <include file="$(find ydlidar_ros_driver)/launch/Tmini.launch" />
+
+    <!-- Astra Camera (Dabai U3) -->
+    <include file="$(find astra_camera)/launch/dabai_u3.launch"/>
+
+    <!-- TF -->
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera_link" args="0.105 0 0.1 0.0 0.0 0.0 /base_link /camera_link 10" />
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_imu_link" args="0.0 0.0 0.0 0.0 0.0 0.0 /base_link /imu_link 10" />
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser_link" args="0.105 0.0 0.08 0.0 0.0 0.0 /base_link /laser_link 10" />
+
+    <!-- Optional: RViz -->
+    <group if="$(arg open_rviz)">
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find limo_bringup)/rviz/bringup.rviz" output="screen"/>
+    </group>
+
+</launch>

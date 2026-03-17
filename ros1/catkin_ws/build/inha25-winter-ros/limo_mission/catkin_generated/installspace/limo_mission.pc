@@ -1,0 +1,8 @@
+prefix=/home/wego/ros1/catkin_ws/install
+
+Name: limo_mission
+Description: Description of limo_mission
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs sensor_msgs geometry_msgs cv_bridge dynamic_reconfigure

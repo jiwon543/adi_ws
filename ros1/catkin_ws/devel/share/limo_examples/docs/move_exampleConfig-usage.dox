@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="limo_examples" pkg="limo_examples" type="limo_examples">
+  <param name="linear_x" type="double" value="0.2" />
+  <param name="angular_z" type="double" value="0.2" />
+</node>
+\endverbatim
+

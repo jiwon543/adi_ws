@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~scan_angle" : \b [double] Scan angle (±degrees) min: 10.0, default: 28.0, max: 45.0
+- \b "~num_sectors" : \b [int] Number of sectors min: 4, default: 8, max: 16
+- \b "~detect_distance" : \b [double] Pedestrian detection distance (m) min: 0.3, default: 0.38, max: 2.0
+- \b "~stop_distance" : \b [double] Emergency stop distance (m) min: 0.1, default: 0.3, max: 0.5
+

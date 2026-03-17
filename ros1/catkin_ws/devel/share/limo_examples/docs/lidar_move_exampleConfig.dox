@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~min_angle_deg" : \b [double] Minimum Value for Angle(deg) min: -90.0, default: -0.5, max: 90.0
+- \b "~max_angle_deg" : \b [double] Maximum Value for Angle(deg) min: -90.0, default: 0.5, max: 90.0
+- \b "~linear_x" : \b [double] Linear X Velocity Value(m/s) min: 0.0, default: 0.2, max: 3.0
+- \b "~min_dist" : \b [double] Minimum Distance Value(m) min: 0.0, default: 0.3, max: 3.0
+
