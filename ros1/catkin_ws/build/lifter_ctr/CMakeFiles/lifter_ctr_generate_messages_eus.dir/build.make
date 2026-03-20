@@ -43,32 +43,32 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for lifter_ctr_generate_messages_eus.
 
 # Include the progress variables for this target.
 include lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/progress.make
 
-lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l
-lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/manifest.l
+lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l
+lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/manifest.l
 
 
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l: /home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from lifter_ctr/lifter_mode.msg"
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg -Ilifter_ctr:/home/wego/ros1/catkin_ws/src/lifter_ctr/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p lifter_ctr -o /home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l: /root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from lifter_ctr/lifter_mode.msg"
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg -Ilifter_ctr:/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p lifter_ctr -o /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg
 
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for lifter_ctr"
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr lifter_ctr std_msgs
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for lifter_ctr"
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr lifter_ctr std_msgs
 
 lifter_ctr_generate_messages_eus: lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus
-lifter_ctr_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l
-lifter_ctr_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/manifest.l
+lifter_ctr_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l
+lifter_ctr_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/manifest.l
 lifter_ctr_generate_messages_eus: lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/build.make
 
 .PHONY : lifter_ctr_generate_messages_eus
@@ -79,10 +79,10 @@ lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/build: lifter_ctr_gen
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/build
 
 lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && $(CMAKE_COMMAND) -P CMakeFiles/lifter_ctr_generate_messages_eus.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && $(CMAKE_COMMAND) -P CMakeFiles/lifter_ctr_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/clean
 
 lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/lifter_ctr /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/lifter_ctr /home/wego/ros1/catkin_ws/build/lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/lifter_ctr /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/lifter_ctr /root/adi_ws/ros1/catkin_ws/build/lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_eus.dir/depend
 

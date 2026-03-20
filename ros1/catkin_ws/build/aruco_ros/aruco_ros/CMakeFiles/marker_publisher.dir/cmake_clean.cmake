@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/aruco_ros/marker_publisher"
-  "/home/wego/ros1/catkin_ws/devel/lib/aruco_ros/marker_publisher.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/aruco_ros/marker_publisher"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/aruco_ros/marker_publisher.pdb"
   "CMakeFiles/marker_publisher.dir/src/aruco_ros_utils.cpp.o"
   "CMakeFiles/marker_publisher.dir/src/marker_publish.cpp.o"
 )

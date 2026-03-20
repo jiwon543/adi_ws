@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/libaruco_ros_utils.pdb"
-  "/home/wego/ros1/catkin_ws/devel/lib/libaruco_ros_utils.so"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco_ros_utils.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco_ros_utils.so"
   "CMakeFiles/aruco_ros_utils.dir/src/aruco_ros_utils.cpp.o"
 )
 

@@ -246,17 +246,25 @@ struct Printer< ::ar_track_alvar_msgs::AlvarMarkers_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::ar_track_alvar_msgs::AlvarMarkers_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "markers[]" << std::endl;
+    if (true || !indent.empty())
+      s << std::endl;
+    s << indent << "markers: ";
+    if (v.markers.empty() || false)
+      s << "[";
     for (size_t i = 0; i < v.markers.size(); ++i)
     {
-      s << indent << "  markers[" << i << "]: ";
-      s << std::endl;
-      s << indent;
-      Printer< ::ar_track_alvar_msgs::AlvarMarker_<ContainerAllocator> >::stream(s, indent + "    ", v.markers[i]);
+      if (false && i > 0)
+        s << ", ";
+      else if (!false)
+        s << std::endl << indent << "  -";
+      Printer< ::ar_track_alvar_msgs::AlvarMarker_<ContainerAllocator> >::stream(s, false ? std::string() : indent + "    ", v.markers[i]);
     }
+    if (v.markers.empty() || false)
+      s << "]";
   }
 };
 

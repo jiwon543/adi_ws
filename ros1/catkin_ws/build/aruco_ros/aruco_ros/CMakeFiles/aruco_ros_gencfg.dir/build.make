@@ -43,44 +43,44 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for aruco_ros_gencfg.
 
 # Include the progress variables for this target.
 include aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/progress.make
 
-aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg: /home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
-aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py
+aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
+aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py
 
 
-/home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg
-/home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/ArucoThreshold.cfg: /home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros && ../../catkin_generated/env_cached.sh /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros/setup_custom_pythonpath.sh /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/wego/ros1/catkin_ws/devel/share/aruco_ros /home/wego/ros1/catkin_ws/devel/include/aruco_ros /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros
+/root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg
+/root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/ArucoThreshold.cfg: /root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros && ../../catkin_generated/env_cached.sh /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros/setup_custom_pythonpath.sh /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros /root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros
 
-/home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.dox: /home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.dox: /root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.dox
 
-/home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox: /home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox: /root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox
 
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py: /home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py: /root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py
 
-/home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc: /home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc
+/root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc: /root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc
 
 aruco_ros_gencfg: aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg
-aruco_ros_gencfg: /home/wego/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
-aruco_ros_gencfg: /home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.dox
-aruco_ros_gencfg: /home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox
-aruco_ros_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py
-aruco_ros_gencfg: /home/wego/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc
+aruco_ros_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
+aruco_ros_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.dox
+aruco_ros_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox
+aruco_ros_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py
+aruco_ros_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc
 aruco_ros_gencfg: aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/build.make
 
 .PHONY : aruco_ros_gencfg
@@ -91,10 +91,10 @@ aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/build: aruco_ros_gencfg
 .PHONY : aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/build
 
 aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros && $(CMAKE_COMMAND) -P CMakeFiles/aruco_ros_gencfg.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros && $(CMAKE_COMMAND) -P CMakeFiles/aruco_ros_gencfg.dir/cmake_clean.cmake
 .PHONY : aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/clean
 
 aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : aruco_ros/aruco_ros/CMakeFiles/aruco_ros_gencfg.dir/depend
 

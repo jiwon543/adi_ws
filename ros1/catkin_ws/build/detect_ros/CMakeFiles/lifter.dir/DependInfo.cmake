@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wego/ros1/catkin_ws/src/detect_ros/src/lifter.cpp" "/home/wego/ros1/catkin_ws/build/detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o"
+  "/root/adi_ws/ros1/catkin_ws/src/detect_ros/src/lifter.cpp" "/root/adi_ws/ros1/catkin_ws/build/detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,8 +22,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
-  "/home/wego/ros1/catkin_ws/src/detect_ros/include"
-  "/home/wego/ros1/catkin_ws/devel/include"
+  "/root/adi_ws/ros1/catkin_ws/src/detect_ros/include"
+  "/root/adi_ws/ros1/catkin_ws/devel/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"

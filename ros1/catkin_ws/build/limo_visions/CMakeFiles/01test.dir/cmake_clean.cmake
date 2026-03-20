@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/01test"
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/01test.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/01test"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/01test.pdb"
   "CMakeFiles/01test.dir/src/01test.cpp.o"
 )
 

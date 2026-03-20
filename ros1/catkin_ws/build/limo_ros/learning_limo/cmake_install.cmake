@@ -1,8 +1,8 @@
-# Install script for directory: /home/wego/ros1/catkin_ws/src/limo_ros/learning_limo
+# Install script for directory: /root/adi_ws/ros1/catkin_ws/src/limo_ros/learning_limo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wego/ros1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/root/adi_ws/ros1/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/wego/ros1/catkin_ws/build/limo_ros/learning_limo/catkin_generated/installspace/learning_limo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/build/limo_ros/learning_limo/catkin_generated/installspace/learning_limo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learning_limo/cmake" TYPE FILE FILES
-    "/home/wego/ros1/catkin_ws/build/limo_ros/learning_limo/catkin_generated/installspace/learning_limoConfig.cmake"
-    "/home/wego/ros1/catkin_ws/build/limo_ros/learning_limo/catkin_generated/installspace/learning_limoConfig-version.cmake"
+    "/root/adi_ws/ros1/catkin_ws/build/limo_ros/learning_limo/catkin_generated/installspace/learning_limoConfig.cmake"
+    "/root/adi_ws/ros1/catkin_ws/build/limo_ros/learning_limo/catkin_generated/installspace/learning_limoConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learning_limo" TYPE FILE FILES "/home/wego/ros1/catkin_ws/src/limo_ros/learning_limo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learning_limo" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/src/limo_ros/learning_limo/package.xml")
 endif()
 

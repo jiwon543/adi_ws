@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/manifest.l"
-  "/home/wego/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/manifest.l"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/lifter_ctr/msg/lifter_mode.l"
   "CMakeFiles/lifter_ctr_generate_messages_eus"
 )
 

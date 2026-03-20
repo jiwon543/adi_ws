@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js"
   "CMakeFiles/lifter_ctr_generate_messages_nodejs"
 )
 

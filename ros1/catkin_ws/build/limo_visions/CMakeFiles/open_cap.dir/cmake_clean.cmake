@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap"
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap.pdb"
   "CMakeFiles/open_cap.dir/src/open_cap.cpp.o"
 )
 

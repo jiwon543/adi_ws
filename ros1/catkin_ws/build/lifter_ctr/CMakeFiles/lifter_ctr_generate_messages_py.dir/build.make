@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for lifter_ctr_generate_messages_py.
 
 # Include the progress variables for this target.
 include lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/progress.make
 
-lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py
-lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py
+lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py
+lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py
 
 
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py: /home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG lifter_ctr/lifter_mode"
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg -Ilifter_ctr:/home/wego/ros1/catkin_ws/src/lifter_ctr/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p lifter_ctr -o /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py: /root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG lifter_ctr/lifter_mode"
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg -Ilifter_ctr:/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p lifter_ctr -o /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg
 
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for lifter_ctr"
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg --initpy
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for lifter_ctr"
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg --initpy
 
 lifter_ctr_generate_messages_py: lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py
-lifter_ctr_generate_messages_py: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py
-lifter_ctr_generate_messages_py: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py
+lifter_ctr_generate_messages_py: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py
+lifter_ctr_generate_messages_py: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py
 lifter_ctr_generate_messages_py: lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/build.make
 
 .PHONY : lifter_ctr_generate_messages_py
@@ -80,10 +80,10 @@ lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/build: lifter_ctr_gene
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/build
 
 lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && $(CMAKE_COMMAND) -P CMakeFiles/lifter_ctr_generate_messages_py.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && $(CMAKE_COMMAND) -P CMakeFiles/lifter_ctr_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/clean
 
 lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/lifter_ctr /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/lifter_ctr /home/wego/ros1/catkin_ws/build/lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/lifter_ctr /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/lifter_ctr /root/adi_ws/ros1/catkin_ws/build/lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_py.dir/depend
 

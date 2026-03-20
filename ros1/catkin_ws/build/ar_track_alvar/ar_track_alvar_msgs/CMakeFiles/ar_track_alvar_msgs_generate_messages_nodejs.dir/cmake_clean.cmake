@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/ar_track_alvar_msgs/msg/AlvarMarker.js"
-  "/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/ar_track_alvar_msgs/msg/AlvarMarkers.js"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/ar_track_alvar_msgs/msg/AlvarMarker.js"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/ar_track_alvar_msgs/msg/AlvarMarkers.js"
   "CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs"
 )
 

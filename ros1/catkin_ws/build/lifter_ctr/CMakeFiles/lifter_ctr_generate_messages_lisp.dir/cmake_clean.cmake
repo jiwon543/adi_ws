@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/lifter_ctr/msg/lifter_mode.lisp"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/lifter_ctr/msg/lifter_mode.lisp"
   "CMakeFiles/lifter_ctr_generate_messages_lisp"
 )
 

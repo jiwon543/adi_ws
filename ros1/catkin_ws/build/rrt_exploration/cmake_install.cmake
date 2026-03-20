@@ -1,8 +1,8 @@
-# Install script for directory: /home/wego/ros1/catkin_ws/src/rrt_exploration
+# Install script for directory: /root/adi_ws/ros1/catkin_ws/src/rrt_exploration
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wego/ros1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/root/adi_ws/ros1/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration/msg" TYPE FILE FILES "/home/wego/ros1/catkin_ws/src/rrt_exploration/msg/PointArray.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration/msg" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/src/rrt_exploration/msg/PointArray.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration/cmake" TYPE FILE FILES "/home/wego/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_exploration-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration/cmake" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_exploration-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/wego/ros1/catkin_ws/devel/include/rrt_exploration")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/root/adi_ws/ros1/catkin_ws/devel/include/rrt_exploration")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/wego/ros1/catkin_ws/devel/share/roseus/ros/rrt_exploration")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/rrt_exploration")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/rrt_exploration")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/rrt_exploration")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/rrt_exploration")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/rrt_exploration")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/rrt_exploration")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/rrt_exploration")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/rrt_exploration")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/rrt_exploration")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/wego/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_exploration.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_exploration.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration/cmake" TYPE FILE FILES "/home/wego/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_exploration-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration/cmake" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_exploration-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration/cmake" TYPE FILE FILES
-    "/home/wego/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_explorationConfig.cmake"
-    "/home/wego/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_explorationConfig-version.cmake"
+    "/root/adi_ws/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_explorationConfig.cmake"
+    "/root/adi_ws/ros1/catkin_ws/build/rrt_exploration/catkin_generated/installspace/rrt_explorationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration" TYPE FILE FILES "/home/wego/ros1/catkin_ws/src/rrt_exploration/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrt_exploration" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/src/rrt_exploration/package.xml")
 endif()
 

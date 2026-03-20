@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/libmedianFilter.pdb"
-  "/home/wego/ros1/catkin_ws/devel/lib/libmedianFilter.so"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/libmedianFilter.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/libmedianFilter.so"
   "CMakeFiles/medianFilter.dir/src/medianFilter.cpp.o"
 )
 

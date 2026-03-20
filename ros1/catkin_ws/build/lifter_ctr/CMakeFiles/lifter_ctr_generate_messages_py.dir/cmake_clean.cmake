@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py"
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/__init__.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/lifter_ctr/msg/_lifter_mode.py"
   "CMakeFiles/lifter_ctr_generate_messages_py"
 )
 

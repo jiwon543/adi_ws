@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wego/ros1/catkin_ws/src/limo_visions/src/traffic_light.cpp" "/home/wego/ros1/catkin_ws/build/limo_visions/CMakeFiles/traffic_light.dir/src/traffic_light.cpp.o"
+  "/root/adi_ws/ros1/catkin_ws/src/limo_visions/src/traffic_light.cpp" "/root/adi_ws/ros1/catkin_ws/build/limo_visions/CMakeFiles/traffic_light.dir/src/traffic_light.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/wego/ros1/catkin_ws/src/limo_visions/include"
-  "/home/wego/ros1/catkin_ws/devel/include"
+  "/root/adi_ws/ros1/catkin_ws/src/limo_visions/include"
+  "/root/adi_ws/ros1/catkin_ws/devel/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv4"

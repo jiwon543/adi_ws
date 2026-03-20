@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/limo_base/msg/LimoStatus.lisp"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/limo_base/msg/LimoStatus.lisp"
   "CMakeFiles/limo_base_generate_messages_lisp"
 )
 

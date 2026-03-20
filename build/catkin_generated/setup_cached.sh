@@ -7,7 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/root/adi_ws/devel:$CMAKE_PREFIX_PATH"
+export PATH='/opt/ros/noetic/bin:/root/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
 export PWD='/root/adi_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/root/adi_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/root/adi_ws/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH="/root/adi_ws/devel/lib/python3/dist-packages:$PYTHONPATH"

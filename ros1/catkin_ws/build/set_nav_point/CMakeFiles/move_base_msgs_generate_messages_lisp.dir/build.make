@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for move_base_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ set_nav_point/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build: move_b
 .PHONY : set_nav_point/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
 
 set_nav_point/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/set_nav_point && $(CMAKE_COMMAND) -P CMakeFiles/move_base_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/set_nav_point && $(CMAKE_COMMAND) -P CMakeFiles/move_base_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : set_nav_point/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/clean
 
 set_nav_point/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/set_nav_point /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/set_nav_point /home/wego/ros1/catkin_ws/build/set_nav_point/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/set_nav_point /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/set_nav_point /root/adi_ws/ros1/catkin_ws/build/set_nav_point/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : set_nav_point/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/depend
 

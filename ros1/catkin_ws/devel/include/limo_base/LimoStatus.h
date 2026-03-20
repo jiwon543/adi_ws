@@ -242,17 +242,28 @@ struct Printer< ::limo_base::LimoStatus_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::limo_base::LimoStatus_<ContainerAllocator>& v)
   {
+    if (false || !indent.empty())
+      s << std::endl;
     s << indent << "header: ";
-    s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "vehicle_state: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.vehicle_state);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "control_mode: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.control_mode);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "battery_voltage: ";
     Printer<double>::stream(s, indent + "  ", v.battery_voltage);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "error_code: ";
     Printer<uint16_t>::stream(s, indent + "  ", v.error_code);
+    if (true || !indent.empty())
+      s << std::endl;
     s << indent << "motion_mode: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.motion_mode);
   }

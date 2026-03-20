@@ -1,8 +1,0 @@
-prefix=/home/wego/ros1/catkin_ws/install
-
-Name: yolov3-ros
-Description: Description of yolov3-ros
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

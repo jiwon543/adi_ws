@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for visualization_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ aruco_ros/aruco_ros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/b
 .PHONY : aruco_ros/aruco_ros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
 
 aruco_ros/aruco_ros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : aruco_ros/aruco_ros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
 
 aruco_ros/aruco_ros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : aruco_ros/aruco_ros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend
 

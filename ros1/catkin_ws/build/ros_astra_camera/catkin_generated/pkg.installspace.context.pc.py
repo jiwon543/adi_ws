@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "cv_bridge;dynamic_reconfigure;image_geometry;image_transport;message_runtime;roscpp;sensor_msgs;tf2;tf2_ros;std_srvs;message_filters;camera_info_manager".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lastra_camera".split(';') if "-lastra_camera" != "" else []
 PROJECT_NAME = "astra_camera"
-PROJECT_SPACE_DIR = "/home/wego/ros1/catkin_ws/install"
+PROJECT_SPACE_DIR = "/root/adi_ws/ros1/catkin_ws/install"
 PROJECT_VERSION = "1.2.5"

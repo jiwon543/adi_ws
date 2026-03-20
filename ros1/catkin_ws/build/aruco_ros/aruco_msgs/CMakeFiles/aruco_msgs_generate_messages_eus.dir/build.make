@@ -43,50 +43,50 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for aruco_msgs_generate_messages_eus.
 
 # Include the progress variables for this target.
 include aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/progress.make
 
-aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l
-aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l
-aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/manifest.l
+aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l
+aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l
+aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/manifest.l
 
 
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from aruco_msgs/Marker.msg"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg -Iaruco_msgs:/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from aruco_msgs/Marker.msg"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg -Iaruco_msgs:/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg
 
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from aruco_msgs/MarkerArray.msg"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg -Iaruco_msgs:/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from aruco_msgs/MarkerArray.msg"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg -Iaruco_msgs:/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg
 
-/home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for aruco_msgs"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs aruco_msgs std_msgs geometry_msgs
+/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for aruco_msgs"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs aruco_msgs std_msgs geometry_msgs
 
 aruco_msgs_generate_messages_eus: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus
-aruco_msgs_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l
-aruco_msgs_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l
-aruco_msgs_generate_messages_eus: /home/wego/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/manifest.l
+aruco_msgs_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l
+aruco_msgs_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l
+aruco_msgs_generate_messages_eus: /root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/aruco_msgs/manifest.l
 aruco_msgs_generate_messages_eus: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/build.make
 
 .PHONY : aruco_msgs_generate_messages_eus
@@ -97,10 +97,10 @@ aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/build: aruc
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/build
 
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && $(CMAKE_COMMAND) -P CMakeFiles/aruco_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && $(CMAKE_COMMAND) -P CMakeFiles/aruco_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/clean
 
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/depend
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/learning_limo/listener"
-  "/home/wego/ros1/catkin_ws/devel/lib/learning_limo/listener.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/learning_limo/listener"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/learning_limo/listener.pdb"
   "CMakeFiles/listener.dir/src/listener.cpp.o"
 )
 

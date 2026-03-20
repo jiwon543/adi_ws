@@ -2,7 +2,7 @@
 
 message(STATUS "lifter_ctr: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Ilifter_ctr:/home/wego/ros1/catkin_ws/src/lifter_ctr/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ilifter_ctr:/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,9 +17,9 @@ add_custom_target(lifter_ctr_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
 add_custom_target(_lifter_ctr_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lifter_ctr" "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lifter_ctr" "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" ""
 )
 
 #
@@ -29,7 +29,7 @@ add_custom_target(_lifter_ctr_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(lifter_ctr
-  "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/lifter_ctr
@@ -49,7 +49,7 @@ add_custom_target(lifter_ctr_generate_messages_cpp
 add_dependencies(lifter_ctr_generate_messages lifter_ctr_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
 add_dependencies(lifter_ctr_generate_messages_cpp _lifter_ctr_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -62,7 +62,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lifter_ctr_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(lifter_ctr
-  "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/lifter_ctr
@@ -82,7 +82,7 @@ add_custom_target(lifter_ctr_generate_messages_eus
 add_dependencies(lifter_ctr_generate_messages lifter_ctr_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
 add_dependencies(lifter_ctr_generate_messages_eus _lifter_ctr_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -95,7 +95,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lifter_ctr_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(lifter_ctr
-  "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/lifter_ctr
@@ -115,7 +115,7 @@ add_custom_target(lifter_ctr_generate_messages_lisp
 add_dependencies(lifter_ctr_generate_messages lifter_ctr_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
 add_dependencies(lifter_ctr_generate_messages_lisp _lifter_ctr_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -128,7 +128,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lifter_ctr_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(lifter_ctr
-  "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/lifter_ctr
@@ -148,7 +148,7 @@ add_custom_target(lifter_ctr_generate_messages_nodejs
 add_dependencies(lifter_ctr_generate_messages lifter_ctr_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
 add_dependencies(lifter_ctr_generate_messages_nodejs _lifter_ctr_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -161,7 +161,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lifter_ctr_generate_messages_nodejs
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(lifter_ctr
-  "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/lifter_ctr
@@ -181,7 +181,7 @@ add_custom_target(lifter_ctr_generate_messages_py
 add_dependencies(lifter_ctr_generate_messages lifter_ctr_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg" NAME_WE)
 add_dependencies(lifter_ctr_generate_messages_py _lifter_ctr_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

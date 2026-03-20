@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/rrt_exploration/msg/PointArray.lisp"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/rrt_exploration/msg/PointArray.lisp"
   "CMakeFiles/rrt_exploration_generate_messages_lisp"
 )
 

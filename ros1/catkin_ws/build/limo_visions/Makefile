@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wego/ros1/catkin_ws/build/CMakeFiles /home/wego/ros1/catkin_ws/build/limo_visions/CMakeFiles/progress.marks
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wego/ros1/catkin_ws/build/CMakeFiles 0
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/adi_ws/ros1/catkin_ws/build/CMakeFiles /root/adi_ws/ros1/catkin_ws/build/limo_visions/CMakeFiles/progress.marks
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/adi_ws/ros1/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/clean
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/preinstall
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/preinstall
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 limo_visions/CMakeFiles/object_detect.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/object_detect.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/object_detect.dir/rule
 .PHONY : limo_visions/CMakeFiles/object_detect.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ object_detect: limo_visions/CMakeFiles/object_detect.dir/rule
 
 # fast build rule for target.
 object_detect/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/object_detect.dir/build.make limo_visions/CMakeFiles/object_detect.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/object_detect.dir/build.make limo_visions/CMakeFiles/object_detect.dir/build
 .PHONY : object_detect/fast
 
 # Convenience name for target.
 limo_visions/CMakeFiles/follow_line.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/follow_line.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/follow_line.dir/rule
 .PHONY : limo_visions/CMakeFiles/follow_line.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ follow_line: limo_visions/CMakeFiles/follow_line.dir/rule
 
 # fast build rule for target.
 follow_line/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/follow_line.dir/build.make limo_visions/CMakeFiles/follow_line.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/follow_line.dir/build.make limo_visions/CMakeFiles/follow_line.dir/build
 .PHONY : follow_line/fast
 
 # Convenience name for target.
 limo_visions/CMakeFiles/traffic_light.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/traffic_light.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/traffic_light.dir/rule
 .PHONY : limo_visions/CMakeFiles/traffic_light.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ traffic_light: limo_visions/CMakeFiles/traffic_light.dir/rule
 
 # fast build rule for target.
 traffic_light/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/traffic_light.dir/build.make limo_visions/CMakeFiles/traffic_light.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/traffic_light.dir/build.make limo_visions/CMakeFiles/traffic_light.dir/build
 .PHONY : traffic_light/fast
 
 # Convenience name for target.
 limo_visions/CMakeFiles/open_cap.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/open_cap.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/open_cap.dir/rule
 .PHONY : limo_visions/CMakeFiles/open_cap.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ open_cap: limo_visions/CMakeFiles/open_cap.dir/rule
 
 # fast build rule for target.
 open_cap/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/open_cap.dir/build.make limo_visions/CMakeFiles/open_cap.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/open_cap.dir/build.make limo_visions/CMakeFiles/open_cap.dir/build
 .PHONY : open_cap/fast
 
 # Convenience name for target.
 limo_visions/CMakeFiles/01test.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/01test.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/01test.dir/rule
 .PHONY : limo_visions/CMakeFiles/01test.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ limo_visions/CMakeFiles/01test.dir/rule:
 
 # fast build rule for target.
 01test/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/01test.dir/build.make limo_visions/CMakeFiles/01test.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/01test.dir/build.make limo_visions/CMakeFiles/01test.dir/build
 .PHONY : 01test/fast
 
 # Convenience name for target.
 limo_visions/CMakeFiles/recognition.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/recognition.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/recognition.dir/rule
 .PHONY : limo_visions/CMakeFiles/recognition.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ recognition: limo_visions/CMakeFiles/recognition.dir/rule
 
 # fast build rule for target.
 recognition/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/recognition.dir/build.make limo_visions/CMakeFiles/recognition.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/recognition.dir/build.make limo_visions/CMakeFiles/recognition.dir/build
 .PHONY : recognition/fast
 
 # Convenience name for target.
 limo_visions/CMakeFiles/get_hsv.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/get_hsv.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 limo_visions/CMakeFiles/get_hsv.dir/rule
 .PHONY : limo_visions/CMakeFiles/get_hsv.dir/rule
 
 # Convenience name for target.
@@ -269,7 +269,7 @@ get_hsv: limo_visions/CMakeFiles/get_hsv.dir/rule
 
 # fast build rule for target.
 get_hsv/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/get_hsv.dir/build.make limo_visions/CMakeFiles/get_hsv.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/get_hsv.dir/build.make limo_visions/CMakeFiles/get_hsv.dir/build
 .PHONY : get_hsv/fast
 
 src/01test.o: src/01test.cpp.o
@@ -278,7 +278,7 @@ src/01test.o: src/01test.cpp.o
 
 # target to build an object file
 src/01test.cpp.o:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/01test.dir/build.make limo_visions/CMakeFiles/01test.dir/src/01test.cpp.o
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/01test.dir/build.make limo_visions/CMakeFiles/01test.dir/src/01test.cpp.o
 .PHONY : src/01test.cpp.o
 
 src/01test.i: src/01test.cpp.i
@@ -287,7 +287,7 @@ src/01test.i: src/01test.cpp.i
 
 # target to preprocess a source file
 src/01test.cpp.i:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/01test.dir/build.make limo_visions/CMakeFiles/01test.dir/src/01test.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/01test.dir/build.make limo_visions/CMakeFiles/01test.dir/src/01test.cpp.i
 .PHONY : src/01test.cpp.i
 
 src/01test.s: src/01test.cpp.s
@@ -296,7 +296,7 @@ src/01test.s: src/01test.cpp.s
 
 # target to generate assembly for a file
 src/01test.cpp.s:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/01test.dir/build.make limo_visions/CMakeFiles/01test.dir/src/01test.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/01test.dir/build.make limo_visions/CMakeFiles/01test.dir/src/01test.cpp.s
 .PHONY : src/01test.cpp.s
 
 src/follow_line.o: src/follow_line.cpp.o
@@ -305,7 +305,7 @@ src/follow_line.o: src/follow_line.cpp.o
 
 # target to build an object file
 src/follow_line.cpp.o:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/follow_line.dir/build.make limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/follow_line.dir/build.make limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o
 .PHONY : src/follow_line.cpp.o
 
 src/follow_line.i: src/follow_line.cpp.i
@@ -314,7 +314,7 @@ src/follow_line.i: src/follow_line.cpp.i
 
 # target to preprocess a source file
 src/follow_line.cpp.i:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/follow_line.dir/build.make limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/follow_line.dir/build.make limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.i
 .PHONY : src/follow_line.cpp.i
 
 src/follow_line.s: src/follow_line.cpp.s
@@ -323,7 +323,7 @@ src/follow_line.s: src/follow_line.cpp.s
 
 # target to generate assembly for a file
 src/follow_line.cpp.s:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/follow_line.dir/build.make limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/follow_line.dir/build.make limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.s
 .PHONY : src/follow_line.cpp.s
 
 src/get_hsv.o: src/get_hsv.cpp.o
@@ -332,7 +332,7 @@ src/get_hsv.o: src/get_hsv.cpp.o
 
 # target to build an object file
 src/get_hsv.cpp.o:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/get_hsv.dir/build.make limo_visions/CMakeFiles/get_hsv.dir/src/get_hsv.cpp.o
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/get_hsv.dir/build.make limo_visions/CMakeFiles/get_hsv.dir/src/get_hsv.cpp.o
 .PHONY : src/get_hsv.cpp.o
 
 src/get_hsv.i: src/get_hsv.cpp.i
@@ -341,7 +341,7 @@ src/get_hsv.i: src/get_hsv.cpp.i
 
 # target to preprocess a source file
 src/get_hsv.cpp.i:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/get_hsv.dir/build.make limo_visions/CMakeFiles/get_hsv.dir/src/get_hsv.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/get_hsv.dir/build.make limo_visions/CMakeFiles/get_hsv.dir/src/get_hsv.cpp.i
 .PHONY : src/get_hsv.cpp.i
 
 src/get_hsv.s: src/get_hsv.cpp.s
@@ -350,7 +350,7 @@ src/get_hsv.s: src/get_hsv.cpp.s
 
 # target to generate assembly for a file
 src/get_hsv.cpp.s:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/get_hsv.dir/build.make limo_visions/CMakeFiles/get_hsv.dir/src/get_hsv.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/get_hsv.dir/build.make limo_visions/CMakeFiles/get_hsv.dir/src/get_hsv.cpp.s
 .PHONY : src/get_hsv.cpp.s
 
 src/object_detect.o: src/object_detect.cpp.o
@@ -359,7 +359,7 @@ src/object_detect.o: src/object_detect.cpp.o
 
 # target to build an object file
 src/object_detect.cpp.o:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/object_detect.dir/build.make limo_visions/CMakeFiles/object_detect.dir/src/object_detect.cpp.o
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/object_detect.dir/build.make limo_visions/CMakeFiles/object_detect.dir/src/object_detect.cpp.o
 .PHONY : src/object_detect.cpp.o
 
 src/object_detect.i: src/object_detect.cpp.i
@@ -368,7 +368,7 @@ src/object_detect.i: src/object_detect.cpp.i
 
 # target to preprocess a source file
 src/object_detect.cpp.i:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/object_detect.dir/build.make limo_visions/CMakeFiles/object_detect.dir/src/object_detect.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/object_detect.dir/build.make limo_visions/CMakeFiles/object_detect.dir/src/object_detect.cpp.i
 .PHONY : src/object_detect.cpp.i
 
 src/object_detect.s: src/object_detect.cpp.s
@@ -377,7 +377,7 @@ src/object_detect.s: src/object_detect.cpp.s
 
 # target to generate assembly for a file
 src/object_detect.cpp.s:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/object_detect.dir/build.make limo_visions/CMakeFiles/object_detect.dir/src/object_detect.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/object_detect.dir/build.make limo_visions/CMakeFiles/object_detect.dir/src/object_detect.cpp.s
 .PHONY : src/object_detect.cpp.s
 
 src/open_cap.o: src/open_cap.cpp.o
@@ -386,7 +386,7 @@ src/open_cap.o: src/open_cap.cpp.o
 
 # target to build an object file
 src/open_cap.cpp.o:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/open_cap.dir/build.make limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/open_cap.dir/build.make limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o
 .PHONY : src/open_cap.cpp.o
 
 src/open_cap.i: src/open_cap.cpp.i
@@ -395,7 +395,7 @@ src/open_cap.i: src/open_cap.cpp.i
 
 # target to preprocess a source file
 src/open_cap.cpp.i:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/open_cap.dir/build.make limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/open_cap.dir/build.make limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.i
 .PHONY : src/open_cap.cpp.i
 
 src/open_cap.s: src/open_cap.cpp.s
@@ -404,7 +404,7 @@ src/open_cap.s: src/open_cap.cpp.s
 
 # target to generate assembly for a file
 src/open_cap.cpp.s:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/open_cap.dir/build.make limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/open_cap.dir/build.make limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.s
 .PHONY : src/open_cap.cpp.s
 
 src/recognition.o: src/recognition.cpp.o
@@ -413,7 +413,7 @@ src/recognition.o: src/recognition.cpp.o
 
 # target to build an object file
 src/recognition.cpp.o:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/recognition.dir/build.make limo_visions/CMakeFiles/recognition.dir/src/recognition.cpp.o
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/recognition.dir/build.make limo_visions/CMakeFiles/recognition.dir/src/recognition.cpp.o
 .PHONY : src/recognition.cpp.o
 
 src/recognition.i: src/recognition.cpp.i
@@ -422,7 +422,7 @@ src/recognition.i: src/recognition.cpp.i
 
 # target to preprocess a source file
 src/recognition.cpp.i:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/recognition.dir/build.make limo_visions/CMakeFiles/recognition.dir/src/recognition.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/recognition.dir/build.make limo_visions/CMakeFiles/recognition.dir/src/recognition.cpp.i
 .PHONY : src/recognition.cpp.i
 
 src/recognition.s: src/recognition.cpp.s
@@ -431,7 +431,7 @@ src/recognition.s: src/recognition.cpp.s
 
 # target to generate assembly for a file
 src/recognition.cpp.s:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/recognition.dir/build.make limo_visions/CMakeFiles/recognition.dir/src/recognition.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/recognition.dir/build.make limo_visions/CMakeFiles/recognition.dir/src/recognition.cpp.s
 .PHONY : src/recognition.cpp.s
 
 src/traffic_light.o: src/traffic_light.cpp.o
@@ -440,7 +440,7 @@ src/traffic_light.o: src/traffic_light.cpp.o
 
 # target to build an object file
 src/traffic_light.cpp.o:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/traffic_light.dir/build.make limo_visions/CMakeFiles/traffic_light.dir/src/traffic_light.cpp.o
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/traffic_light.dir/build.make limo_visions/CMakeFiles/traffic_light.dir/src/traffic_light.cpp.o
 .PHONY : src/traffic_light.cpp.o
 
 src/traffic_light.i: src/traffic_light.cpp.i
@@ -449,7 +449,7 @@ src/traffic_light.i: src/traffic_light.cpp.i
 
 # target to preprocess a source file
 src/traffic_light.cpp.i:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/traffic_light.dir/build.make limo_visions/CMakeFiles/traffic_light.dir/src/traffic_light.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/traffic_light.dir/build.make limo_visions/CMakeFiles/traffic_light.dir/src/traffic_light.cpp.i
 .PHONY : src/traffic_light.cpp.i
 
 src/traffic_light.s: src/traffic_light.cpp.s
@@ -458,7 +458,7 @@ src/traffic_light.s: src/traffic_light.cpp.s
 
 # target to generate assembly for a file
 src/traffic_light.cpp.s:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/traffic_light.dir/build.make limo_visions/CMakeFiles/traffic_light.dir/src/traffic_light.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f limo_visions/CMakeFiles/traffic_light.dir/build.make limo_visions/CMakeFiles/traffic_light.dir/src/traffic_light.cpp.s
 .PHONY : src/traffic_light.cpp.s
 
 # Help Target
@@ -513,6 +513,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

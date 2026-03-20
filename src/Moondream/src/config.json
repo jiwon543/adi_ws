@@ -1,0 +1,12 @@
+{
+  "model": "vikhyatk/moondream2",
+  "image_path": "/root/adi_ws/src/Moondream/src/test_image.jpg",
+  "webcam_index": 0,
+  "prompts": {
+    "caption": true,
+    "questions": [
+      "What objects are visible in this image?",
+      "Describe the scene in detail."
+    ]
+  }
+}

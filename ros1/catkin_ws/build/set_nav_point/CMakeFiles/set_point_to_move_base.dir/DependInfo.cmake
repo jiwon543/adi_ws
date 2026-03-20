@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wego/ros1/catkin_ws/src/set_nav_point/src/set_point_to_move_base.cpp" "/home/wego/ros1/catkin_ws/build/set_nav_point/CMakeFiles/set_point_to_move_base.dir/src/set_point_to_move_base.cpp.o"
+  "/root/adi_ws/ros1/catkin_ws/src/set_nav_point/src/set_point_to_move_base.cpp" "/root/adi_ws/ros1/catkin_ws/build/set_nav_point/CMakeFiles/set_point_to_move_base.dir/src/set_point_to_move_base.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

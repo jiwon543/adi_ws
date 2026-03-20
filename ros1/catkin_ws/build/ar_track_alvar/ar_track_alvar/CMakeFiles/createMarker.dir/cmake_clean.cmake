@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/ar_track_alvar/createMarker"
-  "/home/wego/ros1/catkin_ws/devel/lib/ar_track_alvar/createMarker.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/ar_track_alvar/createMarker"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/ar_track_alvar/createMarker.pdb"
   "CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o"
 )
 

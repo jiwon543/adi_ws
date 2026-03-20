@@ -1,8 +1,8 @@
-# Install script for directory: /home/wego/ros1/catkin_ws/src/limo_application-master
+# Install script for directory: /root/adi_ws/ros1/catkin_ws/src/limo_application-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wego/ros1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/root/adi_ws/ros1/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,45 +38,45 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/limo_application" TYPE FILE FILES "/home/wego/ros1/catkin_ws/devel/include/limo_application/image_processingConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/limo_application" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/devel/include/limo_application/image_processingConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/limo_application" TYPE FILE FILES "/home/wego/ros1/catkin_ws/devel/include/limo_application/lidar_e_stopConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/limo_application" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/devel/include/limo_application/lidar_e_stopConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/limo_application" TYPE FILE FILES "/home/wego/ros1/catkin_ws/devel/include/limo_application/controlConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/limo_application" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/devel/include/limo_application/controlConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/limo_application" TYPE FILE FILES "/home/wego/ros1/catkin_ws/devel/include/limo_application/crosswalkConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/limo_application" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/devel/include/limo_application/crosswalkConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/limo_application" TYPE FILE FILES "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_application/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/limo_application" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_application/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_application/cfg")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_application/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/limo_application" TYPE DIRECTORY FILES "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_application/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/limo_application" TYPE DIRECTORY FILES "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_application/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/wego/ros1/catkin_ws/build/limo_application-master/catkin_generated/installspace/limo_application.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/build/limo_application-master/catkin_generated/installspace/limo_application.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/limo_application/cmake" TYPE FILE FILES
-    "/home/wego/ros1/catkin_ws/build/limo_application-master/catkin_generated/installspace/limo_applicationConfig.cmake"
-    "/home/wego/ros1/catkin_ws/build/limo_application-master/catkin_generated/installspace/limo_applicationConfig-version.cmake"
+    "/root/adi_ws/ros1/catkin_ws/build/limo_application-master/catkin_generated/installspace/limo_applicationConfig.cmake"
+    "/root/adi_ws/ros1/catkin_ws/build/limo_application-master/catkin_generated/installspace/limo_applicationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/limo_application" TYPE FILE FILES "/home/wego/ros1/catkin_ws/src/limo_application-master/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/limo_application" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/src/limo_application-master/package.xml")
 endif()
 

@@ -43,44 +43,44 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for aruco_msgs_generate_messages_lisp.
 
 # Include the progress variables for this target.
 include aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/progress.make
 
-aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp: /home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp
-aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp: /home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp
+aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp: /root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp
+aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp: /root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp
 
 
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from aruco_msgs/Marker.msg"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg -Iaruco_msgs:/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from aruco_msgs/Marker.msg"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg -Iaruco_msgs:/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg
 
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from aruco_msgs/MarkerArray.msg"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg -Iaruco_msgs:/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from aruco_msgs/MarkerArray.msg"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg -Iaruco_msgs:/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg
 
 aruco_msgs_generate_messages_lisp: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp
-aruco_msgs_generate_messages_lisp: /home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp
-aruco_msgs_generate_messages_lisp: /home/wego/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp
+aruco_msgs_generate_messages_lisp: /root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp
+aruco_msgs_generate_messages_lisp: /root/adi_ws/ros1/catkin_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp
 aruco_msgs_generate_messages_lisp: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/build.make
 
 .PHONY : aruco_msgs_generate_messages_lisp
@@ -91,10 +91,10 @@ aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/build: aru
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/build
 
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && $(CMAKE_COMMAND) -P CMakeFiles/aruco_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && $(CMAKE_COMMAND) -P CMakeFiles/aruco_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/clean
 
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/depend
 

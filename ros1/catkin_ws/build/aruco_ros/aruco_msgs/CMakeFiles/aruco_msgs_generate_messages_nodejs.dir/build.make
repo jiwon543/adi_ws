@@ -43,44 +43,44 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for aruco_msgs_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/progress.make
 
-aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs: /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js
-aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs: /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js
+aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs: /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js
+aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs: /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js
 
 
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from aruco_msgs/Marker.msg"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg -Iaruco_msgs:/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from aruco_msgs/Marker.msg"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg -Iaruco_msgs:/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg
 
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from aruco_msgs/MarkerArray.msg"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg -Iaruco_msgs:/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from aruco_msgs/MarkerArray.msg"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg -Iaruco_msgs:/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p aruco_msgs -o /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg
 
 aruco_msgs_generate_messages_nodejs: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs
-aruco_msgs_generate_messages_nodejs: /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js
-aruco_msgs_generate_messages_nodejs: /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js
+aruco_msgs_generate_messages_nodejs: /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js
+aruco_msgs_generate_messages_nodejs: /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js
 aruco_msgs_generate_messages_nodejs: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/build.make
 
 .PHONY : aruco_msgs_generate_messages_nodejs
@@ -91,10 +91,10 @@ aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/build: a
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/build
 
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && $(CMAKE_COMMAND) -P CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && $(CMAKE_COMMAND) -P CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/clean
 
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/depend
 

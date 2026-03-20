@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include aruco_ros/aruco/CMakeFiles/aruco.dir/depend.make
@@ -58,225 +58,225 @@ include aruco_ros/aruco/CMakeFiles/aruco.dir/progress.make
 include aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cameraparameters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cameraparameters.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cameraparameters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cameraparameters.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cameraparameters.cpp > CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cameraparameters.cpp > CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cameraparameters.cpp -o CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cameraparameters.cpp -o CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cvdrawingutils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cvdrawingutils.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cvdrawingutils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cvdrawingutils.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cvdrawingutils.cpp > CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cvdrawingutils.cpp > CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cvdrawingutils.cpp -o CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/cvdrawingutils.cpp -o CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/debug.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/debug.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/debug.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/debug.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/debug.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/debug.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/debug.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/debug.cpp > CMakeFiles/aruco.dir/src/aruco/debug.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/debug.cpp > CMakeFiles/aruco.dir/src/aruco/debug.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/debug.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/debug.cpp -o CMakeFiles/aruco.dir/src/aruco/debug.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/debug.cpp -o CMakeFiles/aruco.dir/src/aruco/debug.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary_based.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary_based.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary_based.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary_based.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary_based.cpp > CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary_based.cpp > CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary_based.cpp -o CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary_based.cpp -o CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary.cpp > CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary.cpp > CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary.cpp -o CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/dictionary.cpp -o CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractaldetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractaldetector.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractaldetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractaldetector.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractaldetector.cpp > CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractaldetector.cpp > CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractaldetector.cpp -o CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractaldetector.cpp -o CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/ippe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/ippe.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/ippe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/ippe.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/ippe.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/ippe.cpp > CMakeFiles/aruco.dir/src/aruco/ippe.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/ippe.cpp > CMakeFiles/aruco.dir/src/aruco/ippe.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/ippe.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/ippe.cpp -o CMakeFiles/aruco.dir/src/aruco/ippe.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/ippe.cpp -o CMakeFiles/aruco.dir/src/aruco/ippe.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/marker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/marker.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/marker.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/marker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/marker.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/marker.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/marker.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/marker.cpp > CMakeFiles/aruco.dir/src/aruco/marker.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/marker.cpp > CMakeFiles/aruco.dir/src/aruco/marker.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/marker.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/marker.cpp -o CMakeFiles/aruco.dir/src/aruco/marker.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/marker.cpp -o CMakeFiles/aruco.dir/src/aruco/marker.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector_impl.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector_impl.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector_impl.cpp > CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector_impl.cpp > CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector_impl.cpp -o CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector_impl.cpp -o CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector.cpp > CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector.cpp > CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector.cpp -o CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerdetector.cpp -o CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerlabeler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerlabeler.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerlabeler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerlabeler.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerlabeler.cpp > CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerlabeler.cpp > CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerlabeler.cpp -o CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markerlabeler.cpp -o CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markermap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markermap.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markermap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markermap.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/markermap.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markermap.cpp > CMakeFiles/aruco.dir/src/aruco/markermap.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markermap.cpp > CMakeFiles/aruco.dir/src/aruco/markermap.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/markermap.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markermap.cpp -o CMakeFiles/aruco.dir/src/aruco/markermap.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/markermap.cpp -o CMakeFiles/aruco.dir/src/aruco/markermap.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/posetracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/posetracker.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/posetracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/posetracker.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/posetracker.cpp > CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/posetracker.cpp > CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/posetracker.cpp -o CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/posetracker.cpp -o CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractallabeler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractallabeler.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractallabeler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractallabeler.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractallabeler.cpp > CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractallabeler.cpp > CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractallabeler.cpp -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractallabeler.cpp -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarker.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarker.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarker.cpp > CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarker.cpp > CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarker.cpp -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarker.cpp -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarkerset.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarkerset.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarkerset.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarkerset.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarkerset.cpp > CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarkerset.cpp > CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarkerset.cpp -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalmarkerset.cpp -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.s
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o: aruco_ros/aruco/CMakeFiles/aruco.dir/flags.make
-aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o: /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalposetracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o -c /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalposetracker.cpp
+aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o: /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalposetracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalposetracker.cpp
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalposetracker.cpp > CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalposetracker.cpp > CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.i
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalposetracker.cpp -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/src/aruco/fractallabelers/fractalposetracker.cpp -o CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.s
 
 # Object files for target aruco
 aruco_OBJECTS = \
@@ -301,53 +301,86 @@ aruco_OBJECTS = \
 # External object files for target aruco
 aruco_EXTERNAL_OBJECTS =
 
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/build.make
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_gapi.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_ml.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_objdetect.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_video.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_videoio.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_dnn.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_calib3d.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_features2d.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_flann.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library /home/wego/ros1/catkin_ws/devel/lib/libaruco.so"
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aruco.dir/link.txt --verbose=$(VERBOSE)
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary_based.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractaldetector.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector_impl.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractallabeler.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarker.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalmarkerset.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/fractallabelers/fractalposetracker.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/build.make
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so: aruco_ros/aruco/CMakeFiles/aruco.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library /root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so"
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aruco.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-aruco_ros/aruco/CMakeFiles/aruco.dir/build: /home/wego/ros1/catkin_ws/devel/lib/libaruco.so
+aruco_ros/aruco/CMakeFiles/aruco.dir/build: /root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so
 
 .PHONY : aruco_ros/aruco/CMakeFiles/aruco.dir/build
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco && $(CMAKE_COMMAND) -P CMakeFiles/aruco.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco && $(CMAKE_COMMAND) -P CMakeFiles/aruco.dir/cmake_clean.cmake
 .PHONY : aruco_ros/aruco/CMakeFiles/aruco.dir/clean
 
 aruco_ros/aruco/CMakeFiles/aruco.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/aruco_ros/aruco /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/aruco_ros/aruco /home/wego/ros1/catkin_ws/build/aruco_ros/aruco/CMakeFiles/aruco.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco/CMakeFiles/aruco.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : aruco_ros/aruco/CMakeFiles/aruco.dir/depend
 

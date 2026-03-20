@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "mybuddy_moveit"
-PROJECT_SPACE_DIR = "/home/wego/ros1/catkin_ws/install"
+PROJECT_SPACE_DIR = "/root/adi_ws/ros1/catkin_ws/install"
 PROJECT_VERSION = "0.3.0"

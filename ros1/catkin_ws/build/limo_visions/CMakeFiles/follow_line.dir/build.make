@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include limo_visions/CMakeFiles/follow_line.dir/depend.make
@@ -58,17 +58,17 @@ include limo_visions/CMakeFiles/follow_line.dir/progress.make
 include limo_visions/CMakeFiles/follow_line.dir/flags.make
 
 limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o: limo_visions/CMakeFiles/follow_line.dir/flags.make
-limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o: /home/wego/ros1/catkin_ws/src/limo_visions/src/follow_line.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/follow_line.dir/src/follow_line.cpp.o -c /home/wego/ros1/catkin_ws/src/limo_visions/src/follow_line.cpp
+limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o: /root/adi_ws/ros1/catkin_ws/src/limo_visions/src/follow_line.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/follow_line.dir/src/follow_line.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/limo_visions/src/follow_line.cpp
 
 limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/follow_line.dir/src/follow_line.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/limo_visions/src/follow_line.cpp > CMakeFiles/follow_line.dir/src/follow_line.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/limo_visions/src/follow_line.cpp > CMakeFiles/follow_line.dir/src/follow_line.cpp.i
 
 limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/follow_line.dir/src/follow_line.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/limo_visions/src/follow_line.cpp -o CMakeFiles/follow_line.dir/src/follow_line.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/limo_visions/src/follow_line.cpp -o CMakeFiles/follow_line.dir/src/follow_line.cpp.s
 
 # Object files for target follow_line
 follow_line_OBJECTS = \
@@ -77,102 +77,102 @@ follow_line_OBJECTS = \
 # External object files for target follow_line
 follow_line_EXTERNAL_OBJECTS =
 
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: limo_visions/CMakeFiles/follow_line.dir/build.make
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libcv_bridge.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_calib3d.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_dnn.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_features2d.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_flann.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_ml.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_objdetect.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_video.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_videoio.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_aruco.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_bgsegm.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_bioinspired.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_ccalib.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_datasets.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_dnn_superres.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_dpm.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_face.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_freetype.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_fuzzy.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_hdf.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_hfs.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_img_hash.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_line_descriptor.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_optflow.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_plot.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_quality.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_reg.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_rgbd.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_saliency.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_shape.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_stereo.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_structured_light.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_superres.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_surface_matching.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_text.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_tracking.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_videostab.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_viz.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_ximgproc.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_xobjdetect.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_xphoto.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libimage_transport.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libclass_loader.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libPocoFoundation.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libdl.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libroslib.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librospack.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libpython3.8.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libboost_program_options.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libtf.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libtf2_ros.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libactionlib.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libmessage_filters.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libroscpp.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libpthread.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librosconsole.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libtf2.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librostime.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libcpp_common.so
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line: limo_visions/CMakeFiles/follow_line.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line"
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/follow_line.dir/link.txt --verbose=$(VERBOSE)
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: limo_visions/CMakeFiles/follow_line.dir/src/follow_line.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: limo_visions/CMakeFiles/follow_line.dir/build.make
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libcv_bridge.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libimage_transport.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libclass_loader.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libdl.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libroslib.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librospack.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libtf.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libtf2_ros.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libactionlib.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libmessage_filters.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libroscpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libpthread.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libxmlrpcpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librosconsole.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libtf2.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libroscpp_serialization.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/librostime.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /opt/ros/noetic/lib/libcpp_common.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line: limo_visions/CMakeFiles/follow_line.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line"
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/follow_line.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-limo_visions/CMakeFiles/follow_line.dir/build: /home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line
+limo_visions/CMakeFiles/follow_line.dir/build: /root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line
 
 .PHONY : limo_visions/CMakeFiles/follow_line.dir/build
 
 limo_visions/CMakeFiles/follow_line.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && $(CMAKE_COMMAND) -P CMakeFiles/follow_line.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && $(CMAKE_COMMAND) -P CMakeFiles/follow_line.dir/cmake_clean.cmake
 .PHONY : limo_visions/CMakeFiles/follow_line.dir/clean
 
 limo_visions/CMakeFiles/follow_line.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/limo_visions /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/limo_visions /home/wego/ros1/catkin_ws/build/limo_visions/CMakeFiles/follow_line.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/limo_visions /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/limo_visions /root/adi_ws/ros1/catkin_ws/build/limo_visions/CMakeFiles/follow_line.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : limo_visions/CMakeFiles/follow_line.dir/depend
 

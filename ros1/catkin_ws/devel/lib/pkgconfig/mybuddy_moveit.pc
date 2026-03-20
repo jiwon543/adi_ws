@@ -1,4 +1,4 @@
-prefix=/home/wego/ros1/catkin_ws/devel
+prefix=/root/adi_ws/ros1/catkin_ws/devel
 
 Name: mybuddy_moveit
 Description: Description of mybuddy_moveit

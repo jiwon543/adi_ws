@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/limo_base/msg/LimoStatus.js"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/limo_base/msg/LimoStatus.js"
   "CMakeFiles/limo_base_generate_messages_nodejs"
 )
 

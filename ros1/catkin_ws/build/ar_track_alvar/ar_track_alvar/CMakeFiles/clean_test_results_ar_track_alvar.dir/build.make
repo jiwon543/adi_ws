@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for clean_test_results_ar_track_alvar.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
 include ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/progress.make
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar:
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/wego/ros1/catkin_ws/build/test_results/ar_track_alvar
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /root/adi_ws/ros1/catkin_ws/build/test_results/ar_track_alvar
 
 clean_test_results_ar_track_alvar: ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar
 clean_test_results_ar_track_alvar: ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/build.make
@@ -67,10 +67,10 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/b
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/build
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_ar_track_alvar.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_ar_track_alvar.dir/cmake_clean.cmake
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/clean
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/depend
 

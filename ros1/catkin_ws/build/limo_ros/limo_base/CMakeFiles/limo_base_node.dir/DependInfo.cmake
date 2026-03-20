@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wego/ros1/catkin_ws/src/limo_ros/limo_base/src/limo_base_node.cpp" "/home/wego/ros1/catkin_ws/build/limo_ros/limo_base/CMakeFiles/limo_base_node.dir/src/limo_base_node.cpp.o"
-  "/home/wego/ros1/catkin_ws/src/limo_ros/limo_base/src/limo_driver.cpp" "/home/wego/ros1/catkin_ws/build/limo_ros/limo_base/CMakeFiles/limo_base_node.dir/src/limo_driver.cpp.o"
-  "/home/wego/ros1/catkin_ws/src/limo_ros/limo_base/src/serial_port.cpp" "/home/wego/ros1/catkin_ws/build/limo_ros/limo_base/CMakeFiles/limo_base_node.dir/src/serial_port.cpp.o"
+  "/root/adi_ws/ros1/catkin_ws/src/limo_ros/limo_base/src/limo_base_node.cpp" "/root/adi_ws/ros1/catkin_ws/build/limo_ros/limo_base/CMakeFiles/limo_base_node.dir/src/limo_base_node.cpp.o"
+  "/root/adi_ws/ros1/catkin_ws/src/limo_ros/limo_base/src/limo_driver.cpp" "/root/adi_ws/ros1/catkin_ws/build/limo_ros/limo_base/CMakeFiles/limo_base_node.dir/src/limo_driver.cpp.o"
+  "/root/adi_ws/ros1/catkin_ws/src/limo_ros/limo_base/src/serial_port.cpp" "/root/adi_ws/ros1/catkin_ws/build/limo_ros/limo_base/CMakeFiles/limo_base_node.dir/src/serial_port.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,9 +19,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/wego/ros1/catkin_ws/devel/include"
-  "/home/wego/ros1/catkin_ws/src/limo_ros/limo_base/include"
-  "/home/wego/ros1/catkin_ws/src/limo_ros/limo_base/include/limo_base"
+  "/root/adi_ws/ros1/catkin_ws/devel/include"
+  "/root/adi_ws/ros1/catkin_ws/src/limo_ros/limo_base/include"
+  "/root/adi_ws/ros1/catkin_ws/src/limo_ros/limo_base/include/limo_base"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

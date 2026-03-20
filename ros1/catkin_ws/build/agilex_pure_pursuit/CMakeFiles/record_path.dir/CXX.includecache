@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/wego/ros1/catkin_ws/src/agilex_pure_pursuit/src/record_path.cpp
-ros/ros.h
--
-tf/transform_listener.h
--
-tf/tf.h
--
-nav_msgs/Path.h
--
-iostream
--
-fstream
--
-
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string
 -
@@ -585,7 +571,7 @@ ros/init.h
 /opt/ros/noetic/include/ros/ros/init.h
 common.h
 /opt/ros/noetic/include/ros/common.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 xmlrpcpp/XmlRpcValue.h
 -
@@ -631,7 +617,7 @@ ros/message.h
 /opt/ros/noetic/include/ros/ros/message.h
 ros/serialization.h
 /opt/ros/noetic/include/ros/ros/serialization.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 boost/thread/mutex.hpp
 -
@@ -1424,5 +1410,19 @@ string
 vector
 -
 time.h
+-
+
+/root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit/src/record_path.cpp
+ros/ros.h
+-
+tf/transform_listener.h
+-
+tf/tf.h
+-
+nav_msgs/Path.h
+-
+iostream
+-
+fstream
 -
 

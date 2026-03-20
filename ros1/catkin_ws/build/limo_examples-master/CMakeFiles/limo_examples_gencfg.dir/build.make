@@ -43,119 +43,119 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for limo_examples_gencfg.
 
 # Include the progress variables for this target.
 include limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/progress.make
 
-limo_examples-master/CMakeFiles/limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
-limo_examples-master/CMakeFiles/limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py
-limo_examples-master/CMakeFiles/limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
-limo_examples-master/CMakeFiles/limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py
-limo_examples-master/CMakeFiles/limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
-limo_examples-master/CMakeFiles/limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py
-limo_examples-master/CMakeFiles/limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
-limo_examples-master/CMakeFiles/limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py
+limo_examples-master/CMakeFiles/limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
+limo_examples-master/CMakeFiles/limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py
+limo_examples-master/CMakeFiles/limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
+limo_examples-master/CMakeFiles/limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py
+limo_examples-master/CMakeFiles/limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
+limo_examples-master/CMakeFiles/limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py
+limo_examples-master/CMakeFiles/limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
+limo_examples-master/CMakeFiles/limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py
 
 
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h: /home/wego/ros1/catkin_ws/src/limo_examples-master/cfg/lidar_example.cfg
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/lidar_example.cfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py"
-	cd /home/wego/ros1/catkin_ws/build/limo_examples-master && ../catkin_generated/env_cached.sh /home/wego/ros1/catkin_ws/build/limo_examples-master/setup_custom_pythonpath.sh /home/wego/ros1/catkin_ws/src/limo_examples-master/cfg/lidar_example.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/wego/ros1/catkin_ws/devel/share/limo_examples /home/wego/ros1/catkin_ws/devel/include/limo_examples /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h: /root/adi_ws/ros1/catkin_ws/src/limo_examples-master/cfg/lidar_example.cfg
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/lidar_example.cfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py"
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_examples-master && ../catkin_generated/env_cached.sh /root/adi_ws/ros1/catkin_ws/build/limo_examples-master/setup_custom_pythonpath.sh /root/adi_ws/ros1/catkin_ws/src/limo_examples-master/cfg/lidar_example.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.dox: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.dox: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.dox
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig-usage.dox: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig-usage.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig-usage.dox: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig-usage.dox
 
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.wikidoc: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.wikidoc
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.wikidoc: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.wikidoc
 
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h: /home/wego/ros1/catkin_ws/src/limo_examples-master/cfg/move_example.cfg
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating dynamic reconfigure files from cfg/move_example.cfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py"
-	cd /home/wego/ros1/catkin_ws/build/limo_examples-master && ../catkin_generated/env_cached.sh /home/wego/ros1/catkin_ws/build/limo_examples-master/setup_custom_pythonpath.sh /home/wego/ros1/catkin_ws/src/limo_examples-master/cfg/move_example.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/wego/ros1/catkin_ws/devel/share/limo_examples /home/wego/ros1/catkin_ws/devel/include/limo_examples /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h: /root/adi_ws/ros1/catkin_ws/src/limo_examples-master/cfg/move_example.cfg
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating dynamic reconfigure files from cfg/move_example.cfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py"
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_examples-master && ../catkin_generated/env_cached.sh /root/adi_ws/ros1/catkin_ws/build/limo_examples-master/setup_custom_pythonpath.sh /root/adi_ws/ros1/catkin_ws/src/limo_examples-master/cfg/move_example.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.dox: /home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.dox: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.dox
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig-usage.dox: /home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig-usage.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig-usage.dox: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig-usage.dox
 
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py: /home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.wikidoc: /home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.wikidoc
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.wikidoc: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.wikidoc
 
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h: /home/wego/ros1/catkin_ws/src/limo_examples-master/cfg/lidar_move_example.cfg
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating dynamic reconfigure files from cfg/lidar_move_example.cfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py"
-	cd /home/wego/ros1/catkin_ws/build/limo_examples-master && ../catkin_generated/env_cached.sh /home/wego/ros1/catkin_ws/build/limo_examples-master/setup_custom_pythonpath.sh /home/wego/ros1/catkin_ws/src/limo_examples-master/cfg/lidar_move_example.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/wego/ros1/catkin_ws/devel/share/limo_examples /home/wego/ros1/catkin_ws/devel/include/limo_examples /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h: /root/adi_ws/ros1/catkin_ws/src/limo_examples-master/cfg/lidar_move_example.cfg
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating dynamic reconfigure files from cfg/lidar_move_example.cfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py"
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_examples-master && ../catkin_generated/env_cached.sh /root/adi_ws/ros1/catkin_ws/build/limo_examples-master/setup_custom_pythonpath.sh /root/adi_ws/ros1/catkin_ws/src/limo_examples-master/cfg/lidar_move_example.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.dox: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.dox: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.dox
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig-usage.dox: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig-usage.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig-usage.dox: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig-usage.dox
 
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.wikidoc: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.wikidoc
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.wikidoc: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.wikidoc
 
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h: /home/wego/ros1/catkin_ws/src/limo_examples-master/cfg/camera_example.cfg
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating dynamic reconfigure files from cfg/camera_example.cfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py"
-	cd /home/wego/ros1/catkin_ws/build/limo_examples-master && ../catkin_generated/env_cached.sh /home/wego/ros1/catkin_ws/build/limo_examples-master/setup_custom_pythonpath.sh /home/wego/ros1/catkin_ws/src/limo_examples-master/cfg/camera_example.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/wego/ros1/catkin_ws/devel/share/limo_examples /home/wego/ros1/catkin_ws/devel/include/limo_examples /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h: /root/adi_ws/ros1/catkin_ws/src/limo_examples-master/cfg/camera_example.cfg
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating dynamic reconfigure files from cfg/camera_example.cfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py"
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_examples-master && ../catkin_generated/env_cached.sh /root/adi_ws/ros1/catkin_ws/build/limo_examples-master/setup_custom_pythonpath.sh /root/adi_ws/ros1/catkin_ws/src/limo_examples-master/cfg/camera_example.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.dox: /home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.dox: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.dox
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig-usage.dox: /home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig-usage.dox
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig-usage.dox: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig-usage.dox
 
-/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py: /home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py
+/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py
 
-/home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.wikidoc: /home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.wikidoc
+/root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.wikidoc: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.wikidoc
 
 limo_examples_gencfg: limo_examples-master/CMakeFiles/limo_examples_gencfg
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.dox
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig-usage.dox
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.wikidoc
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.dox
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig-usage.dox
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.wikidoc
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.dox
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig-usage.dox
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.wikidoc
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.dox
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig-usage.dox
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py
-limo_examples_gencfg: /home/wego/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.wikidoc
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_exampleConfig.h
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.dox
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig-usage.dox
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_exampleConfig.py
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_exampleConfig.wikidoc
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/move_exampleConfig.h
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.dox
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig-usage.dox
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/move_exampleConfig.py
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/move_exampleConfig.wikidoc
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/lidar_move_exampleConfig.h
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.dox
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig-usage.dox
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/lidar_move_exampleConfig.py
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/lidar_move_exampleConfig.wikidoc
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/include/limo_examples/camera_exampleConfig.h
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.dox
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig-usage.dox
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_examples/cfg/camera_exampleConfig.py
+limo_examples_gencfg: /root/adi_ws/ros1/catkin_ws/devel/share/limo_examples/docs/camera_exampleConfig.wikidoc
 limo_examples_gencfg: limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/build.make
 
 .PHONY : limo_examples_gencfg
@@ -166,10 +166,10 @@ limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/build: limo_examples_ge
 .PHONY : limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/build
 
 limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/limo_examples-master && $(CMAKE_COMMAND) -P CMakeFiles/limo_examples_gencfg.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_examples-master && $(CMAKE_COMMAND) -P CMakeFiles/limo_examples_gencfg.dir/cmake_clean.cmake
 .PHONY : limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/clean
 
 limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/limo_examples-master /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/limo_examples-master /home/wego/ros1/catkin_ws/build/limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/limo_examples-master /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/limo_examples-master /root/adi_ws/ros1/catkin_ws/build/limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : limo_examples-master/CMakeFiles/limo_examples_gencfg.dir/depend
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/libaruco.pdb"
-  "/home/wego/ros1/catkin_ws/devel/lib/libaruco.so"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/libaruco.so"
   "CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.o"
   "CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o"
   "CMakeFiles/aruco.dir/src/aruco/debug.cpp.o"

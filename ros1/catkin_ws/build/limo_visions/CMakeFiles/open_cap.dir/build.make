@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include limo_visions/CMakeFiles/open_cap.dir/depend.make
@@ -58,17 +58,17 @@ include limo_visions/CMakeFiles/open_cap.dir/progress.make
 include limo_visions/CMakeFiles/open_cap.dir/flags.make
 
 limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o: limo_visions/CMakeFiles/open_cap.dir/flags.make
-limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o: /home/wego/ros1/catkin_ws/src/limo_visions/src/open_cap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/open_cap.dir/src/open_cap.cpp.o -c /home/wego/ros1/catkin_ws/src/limo_visions/src/open_cap.cpp
+limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o: /root/adi_ws/ros1/catkin_ws/src/limo_visions/src/open_cap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/open_cap.dir/src/open_cap.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/limo_visions/src/open_cap.cpp
 
 limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/open_cap.dir/src/open_cap.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/limo_visions/src/open_cap.cpp > CMakeFiles/open_cap.dir/src/open_cap.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/limo_visions/src/open_cap.cpp > CMakeFiles/open_cap.dir/src/open_cap.cpp.i
 
 limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/open_cap.dir/src/open_cap.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/limo_visions/src/open_cap.cpp -o CMakeFiles/open_cap.dir/src/open_cap.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/limo_visions/src/open_cap.cpp -o CMakeFiles/open_cap.dir/src/open_cap.cpp.s
 
 # Object files for target open_cap
 open_cap_OBJECTS = \
@@ -77,37 +77,70 @@ open_cap_OBJECTS = \
 # External object files for target open_cap
 open_cap_EXTERNAL_OBJECTS =
 
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: limo_visions/CMakeFiles/open_cap.dir/build.make
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_gapi.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_ml.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_objdetect.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_video.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_videoio.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_dnn.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_calib3d.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_features2d.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_flann.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap: limo_visions/CMakeFiles/open_cap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap"
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/open_cap.dir/link.txt --verbose=$(VERBOSE)
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: limo_visions/CMakeFiles/open_cap.dir/src/open_cap.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: limo_visions/CMakeFiles/open_cap.dir/build.make
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap: limo_visions/CMakeFiles/open_cap.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap"
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/open_cap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-limo_visions/CMakeFiles/open_cap.dir/build: /home/wego/ros1/catkin_ws/devel/lib/limo_visions/open_cap
+limo_visions/CMakeFiles/open_cap.dir/build: /root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/open_cap
 
 .PHONY : limo_visions/CMakeFiles/open_cap.dir/build
 
 limo_visions/CMakeFiles/open_cap.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/limo_visions && $(CMAKE_COMMAND) -P CMakeFiles/open_cap.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_visions && $(CMAKE_COMMAND) -P CMakeFiles/open_cap.dir/cmake_clean.cmake
 .PHONY : limo_visions/CMakeFiles/open_cap.dir/clean
 
 limo_visions/CMakeFiles/open_cap.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/limo_visions /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/limo_visions /home/wego/ros1/catkin_ws/build/limo_visions/CMakeFiles/open_cap.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/limo_visions /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/limo_visions /root/adi_ws/ros1/catkin_ws/build/limo_visions/CMakeFiles/open_cap.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : limo_visions/CMakeFiles/open_cap.dir/depend
 
