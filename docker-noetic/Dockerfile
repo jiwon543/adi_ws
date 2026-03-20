@@ -118,7 +118,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # pip for python3.10 + moondream (torch 포함 자동 설치)
 RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10 \
- && python3.10 -m pip install --no-cache-dir moondream
+ && python3.10 -m pip install --no-cache-dir \
+    moondream \
+    opencv-python
 
 # rosdep 초기화가 안 되어 있을 때만 실행
 RUN rosdep update || true
