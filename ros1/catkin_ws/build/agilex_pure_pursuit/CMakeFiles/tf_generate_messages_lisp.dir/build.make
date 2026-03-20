@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for tf_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ agilex_pure_pursuit/CMakeFiles/tf_generate_messages_lisp.dir/build: tf_generate_
 .PHONY : agilex_pure_pursuit/CMakeFiles/tf_generate_messages_lisp.dir/build
 
 agilex_pure_pursuit/CMakeFiles/tf_generate_messages_lisp.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/agilex_pure_pursuit && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/agilex_pure_pursuit && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : agilex_pure_pursuit/CMakeFiles/tf_generate_messages_lisp.dir/clean
 
 agilex_pure_pursuit/CMakeFiles/tf_generate_messages_lisp.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/agilex_pure_pursuit /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/agilex_pure_pursuit /home/wego/ros1/catkin_ws/build/agilex_pure_pursuit/CMakeFiles/tf_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/agilex_pure_pursuit /root/adi_ws/ros1/catkin_ws/build/agilex_pure_pursuit/CMakeFiles/tf_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : agilex_pure_pursuit/CMakeFiles/tf_generate_messages_lisp.dir/depend
 

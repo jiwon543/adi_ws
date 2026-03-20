@@ -43,26 +43,26 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for lifter_ctr_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/progress.make
 
-lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs: /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js
+lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs: /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js
 
 
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js: /home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from lifter_ctr/lifter_mode.msg"
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/wego/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg -Ilifter_ctr:/home/wego/ros1/catkin_ws/src/lifter_ctr/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p lifter_ctr -o /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js: /root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from lifter_ctr/lifter_mode.msg"
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg/lifter_mode.msg -Ilifter_ctr:/root/adi_ws/ros1/catkin_ws/src/lifter_ctr/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p lifter_ctr -o /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg
 
 lifter_ctr_generate_messages_nodejs: lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs
-lifter_ctr_generate_messages_nodejs: /home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js
+lifter_ctr_generate_messages_nodejs: /root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/lifter_ctr/msg/lifter_mode.js
 lifter_ctr_generate_messages_nodejs: lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/build.make
 
 .PHONY : lifter_ctr_generate_messages_nodejs
@@ -73,10 +73,10 @@ lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/build: lifter_ctr_
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/build
 
 lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && $(CMAKE_COMMAND) -P CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && $(CMAKE_COMMAND) -P CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/clean
 
 lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/lifter_ctr /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/lifter_ctr /home/wego/ros1/catkin_ws/build/lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/lifter_ctr /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/lifter_ctr /root/adi_ws/ros1/catkin_ws/build/lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_generate_messages_nodejs.dir/depend
 

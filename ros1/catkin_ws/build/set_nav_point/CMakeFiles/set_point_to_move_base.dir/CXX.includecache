@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/wego/ros1/catkin_ws/src/set_nav_point/src/set_point_to_move_base.cpp
-ros/ros.h
--
-move_base_msgs/MoveBaseAction.h
--
-actionlib/client/simple_action_client.h
--
-
 /opt/ros/noetic/include/actionlib/action_definition.h
 
 /opt/ros/noetic/include/actionlib/client/action_client.h
@@ -755,7 +747,7 @@ ros/init.h
 /opt/ros/noetic/include/ros/ros/init.h
 common.h
 /opt/ros/noetic/include/ros/common.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 xmlrpcpp/XmlRpcValue.h
 -
@@ -801,7 +793,7 @@ ros/message.h
 /opt/ros/noetic/include/ros/ros/message.h
 ros/serialization.h
 /opt/ros/noetic/include/ros/ros/serialization.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 boost/thread/mutex.hpp
 -
@@ -1164,5 +1156,13 @@ string
 vector
 -
 time.h
+-
+
+/root/adi_ws/ros1/catkin_ws/src/set_nav_point/src/set_point_to_move_base.cpp
+ros/ros.h
+-
+move_base_msgs/MoveBaseAction.h
+-
+actionlib/client/simple_action_client.h
 -
 

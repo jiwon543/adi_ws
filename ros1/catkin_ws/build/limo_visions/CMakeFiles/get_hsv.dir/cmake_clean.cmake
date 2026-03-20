@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/get_hsv"
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/get_hsv.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/get_hsv"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/get_hsv.pdb"
   "CMakeFiles/get_hsv.dir/src/get_hsv.cpp.o"
 )
 

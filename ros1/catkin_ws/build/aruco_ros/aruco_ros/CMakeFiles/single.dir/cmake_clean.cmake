@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/aruco_ros/single"
-  "/home/wego/ros1/catkin_ws/devel/lib/aruco_ros/single.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/aruco_ros/single"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/aruco_ros/single.pdb"
   "CMakeFiles/single.dir/src/aruco_ros_utils.cpp.o"
   "CMakeFiles/single.dir/src/simple_single.cpp.o"
 )

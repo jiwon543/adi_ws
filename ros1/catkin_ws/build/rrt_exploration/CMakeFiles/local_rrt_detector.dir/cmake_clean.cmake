@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/rrt_exploration/local_rrt_detector"
-  "/home/wego/ros1/catkin_ws/devel/lib/rrt_exploration/local_rrt_detector.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/rrt_exploration/local_rrt_detector"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/rrt_exploration/local_rrt_detector.pdb"
   "CMakeFiles/local_rrt_detector.dir/src/functions.cpp.o"
   "CMakeFiles/local_rrt_detector.dir/src/local_rrt_detector.cpp.o"
   "CMakeFiles/local_rrt_detector.dir/src/mtrand.cpp.o"

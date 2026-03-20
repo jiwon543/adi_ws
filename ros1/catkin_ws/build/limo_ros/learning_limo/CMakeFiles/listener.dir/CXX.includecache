@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/wego/ros1/catkin_ws/src/limo_ros/learning_limo/src/listener.cpp
-ros/ros.h
-/home/wego/ros1/catkin_ws/src/limo_ros/learning_limo/src/ros/ros.h
-std_msgs/String.h
-/home/wego/ros1/catkin_ws/src/limo_ros/learning_limo/src/std_msgs/String.h
-geometry_msgs/Twist.h
--
-
 /opt/ros/noetic/include/geometry_msgs/Twist.h
 string
 -
@@ -321,7 +313,7 @@ ros/init.h
 /opt/ros/noetic/include/ros/ros/init.h
 common.h
 /opt/ros/noetic/include/ros/common.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 xmlrpcpp/XmlRpcValue.h
 -
@@ -367,7 +359,7 @@ ros/message.h
 /opt/ros/noetic/include/ros/ros/message.h
 ros/serialization.h
 /opt/ros/noetic/include/ros/ros/serialization.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 boost/thread/mutex.hpp
 -
@@ -730,5 +722,13 @@ string
 vector
 -
 time.h
+-
+
+/root/adi_ws/ros1/catkin_ws/src/limo_ros/learning_limo/src/listener.cpp
+ros/ros.h
+/root/adi_ws/ros1/catkin_ws/src/limo_ros/learning_limo/src/ros/ros.h
+std_msgs/String.h
+/root/adi_ws/ros1/catkin_ws/src/limo_ros/learning_limo/src/std_msgs/String.h
+geometry_msgs/Twist.h
 -
 

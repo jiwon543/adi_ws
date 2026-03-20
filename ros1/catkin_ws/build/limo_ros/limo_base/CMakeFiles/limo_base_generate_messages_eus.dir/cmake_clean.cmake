@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/roseus/ros/limo_base/manifest.l"
-  "/home/wego/ros1/catkin_ws/devel/share/roseus/ros/limo_base/msg/LimoStatus.l"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/limo_base/manifest.l"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/roseus/ros/limo_base/msg/LimoStatus.l"
   "CMakeFiles/limo_base_generate_messages_eus"
 )
 

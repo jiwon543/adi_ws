@@ -1,4 +1,4 @@
-prefix=/home/wego/ros1/catkin_ws/devel
+prefix=/root/adi_ws/ros1/catkin_ws/devel
 
 Name: set_nav_point
 Description: Description of set_nav_point

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/share/gennodejs/ros/rrt_exploration/msg/PointArray.js"
+  "/root/adi_ws/ros1/catkin_ws/devel/share/gennodejs/ros/rrt_exploration/msg/PointArray.js"
   "CMakeFiles/rrt_exploration_generate_messages_nodejs"
 )
 

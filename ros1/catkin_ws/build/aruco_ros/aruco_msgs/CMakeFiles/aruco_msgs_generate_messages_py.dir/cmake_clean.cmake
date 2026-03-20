@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/_Marker.py"
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/_MarkerArray.py"
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/__init__.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/_Marker.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/_MarkerArray.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/__init__.py"
   "CMakeFiles/aruco_msgs_generate_messages_py"
 )
 

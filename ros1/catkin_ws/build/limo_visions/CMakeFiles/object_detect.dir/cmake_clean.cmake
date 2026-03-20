@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/object_detect"
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/object_detect.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/object_detect"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/object_detect.pdb"
   "CMakeFiles/object_detect.dir/src/object_detect.cpp.o"
 )
 

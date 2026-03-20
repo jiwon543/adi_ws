@@ -1,8 +1,8 @@
-# Install script for directory: /home/wego/ros1/catkin_ws/src/agilex_pure_pursuit
+# Install script for directory: /root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wego/ros1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/root/adi_ws/ros1/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/wego/ros1/catkin_ws/build/agilex_pure_pursuit/catkin_generated/installspace/agilex_pure_pursuit.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/build/agilex_pure_pursuit/catkin_generated/installspace/agilex_pure_pursuit.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/agilex_pure_pursuit/cmake" TYPE FILE FILES
-    "/home/wego/ros1/catkin_ws/build/agilex_pure_pursuit/catkin_generated/installspace/agilex_pure_pursuitConfig.cmake"
-    "/home/wego/ros1/catkin_ws/build/agilex_pure_pursuit/catkin_generated/installspace/agilex_pure_pursuitConfig-version.cmake"
+    "/root/adi_ws/ros1/catkin_ws/build/agilex_pure_pursuit/catkin_generated/installspace/agilex_pure_pursuitConfig.cmake"
+    "/root/adi_ws/ros1/catkin_ws/build/agilex_pure_pursuit/catkin_generated/installspace/agilex_pure_pursuitConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/agilex_pure_pursuit" TYPE FILE FILES "/home/wego/ros1/catkin_ws/src/agilex_pure_pursuit/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/agilex_pure_pursuit" TYPE FILE FILES "/root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/agilex_pure_pursuit/pure_pursuit"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/agilex_pure_pursuit" TYPE EXECUTABLE FILES "/home/wego/ros1/catkin_ws/devel/lib/agilex_pure_pursuit/pure_pursuit")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/agilex_pure_pursuit" TYPE EXECUTABLE FILES "/root/adi_ws/ros1/catkin_ws/devel/lib/agilex_pure_pursuit/pure_pursuit")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/agilex_pure_pursuit/pure_pursuit" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/agilex_pure_pursuit/pure_pursuit")
     file(RPATH_CHANGE
@@ -74,8 +74,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/agilex_pure_pursuit" TYPE DIRECTORY FILES
-    "/home/wego/ros1/catkin_ws/src/agilex_pure_pursuit/launch"
-    "/home/wego/ros1/catkin_ws/src/agilex_pure_pursuit/param"
+    "/root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit/launch"
+    "/root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit/param"
     )
 endif()
 

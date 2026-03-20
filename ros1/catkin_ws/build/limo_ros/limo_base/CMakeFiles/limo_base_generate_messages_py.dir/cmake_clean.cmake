@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_base/msg/_LimoStatus.py"
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_base/msg/__init__.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_base/msg/_LimoStatus.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/limo_base/msg/__init__.py"
   "CMakeFiles/limo_base_generate_messages_py"
 )
 

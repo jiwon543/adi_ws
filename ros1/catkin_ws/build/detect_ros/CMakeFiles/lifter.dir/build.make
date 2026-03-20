@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include detect_ros/CMakeFiles/lifter.dir/depend.make
@@ -58,17 +58,17 @@ include detect_ros/CMakeFiles/lifter.dir/progress.make
 include detect_ros/CMakeFiles/lifter.dir/flags.make
 
 detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o: detect_ros/CMakeFiles/lifter.dir/flags.make
-detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o: /home/wego/ros1/catkin_ws/src/detect_ros/src/lifter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/detect_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lifter.dir/src/lifter.cpp.o -c /home/wego/ros1/catkin_ws/src/detect_ros/src/lifter.cpp
+detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o: /root/adi_ws/ros1/catkin_ws/src/detect_ros/src/lifter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/detect_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lifter.dir/src/lifter.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/detect_ros/src/lifter.cpp
 
 detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lifter.dir/src/lifter.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/detect_ros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/detect_ros/src/lifter.cpp > CMakeFiles/lifter.dir/src/lifter.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/detect_ros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/detect_ros/src/lifter.cpp > CMakeFiles/lifter.dir/src/lifter.cpp.i
 
 detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lifter.dir/src/lifter.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/detect_ros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/detect_ros/src/lifter.cpp -o CMakeFiles/lifter.dir/src/lifter.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/detect_ros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/detect_ros/src/lifter.cpp -o CMakeFiles/lifter.dir/src/lifter.cpp.s
 
 # Object files for target lifter
 lifter_OBJECTS = \
@@ -77,139 +77,139 @@ lifter_OBJECTS = \
 # External object files for target lifter
 lifter_EXTERNAL_OBJECTS =
 
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: detect_ros/CMakeFiles/lifter.dir/build.make
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libpcl_ros_filter.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libpcl_ros_tf.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_thread.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_search.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_features.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_filters.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_ml.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_surface.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libqhull.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libflann_cpp.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libnodeletlib.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libbondcpp.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libuuid.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_common.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_octree.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpcl_io.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_system.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_iostreams.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_regex.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtksys-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libfreetype.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libz.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libjpeg.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpng.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libtiff.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libexpat.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosbag.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosbag_storage.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libclass_loader.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libPocoFoundation.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libdl.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libroslib.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librospack.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpython3.8.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_program_options.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libroslz4.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/liblz4.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libtopic_tools.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/liblaser_geometry.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libtf.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libtf2_ros.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libactionlib.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libmessage_filters.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libroscpp.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libpthread.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosconsole.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libtf2.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librostime.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libcpp_common.so
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter: detect_ros/CMakeFiles/lifter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter"
-	cd /home/wego/ros1/catkin_ws/build/detect_ros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lifter.dir/link.txt --verbose=$(VERBOSE)
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: detect_ros/CMakeFiles/lifter.dir/src/lifter.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: detect_ros/CMakeFiles/lifter.dir/build.make
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libpcl_ros_filter.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libpcl_ros_tf.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libqhull.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libnodeletlib.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libbondcpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libuuid.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libfreetype.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libz.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libjpeg.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpng.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libtiff.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libexpat.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosbag.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosbag_storage.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libclass_loader.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libdl.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libroslib.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librospack.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libroslz4.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/liblz4.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libtopic_tools.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/liblaser_geometry.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libtf.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libtf2_ros.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libactionlib.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libmessage_filters.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libroscpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libpthread.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libxmlrpcpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosconsole.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libtf2.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libroscpp_serialization.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/librostime.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /opt/ros/noetic/lib/libcpp_common.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter: detect_ros/CMakeFiles/lifter.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter"
+	cd /root/adi_ws/ros1/catkin_ws/build/detect_ros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lifter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-detect_ros/CMakeFiles/lifter.dir/build: /home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter
+detect_ros/CMakeFiles/lifter.dir/build: /root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter
 
 .PHONY : detect_ros/CMakeFiles/lifter.dir/build
 
 detect_ros/CMakeFiles/lifter.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/detect_ros && $(CMAKE_COMMAND) -P CMakeFiles/lifter.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/detect_ros && $(CMAKE_COMMAND) -P CMakeFiles/lifter.dir/cmake_clean.cmake
 .PHONY : detect_ros/CMakeFiles/lifter.dir/clean
 
 detect_ros/CMakeFiles/lifter.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/detect_ros /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/detect_ros /home/wego/ros1/catkin_ws/build/detect_ros/CMakeFiles/lifter.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/detect_ros /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/detect_ros /root/adi_ws/ros1/catkin_ws/build/detect_ros/CMakeFiles/lifter.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : detect_ros/CMakeFiles/lifter.dir/depend
 

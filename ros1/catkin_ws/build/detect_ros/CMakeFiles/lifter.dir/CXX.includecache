@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/wego/ros1/catkin_ws/src/detect_ros/src/lifter.cpp
-ros/ros.h
--
-ar_track_alvar_msgs/AlvarMarkers.h
--
-geometry_msgs/Pose.h
--
-geometry_msgs/Twist.h
--
-tf/transform_listener.h
--
-std_msgs/UInt8.h
--
-std_msgs/String.h
--
-move_base/move_base.h
--
-
 /opt/ros/noetic/include/actionlib/action_definition.h
 
 /opt/ros/noetic/include/actionlib/decl.h
@@ -265,7 +247,7 @@ actionlib_msgs/GoalStatus.h
 -
 
 /opt/ros/noetic/include/class_loader/class_loader.hpp
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 boost/shared_ptr.hpp
 -
@@ -313,6 +295,8 @@ class_loader/meta_object.hpp
 /opt/ros/noetic/include/class_loader/class_loader/meta_object.hpp
 class_loader/visibility_control.hpp
 /opt/ros/noetic/include/class_loader/class_loader/visibility_control.hpp
+sanitizer/lsan_interface.h
+-
 
 /opt/ros/noetic/include/class_loader/exceptions.hpp
 stdexcept
@@ -1369,8 +1353,6 @@ vector
 -
 boost/algorithm/string.hpp
 /opt/ros/noetic/include/pluginlib/boost/algorithm/string.hpp
-boost/bind.hpp
-/opt/ros/noetic/include/pluginlib/boost/bind.hpp
 boost/filesystem.hpp
 /opt/ros/noetic/include/pluginlib/boost/filesystem.hpp
 boost/foreach.hpp
@@ -1689,7 +1671,7 @@ ros/init.h
 /opt/ros/noetic/include/ros/ros/init.h
 common.h
 /opt/ros/noetic/include/ros/common.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 xmlrpcpp/XmlRpcValue.h
 -
@@ -1745,7 +1727,7 @@ ros/message.h
 /opt/ros/noetic/include/ros/ros/message.h
 ros/serialization.h
 /opt/ros/noetic/include/ros/ros/serialization.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 boost/thread/mutex.hpp
 -
@@ -2600,5 +2582,23 @@ string
 vector
 -
 time.h
+-
+
+/root/adi_ws/ros1/catkin_ws/src/detect_ros/src/lifter.cpp
+ros/ros.h
+-
+ar_track_alvar_msgs/AlvarMarkers.h
+-
+geometry_msgs/Pose.h
+-
+geometry_msgs/Twist.h
+-
+tf/transform_listener.h
+-
+std_msgs/UInt8.h
+-
+std_msgs/String.h
+-
+move_base/move_base.h
 -
 

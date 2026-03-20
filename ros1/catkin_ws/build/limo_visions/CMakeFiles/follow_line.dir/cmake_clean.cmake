@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line"
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/follow_line.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/follow_line.pdb"
   "CMakeFiles/follow_line.dir/src/follow_line.cpp.o"
 )
 

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>limo_bringup</name>
+  <version>1.0.0</version>
+  <description>LIMO Robot Bringup: base driver, LiDAR, and camera</description>
+  
+  <maintainer email="user@example.com">LIMO User</maintainer>
+  <license>MIT</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <exec_depend>limo_base</exec_depend>
+  <exec_depend>ydlidar_ros_driver</exec_depend>
+  <exec_depend>astra_camera</exec_depend>
+  <exec_depend>tf</exec_depend>
+  
+  <export>
+  </export>
+</package>

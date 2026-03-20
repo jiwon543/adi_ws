@@ -1,4 +1,4 @@
-prefix=/home/wego/ros1/catkin_ws/install
+prefix=/root/adi_ws/ros1/catkin_ws/install
 
 Name: ar_track_alvar_msgs
 Description: Description of ar_track_alvar_msgs

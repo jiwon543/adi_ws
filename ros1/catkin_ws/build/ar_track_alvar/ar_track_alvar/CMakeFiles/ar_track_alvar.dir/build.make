@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/depend.make
@@ -58,381 +58,381 @@ include ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/progress.mak
 include ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp > CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp > CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp > CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp > CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp -o CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp -o CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp > CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp > CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp -o CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp -o CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp > CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp > CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp -o CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp -o CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp > CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp > CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp > CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp > CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp -o CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp -o CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp > CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp > CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp -o CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp -o CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp > CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp > CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp -o CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp -o CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp > CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp > CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp -o CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp -o CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Line.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Line.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Line.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Line.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Line.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Line.cpp > CMakeFiles/ar_track_alvar.dir/src/Line.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Line.cpp > CMakeFiles/ar_track_alvar.dir/src/Line.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Line.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Line.cpp -o CMakeFiles/ar_track_alvar.dir/src/Line.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Line.cpp -o CMakeFiles/ar_track_alvar.dir/src/Line.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp > CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp > CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp -o CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp -o CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp > CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp > CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp -o CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp -o CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp > CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp > CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp -o CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp -o CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp > CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp > CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp -o CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp -o CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp > CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp > CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp -o CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp -o CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp > CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp > CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp -o CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp -o CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp > CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp > CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp -o CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp -o CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp > CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp > CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp -o CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp -o CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.s
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/flags.make
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o: /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o -c /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Util.cpp
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o: /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o -c /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Util.cpp
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Util.cpp.i"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Util.cpp > CMakeFiles/ar_track_alvar.dir/src/Util.cpp.i
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Util.cpp > CMakeFiles/ar_track_alvar.dir/src/Util.cpp.i
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Util.cpp.s"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Util.cpp -o CMakeFiles/ar_track_alvar.dir/src/Util.cpp.s
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar/src/Util.cpp -o CMakeFiles/ar_track_alvar.dir/src/Util.cpp.s
 
 # Object files for target ar_track_alvar
 ar_track_alvar_OBJECTS = \
@@ -469,233 +469,266 @@ ar_track_alvar_OBJECTS = \
 # External object files for target ar_track_alvar
 ar_track_alvar_EXTERNAL_OBJECTS =
 
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build.make
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_gapi.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_ml.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_objdetect.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_video.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_videoio.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libtinyxml.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libcv_bridge.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_calib3d.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_dnn.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_features2d.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_flann.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_ml.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_objdetect.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_video.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_videoio.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_aruco.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_bgsegm.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_bioinspired.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_ccalib.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_datasets.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_dnn_superres.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_dpm.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_face.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_freetype.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_fuzzy.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_hdf.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_hfs.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_img_hash.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_line_descriptor.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_optflow.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_plot.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_quality.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_reg.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_rgbd.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_saliency.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_shape.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_stereo.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_structured_light.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_superres.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_surface_matching.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_text.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_tracking.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_videostab.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_viz.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_ximgproc.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_xobjdetect.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_xphoto.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.2.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libimage_transport.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libpcl_ros_filter.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libpcl_ros_tf.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_thread.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_search.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_features.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_filters.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_ml.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_surface.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libqhull.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libflann_cpp.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libnodeletlib.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libbondcpp.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libuuid.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_common.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_octree.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpcl_io.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_system.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_iostreams.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_regex.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtksys-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libfreetype.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libz.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libjpeg.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpng.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libtiff.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libexpat.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosbag.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosbag_storage.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libclass_loader.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libPocoFoundation.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libdl.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libroslib.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librospack.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpython3.8.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_program_options.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libroslz4.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/liblz4.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libtopic_tools.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libresource_retriever.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libtf.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libtf2_ros.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libactionlib.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libmessage_filters.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libroscpp.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libpthread.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosconsole.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libtf2.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librostime.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_dnn.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_calib3d.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_features2d.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_flann.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.5.4
-/home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wego/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX shared library /home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so"
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ar_track_alvar.dir/link.txt --verbose=$(VERBOSE)
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build.make
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libcv_bridge.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libimage_transport.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libpcl_ros_filter.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libpcl_ros_tf.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libqhull.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libnodeletlib.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libbondcpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libfreetype.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libz.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpng.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libtiff.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libexpat.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosbag.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosbag_storage.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libclass_loader.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libroslib.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librospack.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libroslz4.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/liblz4.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libtopic_tools.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libresource_retriever.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libtf.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libtf2_ros.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libactionlib.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libmessage_filters.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libroscpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosconsole.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libtf2.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/librostime.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /opt/ros/noetic/lib/libcpp_common.so
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+/root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/adi_ws/ros1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX shared library /root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so"
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ar_track_alvar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build: /home/wego/ros1/catkin_ws/devel/lib/libar_track_alvar.so
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build: /root/adi_ws/ros1/catkin_ws/devel/lib/libar_track_alvar.so
 
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && $(CMAKE_COMMAND) -P CMakeFiles/ar_track_alvar.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && $(CMAKE_COMMAND) -P CMakeFiles/ar_track_alvar.dir/cmake_clean.cmake
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/clean
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/depend
 

@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -o3 -O3 -DNDEBUG
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"agilex_pure_pursuit\"
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/wego/ros1/catkin_ws/src/agilex_pure_pursuit -I/home/wego/ros1/catkin_ws/src/agilex_pure_pursuit/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit -I/root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

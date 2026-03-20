@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/include/lifter_ctr/lifter_mode.h"
+  "/root/adi_ws/ros1/catkin_ws/devel/include/lifter_ctr/lifter_mode.h"
   "CMakeFiles/lifter_ctr_generate_messages_cpp"
 )
 

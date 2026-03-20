@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for lifter_ctr_genlisp.
 
@@ -63,10 +63,10 @@ lifter_ctr/CMakeFiles/lifter_ctr_genlisp.dir/build: lifter_ctr_genlisp
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_genlisp.dir/build
 
 lifter_ctr/CMakeFiles/lifter_ctr_genlisp.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/lifter_ctr && $(CMAKE_COMMAND) -P CMakeFiles/lifter_ctr_genlisp.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/lifter_ctr && $(CMAKE_COMMAND) -P CMakeFiles/lifter_ctr_genlisp.dir/cmake_clean.cmake
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_genlisp.dir/clean
 
 lifter_ctr/CMakeFiles/lifter_ctr_genlisp.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/lifter_ctr /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/lifter_ctr /home/wego/ros1/catkin_ws/build/lifter_ctr/CMakeFiles/lifter_ctr_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/lifter_ctr /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/lifter_ctr /root/adi_ws/ros1/catkin_ws/build/lifter_ctr/CMakeFiles/lifter_ctr_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lifter_ctr/CMakeFiles/lifter_ctr_genlisp.dir/depend
 

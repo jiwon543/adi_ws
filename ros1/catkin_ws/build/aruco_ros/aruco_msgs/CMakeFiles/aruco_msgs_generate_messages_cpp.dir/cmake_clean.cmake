@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/include/aruco_msgs/Marker.h"
-  "/home/wego/ros1/catkin_ws/devel/include/aruco_msgs/MarkerArray.h"
+  "/root/adi_ws/ros1/catkin_ws/devel/include/aruco_msgs/Marker.h"
+  "/root/adi_ws/ros1/catkin_ws/devel/include/aruco_msgs/MarkerArray.h"
   "CMakeFiles/aruco_msgs_generate_messages_cpp"
 )
 

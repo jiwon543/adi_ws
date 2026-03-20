@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/agilex_pure_pursuit/record_path"
-  "/home/wego/ros1/catkin_ws/devel/lib/agilex_pure_pursuit/record_path.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/agilex_pure_pursuit/record_path"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/agilex_pure_pursuit/record_path.pdb"
   "CMakeFiles/record_path.dir/src/record_path.cpp.o"
 )
 

@@ -1,4 +1,4 @@
-prefix=/home/wego/ros1/catkin_ws/install
+prefix=/root/adi_ws/ros1/catkin_ws/install
 
 Name: mycobot_description
 Description: Description of mycobot_description

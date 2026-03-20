@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/src/aruco_ros_utils.cpp" "/home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros/CMakeFiles/double.dir/src/aruco_ros_utils.cpp.o"
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/src/simple_double.cpp" "/home/wego/ros1/catkin_ws/build/aruco_ros/aruco_ros/CMakeFiles/double.dir/src/simple_double.cpp.o"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/src/aruco_ros_utils.cpp" "/root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros/CMakeFiles/double.dir/src/aruco_ros_utils.cpp.o"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/src/simple_double.cpp" "/root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_ros/CMakeFiles/double.dir/src/simple_double.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,9 +18,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/include"
-  "/home/wego/ros1/catkin_ws/devel/include"
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco/include"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/include"
+  "/root/adi_ws/ros1/catkin_ws/devel/include"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv4"
@@ -28,7 +28,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/wego/ros1/catkin_ws/build/aruco_ros/aruco/CMakeFiles/aruco.dir/DependInfo.cmake"
+  "/root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco/CMakeFiles/aruco.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

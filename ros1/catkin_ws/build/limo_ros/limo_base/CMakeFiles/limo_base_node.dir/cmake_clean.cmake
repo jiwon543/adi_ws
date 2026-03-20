@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_base/limo_base_node"
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_base/limo_base_node.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_base/limo_base_node"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_base/limo_base_node.pdb"
   "CMakeFiles/limo_base_node.dir/src/limo_base_node.cpp.o"
   "CMakeFiles/limo_base_node.dir/src/limo_driver.cpp.o"
   "CMakeFiles/limo_base_node.dir/src/serial_port.cpp.o"

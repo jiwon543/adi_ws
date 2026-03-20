@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "aruco;sensor_msgs;tf".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-laruco_ros_utils".split(';') if "-laruco_ros_utils" != "" else []
 PROJECT_NAME = "aruco_ros"
-PROJECT_SPACE_DIR = "/home/wego/ros1/catkin_ws/install"
+PROJECT_SPACE_DIR = "/root/adi_ws/ros1/catkin_ws/install"
 PROJECT_VERSION = "3.1.4"

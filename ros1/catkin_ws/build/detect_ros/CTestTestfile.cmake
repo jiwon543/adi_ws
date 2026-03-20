@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/wego/ros1/catkin_ws/src/detect_ros
-# Build directory: /home/wego/ros1/catkin_ws/build/detect_ros
+# Source directory: /root/adi_ws/ros1/catkin_ws/src/detect_ros
+# Build directory: /root/adi_ws/ros1/catkin_ws/build/detect_ros
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

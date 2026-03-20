@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/libkinect_filtering.pdb"
-  "/home/wego/ros1/catkin_ws/devel/lib/libkinect_filtering.so"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/libkinect_filtering.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/libkinect_filtering.so"
   "CMakeFiles/kinect_filtering.dir/src/kinect_filtering.cpp.o"
 )
 

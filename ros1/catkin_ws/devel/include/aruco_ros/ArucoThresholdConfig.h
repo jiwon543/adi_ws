@@ -261,15 +261,15 @@ int detection_mode;
 
 
 
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double min_image_size;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       bool normalizeImage;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       int dctComponentsToRemove;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       int degree;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       int detection_mode;
 //#line 231 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -297,16 +297,16 @@ int detection_mode;
       {
         ROS_ERROR("ArucoThresholdConfig::__fromMessage__ called with an unexpected parameter.");
         ROS_ERROR("Booleans:");
-        for (unsigned int i = 0; i < msg.bools.size(); i++)
+        for (size_t i = 0; i < msg.bools.size(); i++)
           ROS_ERROR("  %s", msg.bools[i].name.c_str());
         ROS_ERROR("Integers:");
-        for (unsigned int i = 0; i < msg.ints.size(); i++)
+        for (size_t i = 0; i < msg.ints.size(); i++)
           ROS_ERROR("  %s", msg.ints[i].name.c_str());
         ROS_ERROR("Doubles:");
-        for (unsigned int i = 0; i < msg.doubles.size(); i++)
+        for (size_t i = 0; i < msg.doubles.size(); i++)
           ROS_ERROR("  %s", msg.doubles[i].name.c_str());
         ROS_ERROR("Strings:");
-        for (unsigned int i = 0; i < msg.strs.size(); i++)
+        for (size_t i = 0; i < msg.strs.size(); i++)
           ROS_ERROR("  %s", msg.strs[i].name.c_str());
         // @todo Check that there are no duplicates. Make this error more
         // explicit.
@@ -409,59 +409,59 @@ int detection_mode;
     ArucoThresholdConfigStatics()
     {
 ArucoThresholdConfig::GroupDescription<ArucoThresholdConfig::DEFAULT, ArucoThresholdConfig> Default("Default", "", 0, 0, true, &ArucoThresholdConfig::groups);
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.min_image_size = 0.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.min_image_size = 1.0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.min_image_size = 0.02;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<double>("min_image_size", "double", 0, "minimum size of marker as a % of image area", "", &ArucoThresholdConfig::min_image_size)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<double>("min_image_size", "double", 0, "minimum size of marker as a % of image area", "", &ArucoThresholdConfig::min_image_size)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.normalizeImage = 0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.normalizeImage = 1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.normalizeImage = 1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<bool>("normalizeImage", "bool", 0, "normalizeImage", "", &ArucoThresholdConfig::normalizeImage)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<bool>("normalizeImage", "bool", 0, "normalizeImage", "", &ArucoThresholdConfig::normalizeImage)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.dctComponentsToRemove = 1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.dctComponentsToRemove = 4;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.dctComponentsToRemove = 2;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<int>("dctComponentsToRemove", "int", 0, "DCT components to remove", "", &ArucoThresholdConfig::dctComponentsToRemove)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<int>("dctComponentsToRemove", "int", 0, "DCT components to remove", "", &ArucoThresholdConfig::dctComponentsToRemove)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.degree = 0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.degree = 360;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.degree = 0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<int>("degree", "int", 0, "Degree to rotate", "", &ArucoThresholdConfig::degree)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<int>("degree", "int", 0, "Degree to rotate", "", &ArucoThresholdConfig::degree)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.detection_mode = 0;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.detection_mode = 2;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.detection_mode = 1;
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      Default.abstract_parameters.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<int>("detection_mode", "int", 0, "The detection mode , affects speed and reliability", "{'enum': [{'name': 'Normal', 'type': 'int', 'value': 0, 'srcline': 12, 'srcfile': '/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}, {'name': 'Fast', 'type': 'int', 'value': 1, 'srcline': 13, 'srcfile': '/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}, {'name': 'Video_Fast', 'type': 'int', 'value': 2, 'srcline': 14, 'srcfile': '/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}], 'enum_description': 'detection_mode enum'}", &ArucoThresholdConfig::detection_mode)));
-//#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __param_descriptions__.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<int>("detection_mode", "int", 0, "The detection mode , affects speed and reliability", "{'enum': [{'name': 'Normal', 'type': 'int', 'value': 0, 'srcline': 12, 'srcfile': '/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}, {'name': 'Fast', 'type': 'int', 'value': 1, 'srcline': 13, 'srcfile': '/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}, {'name': 'Video_Fast', 'type': 'int', 'value': 2, 'srcline': 14, 'srcfile': '/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}], 'enum_description': 'detection_mode enum'}", &ArucoThresholdConfig::detection_mode)));
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<int>("detection_mode", "int", 0, "The detection mode , affects speed and reliability", "{'enum': [{'name': 'Normal', 'type': 'int', 'value': 0, 'srcline': 12, 'srcfile': '/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}, {'name': 'Fast', 'type': 'int', 'value': 1, 'srcline': 13, 'srcfile': '/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}, {'name': 'Video_Fast', 'type': 'int', 'value': 2, 'srcline': 14, 'srcfile': '/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}], 'enum_description': 'detection_mode enum'}", &ArucoThresholdConfig::detection_mode)));
+//#line 292 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(ArucoThresholdConfig::AbstractParamDescriptionConstPtr(new ArucoThresholdConfig::ParamDescription<int>("detection_mode", "int", 0, "The detection mode , affects speed and reliability", "{'enum': [{'name': 'Normal', 'type': 'int', 'value': 0, 'srcline': 12, 'srcfile': '/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}, {'name': 'Fast', 'type': 'int', 'value': 1, 'srcline': 13, 'srcfile': '/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}, {'name': 'Video_Fast', 'type': 'int', 'value': 2, 'srcline': 14, 'srcfile': '/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg', 'description': '', 'ctype': 'int', 'cconsttype': 'const int'}], 'enum_description': 'detection_mode enum'}", &ArucoThresholdConfig::detection_mode)));
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
-//#line 246 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+//#line 247 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __group_descriptions__.push_back(ArucoThresholdConfig::AbstractGroupDescriptionConstPtr(new ArucoThresholdConfig::GroupDescription<ArucoThresholdConfig::DEFAULT, ArucoThresholdConfig>(Default)));
 //#line 369 "/opt/ros/noetic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
@@ -538,11 +538,11 @@ ArucoThresholdConfig::GroupDescription<ArucoThresholdConfig::DEFAULT, ArucoThres
     return statics;
   }
 
-//#line 12 "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg"
+//#line 12 "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg"
       const int ArucoThreshold_Normal = 0;
-//#line 13 "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg"
+//#line 13 "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg"
       const int ArucoThreshold_Fast = 1;
-//#line 14 "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg"
+//#line 14 "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/cfg/ArucoThreshold.cfg"
       const int ArucoThreshold_Video_Fast = 2;
 }
 

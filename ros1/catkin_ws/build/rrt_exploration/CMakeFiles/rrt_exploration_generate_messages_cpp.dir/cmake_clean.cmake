@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/include/rrt_exploration/PointArray.h"
+  "/root/adi_ws/ros1/catkin_ws/devel/include/rrt_exploration/PointArray.h"
   "CMakeFiles/rrt_exploration_generate_messages_cpp"
 )
 

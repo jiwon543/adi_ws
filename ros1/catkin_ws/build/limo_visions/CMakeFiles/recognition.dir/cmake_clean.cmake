@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/recognition"
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/recognition.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/recognition"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/recognition.pdb"
   "CMakeFiles/recognition.dir/src/recognition.cpp.o"
 )
 

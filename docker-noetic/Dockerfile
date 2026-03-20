@@ -96,6 +96,30 @@ RUN python3 -m pip install --no-cache-dir \
     matplotlib \
     tqdm
 
+# Python 3.10 (소스 빌드 - deadsnakes PPA 미지원 환경 대응)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    zlib1g-dev \
+    libncurses5-dev \
+    libgdbm-dev \
+    libnss3-dev \
+    libssl-dev \
+    libreadline-dev \
+    libffi-dev \
+    libsqlite3-dev \
+    libbz2-dev \
+ && rm -rf /var/lib/apt/lists/* \
+ && wget https://www.python.org/ftp/python/3.10.14/Python-3.10.14.tgz \
+ && tar -xf Python-3.10.14.tgz \
+ && cd Python-3.10.14 \
+ && ./configure --enable-optimizations \
+ && make -j$(nproc) \
+ && make altinstall \
+ && cd .. && rm -rf Python-3.10.14 Python-3.10.14.tgz
+
+# pip for python3.10 + moondream (torch 포함 자동 설치)
+RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10 \
+ && python3.10 -m pip install --no-cache-dir moondream
+
 # rosdep 초기화가 안 되어 있을 때만 실행
 RUN rosdep update || true
 

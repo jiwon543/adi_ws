@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/ar_track_alvar/trainMarkerBundle"
-  "/home/wego/ros1/catkin_ws/devel/lib/ar_track_alvar/trainMarkerBundle.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/ar_track_alvar/trainMarkerBundle"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/ar_track_alvar/trainMarkerBundle.pdb"
   "CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o"
 )
 

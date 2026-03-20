@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/traffic_light"
-  "/home/wego/ros1/catkin_ws/devel/lib/limo_visions/traffic_light.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/traffic_light"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/limo_visions/traffic_light.pdb"
   "CMakeFiles/traffic_light.dir/src/traffic_light.cpp.o"
 )
 

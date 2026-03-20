@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter"
-  "/home/wego/ros1/catkin_ws/devel/lib/detect_ros/lifter.pdb"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/detect_ros/lifter.pdb"
   "CMakeFiles/lifter.dir/src/lifter.cpp.o"
 )
 

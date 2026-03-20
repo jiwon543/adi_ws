@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for nodelet_topic_tools_gencfg.
 
@@ -63,10 +63,10 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/build: n
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && $(CMAKE_COMMAND) -P CMakeFiles/nodelet_topic_tools_gencfg.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar && $(CMAKE_COMMAND) -P CMakeFiles/nodelet_topic_tools_gencfg.dir/cmake_clean.cmake
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
 
 ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar /home/wego/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/ar_track_alvar/ar_track_alvar /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar /root/adi_ws/ros1/catkin_ws/build/ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/depend
 

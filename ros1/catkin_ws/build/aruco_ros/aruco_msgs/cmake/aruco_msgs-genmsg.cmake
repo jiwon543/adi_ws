@@ -2,7 +2,7 @@
 
 message(STATUS "aruco_msgs: 2 messages, 0 services")
 
-set(MSG_I_FLAGS "-Iaruco_msgs:/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iaruco_msgs:/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(aruco_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
 add_custom_target(_aruco_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "aruco_msgs" "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" "geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/PoseWithCovariance:geometry_msgs/Quaternion:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "aruco_msgs" "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" "std_msgs/Header:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/PoseWithCovariance:geometry_msgs/Quaternion"
 )
 
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
 add_custom_target(_aruco_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "aruco_msgs" "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" "geometry_msgs/Point:aruco_msgs/Marker:geometry_msgs/Pose:geometry_msgs/PoseWithCovariance:geometry_msgs/Quaternion:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "aruco_msgs" "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" "std_msgs/Header:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/PoseWithCovariance:aruco_msgs/Marker:geometry_msgs/Quaternion"
 )
 
 #
@@ -34,15 +34,15 @@ add_custom_target(_aruco_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/aruco_msgs
 )
 _generate_msg_cpp(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/aruco_msgs
 )
 
@@ -60,9 +60,9 @@ add_custom_target(aruco_msgs_generate_messages_cpp
 add_dependencies(aruco_msgs_generate_messages aruco_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_cpp _aruco_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_cpp _aruco_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,15 +75,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS aruco_msgs_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/aruco_msgs
 )
 _generate_msg_eus(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/aruco_msgs
 )
 
@@ -101,9 +101,9 @@ add_custom_target(aruco_msgs_generate_messages_eus
 add_dependencies(aruco_msgs_generate_messages aruco_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_eus _aruco_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_eus _aruco_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,15 +116,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS aruco_msgs_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/aruco_msgs
 )
 _generate_msg_lisp(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/aruco_msgs
 )
 
@@ -142,9 +142,9 @@ add_custom_target(aruco_msgs_generate_messages_lisp
 add_dependencies(aruco_msgs_generate_messages aruco_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_lisp _aruco_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_lisp _aruco_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,15 +157,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS aruco_msgs_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/aruco_msgs
 )
 _generate_msg_nodejs(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/aruco_msgs
 )
 
@@ -183,9 +183,9 @@ add_custom_target(aruco_msgs_generate_messages_nodejs
 add_dependencies(aruco_msgs_generate_messages aruco_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_nodejs _aruco_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_nodejs _aruco_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,15 +198,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS aruco_msgs_generate_messages_nodejs
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/aruco_msgs
 )
 _generate_msg_py(aruco_msgs
-  "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
+  "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/aruco_msgs
 )
 
@@ -224,9 +224,9 @@ add_custom_target(aruco_msgs_generate_messages_py
 add_dependencies(aruco_msgs_generate_messages aruco_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_py _aruco_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
+get_filename_component(_filename "/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg" NAME_WE)
 add_dependencies(aruco_msgs_generate_messages_py _aruco_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

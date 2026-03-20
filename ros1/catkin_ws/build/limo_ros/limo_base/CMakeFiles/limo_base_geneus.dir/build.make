@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for limo_base_geneus.
 
@@ -63,10 +63,10 @@ limo_ros/limo_base/CMakeFiles/limo_base_geneus.dir/build: limo_base_geneus
 .PHONY : limo_ros/limo_base/CMakeFiles/limo_base_geneus.dir/build
 
 limo_ros/limo_base/CMakeFiles/limo_base_geneus.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/limo_ros/limo_base && $(CMAKE_COMMAND) -P CMakeFiles/limo_base_geneus.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/limo_ros/limo_base && $(CMAKE_COMMAND) -P CMakeFiles/limo_base_geneus.dir/cmake_clean.cmake
 .PHONY : limo_ros/limo_base/CMakeFiles/limo_base_geneus.dir/clean
 
 limo_ros/limo_base/CMakeFiles/limo_base_geneus.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/limo_ros/limo_base /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/limo_ros/limo_base /home/wego/ros1/catkin_ws/build/limo_ros/limo_base/CMakeFiles/limo_base_geneus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/limo_ros/limo_base /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/limo_ros/limo_base /root/adi_ws/ros1/catkin_ws/build/limo_ros/limo_base/CMakeFiles/limo_base_geneus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : limo_ros/limo_base/CMakeFiles/limo_base_geneus.dir/depend
 

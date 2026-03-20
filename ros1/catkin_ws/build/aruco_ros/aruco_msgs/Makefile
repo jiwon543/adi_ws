@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wego/ros1/catkin_ws/build/CMakeFiles /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/progress.marks
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wego/ros1/catkin_ws/build/CMakeFiles 0
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/adi_ws/ros1/catkin_ws/build/CMakeFiles /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/progress.marks
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/adi_ws/ros1/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/clean
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/preinstall
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/preinstall
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ aruco_msgs_generate_messages: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generat
 
 # fast build rule for target.
 aruco_msgs_generate_messages/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages.dir/build
 .PHONY : aruco_msgs_generate_messages/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ aruco_msgs_gennodejs: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/r
 
 # fast build rule for target.
 aruco_msgs_gennodejs/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gennodejs.dir/build
 .PHONY : aruco_msgs_gennodejs/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_Marker.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_Marker.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_Marker.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_Marker.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ _aruco_msgs_generate_messages_check_deps_Marker: aruco_ros/aruco_msgs/CMakeFiles
 
 # fast build rule for target.
 _aruco_msgs_generate_messages_check_deps_Marker/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_Marker.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_Marker.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_Marker.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_Marker.dir/build
 .PHONY : _aruco_msgs_generate_messages_check_deps_Marker/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_cpp.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_cpp.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_cpp.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ aruco_msgs_generate_messages_cpp: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gen
 
 # fast build rule for target.
 aruco_msgs_generate_messages_cpp/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_cpp.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_cpp.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_cpp.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_cpp.dir/build
 .PHONY : aruco_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ aruco_msgs_generate_messages_lisp: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_ge
 
 # fast build rule for target.
 aruco_msgs_generate_messages_lisp/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_lisp.dir/build
 .PHONY : aruco_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ aruco_msgs_genpy: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/rule
 
 # fast build rule for target.
 aruco_msgs_genpy/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genpy.dir/build
 .PHONY : aruco_msgs_genpy/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_py.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_py.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_py.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ aruco_msgs_generate_messages_py: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gene
 
 # fast build rule for target.
 aruco_msgs_generate_messages_py/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_py.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_py.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_py.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_py.dir/build
 .PHONY : aruco_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ aruco_msgs_gencpp: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/rule
 
 # fast build rule for target.
 aruco_msgs_gencpp/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/build
 .PHONY : aruco_msgs_gencpp/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ aruco_msgs_geneus: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/rule
 
 # fast build rule for target.
 aruco_msgs_geneus/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_geneus.dir/build
 .PHONY : aruco_msgs_geneus/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ aruco_msgs_generate_messages_eus: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gen
 
 # fast build rule for target.
 aruco_msgs_generate_messages_eus/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_eus.dir/build
 .PHONY : aruco_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ aruco_msgs_generate_messages_nodejs: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_
 
 # fast build rule for target.
 aruco_msgs_generate_messages_nodejs/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_generate_messages_nodejs.dir/build
 .PHONY : aruco_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_MarkerArray.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_MarkerArray.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_MarkerArray.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_MarkerArray.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ _aruco_msgs_generate_messages_check_deps_MarkerArray: aruco_ros/aruco_msgs/CMake
 
 # fast build rule for target.
 _aruco_msgs_generate_messages_check_deps_MarkerArray/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_MarkerArray.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_MarkerArray.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_MarkerArray.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/_aruco_msgs_generate_messages_check_deps_MarkerArray.dir/build
 .PHONY : _aruco_msgs_generate_messages_check_deps_MarkerArray/fast
 
 # Convenience name for target.
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/rule:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/rule
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/rule
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/rule
 
 # Convenience name for target.
@@ -359,7 +359,7 @@ aruco_msgs_genlisp: aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/rule
 
 # fast build rule for target.
 aruco_msgs_genlisp/fast:
-	cd /home/wego/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/build
+	cd /root/adi_ws/ros1/catkin_ws/build && $(MAKE) -f aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/build.make aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_genlisp.dir/build
 .PHONY : aruco_msgs_genlisp/fast
 
 # Help Target
@@ -399,6 +399,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

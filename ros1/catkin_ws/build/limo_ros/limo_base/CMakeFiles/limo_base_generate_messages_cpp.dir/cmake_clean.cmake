@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/include/limo_base/LimoStatus.h"
+  "/root/adi_ws/ros1/catkin_ws/devel/include/limo_base/LimoStatus.h"
   "CMakeFiles/limo_base_generate_messages_cpp"
 )
 

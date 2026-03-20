@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/rrt_exploration/msg/_PointArray.py"
-  "/home/wego/ros1/catkin_ws/devel/lib/python3/dist-packages/rrt_exploration/msg/__init__.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/rrt_exploration/msg/_PointArray.py"
+  "/root/adi_ws/ros1/catkin_ws/devel/lib/python3/dist-packages/rrt_exploration/msg/__init__.py"
   "CMakeFiles/rrt_exploration_generate_messages_py"
 )
 

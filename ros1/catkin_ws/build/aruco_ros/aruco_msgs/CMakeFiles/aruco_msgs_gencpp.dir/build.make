@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wego/ros1/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/adi_ws/ros1/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wego/ros1/catkin_ws/build
+CMAKE_BINARY_DIR = /root/adi_ws/ros1/catkin_ws/build
 
 # Utility rule file for aruco_msgs_gencpp.
 
@@ -63,10 +63,10 @@ aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/build: aruco_msgs_gencpp
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/build
 
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/clean:
-	cd /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs && $(CMAKE_COMMAND) -P CMakeFiles/aruco_msgs_gencpp.dir/cmake_clean.cmake
+	cd /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs && $(CMAKE_COMMAND) -P CMakeFiles/aruco_msgs_gencpp.dir/cmake_clean.cmake
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/clean
 
 aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/depend:
-	cd /home/wego/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wego/ros1/catkin_ws/src /home/wego/ros1/catkin_ws/src/aruco_ros/aruco_msgs /home/wego/ros1/catkin_ws/build /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs /home/wego/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/adi_ws/ros1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/adi_ws/ros1/catkin_ws/src /root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_msgs /root/adi_ws/ros1/catkin_ws/build /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs /root/adi_ws/ros1/catkin_ws/build/aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : aruco_ros/aruco_msgs/CMakeFiles/aruco_msgs_gencpp.dir/depend
 
