@@ -1,0 +1,7 @@
+<!-- launch/e_stop.launch -->
+
+<launch>
+    <node name="e_stop" pkg="Perception" type="e_stop.py" output="screen">
+        <rosparam file="$(find Perception)/config/e_stop.yaml"/>
+    </node>
+</launch>

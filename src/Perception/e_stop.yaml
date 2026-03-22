@@ -1,0 +1,4 @@
+# config/e_stop.yaml
+
+stop_distance: 0.5
+drive_speed: 0.3
