@@ -1,0 +1,10 @@
+<!-- launch/e_stop.launch -->
+<launch>
+    <node name="lidar_clustering" pkg="Perception" type="lidar_clustering.py" output="screen">
+        <rosparam file="$(find Perception)/Lidar/config/lidar_clustering.yaml"/>
+    </node>
+
+    <node name="e_stop" pkg="Control" type="e_stop.py" output="screen">
+        <rosparam file="$(find Control)/config/e_stop.yaml"/>
+    </node>
+</launch>

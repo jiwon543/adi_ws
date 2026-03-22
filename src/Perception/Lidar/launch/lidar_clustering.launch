@@ -1,0 +1,8 @@
+<!--launch/lidar_clustering.launch-->
+<!--라이다 클러스터링 단독 실행 런치파일-->
+
+<launch>
+    <node name="lidar_clustering" pkg="Perception" type="lidar_clustering.py" output="screen">
+        <rosparam file="$(find Perception)/Lidar/config/lidar_clustering.yaml"/>
+    </node>
+</launch>

@@ -94,7 +94,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN python3 -m pip install --no-cache-dir \
     numpy \
     matplotlib \
-    tqdm
+    tqdm \
+    scikit-learn
 
 # Python 3.10 (소스 빌드 - deadsnakes PPA 미지원 환경 대응)
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -120,7 +121,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10 \
  && python3.10 -m pip install --no-cache-dir \
     moondream \
-    opencv-python
+    opencv-python \
+    rospkg \
+    catkin-pkg
 
 # rosdep 초기화가 안 되어 있을 때만 실행
 RUN rosdep update || true
