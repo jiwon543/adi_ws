@@ -1,0 +1,4 @@
+#cofig/lidar_clustering.yaml
+
+eps: 0.3
+min_samples: 5
