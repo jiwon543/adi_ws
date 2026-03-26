@@ -1,0 +1,12 @@
+{
+  "model": "vikhyatk/moondream2",
+  "infer_interval": 1.0,
+  "prompt": "What is in front? Answer ONE word: clear, cone, obstacle, crosswalk.",
+  "mission_map": {
+    "clear": "normal_drive",
+    "cone": "cone_avoidance",
+    "obstacle": "obstacle_stop",
+    "crosswalk": "crosswalk_stop",
+    "default": "normal_drive"
+  }
+}
