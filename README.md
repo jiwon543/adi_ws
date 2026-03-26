@@ -1,13 +1,13 @@
 # adi_ws
 
-> **2026-1 스마트모빌리티종합설계**
-> Lightweight VLM-Assisted Task Planning for Autonomous Driving on Scale Car Platform
+**2026-1 스마트모빌리티종합설계**
+Lightweight VLM-Assisted Task Planning for Autonomous Driving on Scale Car Platform
 
 ---
 
 ## 개요
 
-LIMO 로봇(AgileX)을 플랫폼을 사용하는 자율주행 종합설계 프로젝트입니다.
+LIMO 로봇(AgileX) 플랫폼을 사용하는 자율주행 종합설계 프로젝트입니다.
 카메라 · LiDAR 센서 인식부터 판단, 제어까지의 전체 파이프라인을 ROS Noetic 기반으로 구성합니다.
 Docker 환경을 지원하며, 경량 Vision-Language Model(Moondream2)을 이용한 장면 이해 및 태스크 플래닝이 프로젝트 핵심 모듈입니다.
 
