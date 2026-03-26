@@ -1,12 +1,10 @@
 {
   "model": "vikhyatk/moondream2",
-  "infer_interval": 1.0,
-  "prompt": "What is in front? Answer ONE word: clear, cone, obstacle, crosswalk.",
+  "infer_interval": 0.5,
+  "prompt": "Look at this image from a small autonomous car on a race track. Are there orange traffic cones blocking the path directly ahead? Answer only 'yes' or 'no'.",
   "mission_map": {
-    "clear": "normal_drive",
-    "cone": "cone_avoidance",
-    "obstacle": "obstacle_stop",
-    "crosswalk": "crosswalk_stop",
+    "yes": "obstacle_avoidance",
+    "no": "normal_drive",
     "default": "normal_drive"
   }
 }

@@ -76,7 +76,7 @@ def image_callback(msg):
 
     # 추론 주기 제어
     current_time = time.time()
-    infer_interval = config.get("infer_interval", 1.0)
+    infer_interval = config.get("infer_interval", 0.5)
     if current_time - last_infer_time < infer_interval:
         return
     last_infer_time = current_time
@@ -132,7 +132,7 @@ def main():
     )
 
     rospy.loginfo(f"VLM Inference Node Started (device: {device})")
-    rospy.loginfo(f"Inference interval: {config.get('infer_interval', 1.0)}s")
+    rospy.loginfo(f"Inference interval: {config.get('infer_interval', 0.5)}s")
     rospy.spin()
 
 if __name__ == '__main__':
