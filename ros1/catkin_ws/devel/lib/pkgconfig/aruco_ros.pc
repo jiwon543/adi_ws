@@ -1,8 +1,0 @@
-prefix=/root/adi_ws/ros1/catkin_ws/devel
-
-Name: aruco_ros
-Description: Description of aruco_ros
-Version: 3.1.4
-Cflags: -I/root/adi_ws/ros1/catkin_ws/devel/include -I/root/adi_ws/ros1/catkin_ws/src/aruco_ros/aruco_ros/include
-Libs: -L${prefix}/lib -laruco_ros_utils
-Requires: aruco sensor_msgs tf

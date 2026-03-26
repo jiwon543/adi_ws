@@ -1,8 +1,0 @@
-prefix=/root/adi_ws/ros1/catkin_ws/devel
-
-Name: mybuddy_moveit
-Description: Description of mybuddy_moveit
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

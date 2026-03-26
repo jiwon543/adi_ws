@@ -1,2 +1,0 @@
-agilex_pure_pursuit:ar_track_alvar/ar_track_alvar:ar_track_alvar/ar_track_alvar_msgs:aruco_ros/aruco:aruco_ros/aruco_msgs:aruco_ros/aruco_ros:limo_application-master:limo_description:limo_examples-master:limo_ros/learning_limo:limo_ros/limo_base:limo_ros/limo_bringup:limo_visions:rrt_exploration:set_nav_point:vision:voice
--DCATKIN_DEVEL_PREFIX=/root/adi_ws/ros1/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/root/adi_ws/ros1/catkin_ws/install -G Unix Makefiles

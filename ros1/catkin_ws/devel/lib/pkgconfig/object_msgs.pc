@@ -1,8 +1,0 @@
-prefix=/root/adi_ws/ros1/catkin_ws/devel
-
-Name: object_msgs
-Description: Description of object_msgs
-Version: 0.0.0
-Cflags: -I/root/adi_ws/ros1/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: std_msgs

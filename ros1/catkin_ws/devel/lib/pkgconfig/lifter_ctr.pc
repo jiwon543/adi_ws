@@ -1,8 +1,0 @@
-prefix=/root/adi_ws/ros1/catkin_ws/devel
-
-Name: lifter_ctr
-Description: Description of lifter_ctr
-Version: 0.0.0
-Cflags: -I/root/adi_ws/ros1/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: roscpp rospy std_msgs message_runtime

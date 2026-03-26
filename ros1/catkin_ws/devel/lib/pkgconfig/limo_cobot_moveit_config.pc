@@ -1,8 +1,0 @@
-prefix=/root/adi_ws/ros1/catkin_ws/devel
-
-Name: limo_cobot_moveit_config
-Description: Description of limo_cobot_moveit_config
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -45,23 +45,20 @@ adi_ws/
 
 
 ### `src/Decision` — 판단
-(개발 중)
+(게발 중)
+VLM 장면 이해를 통한 추론 결과를 구독, 이에 대한 미션 토픽을 퍼블리시합니다.
 
 ### `src/Control` — 제어
 (개발 중)
+판단에서 나온 토픽을 구독, 차량을 제어합니다.
 
 ### `src/Moondream` — VLM 장면 이해
-경량 Vision-Language Model **Moondream2** (`vikhyatk/moondream2`)를 로컬에서 추론합니다.
-
-| 파일 | 설명 |
-|---|---|
-| `src/infer_webcam.py` | 웹캠 실시간 추론 — `Space`: 캡처 후 추론, `q`: 종료 |
-| `src/infer_image.py` | 단일 이미지 추론 |
-| `src/config.json` | 모델 경로, 프롬프트, 웹캠 인덱스 설정 |
+(개발 중)
+경량 Vision-Language Model **Moondream2** (`vikhyatk/moondream2`)를 로컬에서 추론합니다. 추론 결과를 Decision에 토픽으로 퍼블리시합니다.
 
 ```bash
-# 웹캠 추론 실행
-cd src/Moondream/src
+# 테스트용 웹캠 추론 실행
+cd src/Moondream/src/test
 python3.10 infer_webcam.py
 ```
 
@@ -85,6 +82,9 @@ roslaunch limo_bringup limo_bringup.launch
 ## 실행 환경
 
 ### Docker (권장)
+
+ROS1 Noetic
+
 ```bash
 cd docker-noetic
 ```
