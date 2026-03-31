@@ -1,0 +1,8 @@
+<!--launch/camera_lane.launch-->
+<!--카메라 차선 인식 단독 실행 런치 파일-->
+
+<launch>
+    <node name="camera_lane_perception" pkg="Perception" type="camera_lane.py" output="screen">
+        <rosparam file="$(find Perception)/Camera/config/camera_lane.yaml"/>
+    </node>
+</launch>
