@@ -1,0 +1,82 @@
+# ============================================================
+#  camera_lane.yaml
+#  camera_lane_perception + lane_control 파라미터
+#  launch:  <rosparam file="$(find your_pkg)/config/camera_lane.yaml" />
+# ============================================================
+
+# ─────────────── Perception ───────────────
+camera_lane_perception:
+
+  # ── ROI (BEV 소스 사각형, 이미지 비율) ──
+  roi_top_y_ratio:     0.60
+  roi_left_top_ratio:  0.10
+  roi_right_top_ratio: 0.80
+  roi_left_bot_ratio: -0.45
+  roi_right_bot_ratio: 1.40
+
+  # ── HSV 하얀 차선 ──
+  hsv_h_low:   0
+  hsv_h_high:  180
+  hsv_s_low:   0
+  hsv_s_high:  40
+  hsv_v_low:   200
+  hsv_v_high:  255
+
+  # ── CLAHE ──
+  clahe_clip_limit: 2.5
+  clahe_grid_size:  8
+
+  # ── 모폴로지 ──
+  morph_kernel_size: 3
+  morph_iterations:  1
+
+  # ── 슬라이딩 윈도우 ──
+  num_windows:     12
+  window_margin:   80
+  minpix_recenter: 50
+  min_lane_sep:    80
+
+  # ── 차선 폭 (BEV px) ──
+  lane_width_px: 340.0
+
+  # ── px → meter 변환 (캘리브 후 수정) ──
+  xm_per_pix: 0.03
+  ym_per_pix: 0.05
+
+  # ── 다항식 피팅 ──
+  poly_order:      2
+  min_lane_points: 4
+  poly_alpha:      0.4
+
+  # ── 출력 스무딩 ──
+  ema_alpha: 0.3
+
+  # ── 디버그 ──
+  publish_debug: true
+
+
+# ─────────────── Control ───────────────
+lane_control:
+
+  # ── PID 게인 ──
+  kp: 0.005                   # lateral offset [px] → angular.z
+  ki: 0.0                     # 적분 (초기엔 0 권장)
+  kd: 0.002                   # 미분 (진동 시 줄이기)
+  i_max: 50.0                 # 적분 windup 제한
+
+  # ── 조향 제한 ──
+  max_angular: 0.5            # rad/s
+
+  # ── 직진 속도 ──
+  v_base: 0.25                # m/s
+
+  # ── 곡률 감속 ──
+  v_min_curve:      0.12      # 급커브 최저 속도
+  curv_slow_thresh: 0.003     # 감속 시작 곡률
+  curv_slow_gain:   50.0      # 감속 비례 계수
+
+  # ── 미검출 처리 ──
+  lost_timeout: 1.0           # 초
+
+  # ── 제어 주기 ──
+  control_rate: 30.0          # Hz
