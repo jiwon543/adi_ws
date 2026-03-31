@@ -66,8 +66,7 @@ def load_params():
     g_p["control_rate"] = float(p.get("control_rate", 30.0))
 
     # lateral offset → meter 변환 계수 (BEV px → 실제 m, 캘리브 필요)
-    # 일단 px 기반으로 동작하되, 추후 보정 가능
-    g_p["px_to_m"] = float(p.get("px_to_m", 1.0))  # 1이면 px 그대로
+    g_p["px_to_m"] = float(p.get("px_to_m", 0.0103))
 
     rospy.loginfo("[control] params loaded: %s", g_p)
 
@@ -108,15 +107,21 @@ def compute_stanley_steer(lateral_px, heading_rad, curvature, dt):
     v     = max(g_p["v_base"], v_min)
 
     # Stanley: δ = k_h * θ + arctan(k_cte * e / v)
-    cte_term = np.arctan2(k_cte * lateral_px, v)
+    #cte_term = np.arctan2(k_cte * lateral_px, v)
+    
+    # px - to - m 변환
+    lateral_m = lateral_px * g_p["px_to_m"]
+    
+    # Stanley terms
+    cte_term = np.arctan2(k_cte * lateral_m, v)
     heading_term = k_h * heading_rad
     ff_term = k_ff * curvature
 
-    # 미분항 (lateral 변화율)
+    # 미분항 (lateral 변화율) — m 단위로 계산해야 함
     d_term = 0.0
     if dt > 1e-6 and k_d > 0:
-        d_term = k_d * (lateral_px - g_prev_lateral) / dt
-    g_prev_lateral = lateral_px
+        d_term = k_d * (lateral_m - g_prev_lateral) / dt
+    g_prev_lateral = lateral_m
 
     steer = heading_term + cte_term + ff_term + d_term
 

@@ -1,10 +1,10 @@
 #config/lane_control.yaml
 
 # ── Stanley 게인 ──
-k_heading: 1.0              # heading error 비례 게인
-k_cte:     0.008            # cross-track error 게인 (px 단위이므로 0.005~0.015)
-k_ff:      0.5              # curvature feedforward 게인
-k_d:       0.0              # lateral 미분 게인 (진동 시 0으로)
+k_heading: 0.7              # heading error 비례 게인
+k_cte:     1.2              # cross-track error 게인
+k_ff:      0.1              # curvature feedforward 게인
+k_d:       0.0              # lateral 미분 게인 (안정 확인 후 천천히 올릴 것)
 
 # ── Stanley 내부 ──
 v_min: 0.1                  # arctan 분모 최소 속도 [m/s] (0 나눗셈 방지)
@@ -13,12 +13,12 @@ v_min: 0.1                  # arctan 분모 최소 속도 [m/s] (0 나눗셈 방
 max_steer: 0.50             # 최대 조향각 [rad] (~28.6°)
 
 # ── 직진 속도 ──
-v_base: 0.3                # 기본 주행 속도 [m/s]
+v_base: 0.15                # 기본 주행 속도 [m/s]
 
 # ── 곡률 감속 ──
-v_min_curve:      0.12      # 급커브 최저 속도 [m/s]
-curv_slow_thresh: 0.003     # 감속 시작 곡률 [1/px]
-curv_slow_gain:   50.0      # 곡률 초과분 × 이 값만큼 감속
+v_min_curve:      0.1      # 급커브 최저 속도 [m/s]
+curv_slow_thresh: 0.5       # 감속 시작 곡률 [1/m] (직선~0.1, 완만한 커브~0.5~1.0)
+curv_slow_gain:   0.15      # 곡률 초과분 × 이 값만큼 감속
 
 # ── 미검출 처리 ──
 lost_timeout: 1.0           # 차선 미검출 후 정지까지 대기 [초]
@@ -27,4 +27,4 @@ lost_timeout: 1.0           # 차선 미검출 후 정지까지 대기 [초]
 control_rate: 30.0          # [Hz]
 
 # ── 단위 변환 ──
-px_to_m: 1.0                # BEV px → 실측 m 변환 (캘리브 후 수정)
+px_to_m: 0.00103          # BEV px → 실측 m 변환 (캘리브 후 수정)

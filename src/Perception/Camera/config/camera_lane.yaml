@@ -3,19 +3,19 @@
 # ── ROI (BEV 변환 소스 사각형, 이미지 비율) ──
 # 값 조정 시 /perception/debug/compressed 토픽으로 확인
 
-roi_top_y_ratio:     0.60    # ROI 상단 y (0=맨위, 1=맨아래). 높이면 가까운 영역만 봄
+roi_top_y_ratio:     0.70    # ROI 상단 y (0=맨위, 1=맨아래). 높이면 가까운 영역만 봄
 roi_left_top_ratio:  0.10    # 상단 좌측 x 비율
-roi_right_top_ratio: 0.80    # 상단 우측 x 비율
-roi_left_bot_ratio: -0.45    # 하단 좌측 (음수 = 프레임 바깥까지 확장)
-roi_right_bot_ratio: 1.40    # 하단 우측 (1 초과 = 프레임 바깥까지 확장)
+roi_right_top_ratio: 0.90    # 상단 우측 x 비율
+roi_left_bot_ratio: -0.10    # 하단 좌측 (음수 = 프레임 바깥까지 확장)
+roi_right_bot_ratio: 1.1    # 하단 우측 (1 초과 = 프레임 바깥까지 확장)
 
 # ── HSV 하얀 차선 범위 ──
 hsv_h_low:  0
 hsv_s_low:  0
-hsv_v_low:  200
+hsv_v_low:  210
 
-hsv_h_high: 180
-hsv_s_high: 40
+hsv_h_high: 179
+hsv_s_high: 30
 hsv_v_high: 255
     
 # ── CLAHE (조명 보정) ──
@@ -35,13 +35,16 @@ min_lane_sep:    80         # 좌/우 윈도우 최소 간격 [px] (겹침 방�
 # ── 차선 폭 ──
 lane_width_px: 340.0        # BEV 상 좌-우 차선 간격 [px]. 한쪽만 검출 시 반대쪽 추정용
 
+xm_per_pix: 0.00103        # BEV x축 px → 실측 m 변환 (캘리브 후 수정)
+ym_per_pix: 0.00103      # BEV y축 px → 실측 m 변환 (캘리브 후 수정)
+
 # ── 다항식 피팅 ──
 poly_order:      2          # 피팅 차수 (2=포물선, 1=직선)
 min_lane_points: 4          # 최소 검출 포인트 (이하면 미검출)
-poly_alpha:      0.4        # 다항식 계수 EMA (0=즉시반영, 1=이전값 유지)
+poly_alpha:      0.6        # 다항식 계수 EMA (0=즉시반영, 1=이전값 유지)
 
 # ── 출력 스무딩 ──
-ema_alpha: 0.3              # lateral/heading/curvature EMA (0=즉시, 1=이전값)
+ema_alpha: 0.6              # lateral/heading/curvature EMA (0=즉시, 1=이전값)
 
 # ── 디버그 ──
 publish_debug: true         # /perception/debug/compressed 퍼블리시 여부

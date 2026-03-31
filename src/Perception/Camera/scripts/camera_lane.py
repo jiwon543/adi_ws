@@ -10,7 +10,9 @@ camera_lane_perception.py
 import rospy
 import cv2
 import numpy as np
-from sensor_msgs.msg import CompressedImage
+from sensor_msgs.msg import CompressedImage, Image
+from cv_bridge import CvBridge
+_bridge = CvBridge()
 from geometry_msgs.msg import PointStamped
 from std_msgs.msg import Float32, Bool
 
@@ -86,6 +88,9 @@ def load_params():
     # 모폴로지
     g_p["morph_kernel"] = int(p.get("morph_kernel_size", 3))
     g_p["morph_iter"]   = int(p.get("morph_iterations",  1))
+
+    g_p["xm_per_pix"] = float(p.get("xm_per_pix", 0.03))
+    g_p["ym_per_pix"] = float(p.get("ym_per_pix", 0.05))
 
     # 다항식 피팅 차수 (2 = 2차 포물선)
     g_p["poly_order"] = int(p.get("poly_order", 2))
@@ -282,6 +287,8 @@ def compute_lane_metrics(left_poly, right_poly, h, w):
         heading   : heading error [rad] (양수 = 차가 우측으로 틀어짐)
         detected  : 검출 여부
     """
+    xm_per_pix = g_p["xm_per_pix"]
+    ym_per_pix = g_p["ym_per_pix"]
     half_w = g_p["lane_width_px"] / 2.0
     img_cx = w / 2.0
 
@@ -325,18 +332,40 @@ def compute_lane_metrics(left_poly, right_poly, h, w):
         ref_poly = (np.array(left_poly) + np.array(right_poly)) / 2.0
 
     # x = a*y^2 + b*y + c  →  dx/dy = 2*a*y + b,  d2x/dy2 = 2*a
-    order = len(ref_poly) - 1
-    if order >= 2:
-        a = ref_poly[0]
-        b = ref_poly[1]
-        dxdy  = 2.0 * a * y_eval_bottom + b
-        d2xdy = 2.0 * a
-        denom = (1.0 + dxdy**2) ** 1.5
-        curvature = d2xdy / denom if abs(denom) > 1e-9 else 0.0
-    else:
-        b = ref_poly[0] if order >= 1 else 0.0
-        dxdy = b
-        curvature = 0.0
+    #order = len(ref_poly) - 1
+    #if order >= 2:
+        #a = ref_poly[0]
+        #b = ref_poly[1]
+
+        #dxdy  = 2.0 * a * y_eval_bottom + b
+        #d2xdy = 2.0 * a
+        #denom = (1.0 + dxdy**2) ** 1.5
+        #curvature = d2xdy / denom if abs(denom) > 1e-9 else 0.0
+    #else:
+        #b = ref_poly[0] if order >= 1 else 0.0
+        #dxdy = b
+        #curvature = 0.0
+
+    xm_per_pix = g_p["xm_per_pix"]
+    ym_per_pix = g_p["ym_per_pix"]
+
+    a = ref_poly[0]
+    b = ref_poly[1]
+
+    # 노이즈 제거 (중요)
+    if abs(a) < 1e-6:
+        a = 0.0
+
+    # pixel → meter 변환
+    a_m = a * (xm_per_pix / (ym_per_pix**2))
+    b_m = b * (xm_per_pix / ym_per_pix)
+
+    y_m = y_eval_bottom * ym_per_pix
+
+    dxdy  = 2.0 * a_m * y_m + b_m
+    d2xdy = 2.0 * a_m
+
+    curvature = d2xdy / (1 + dxdy**2)**1.5
 
     # heading error: BEV에서 차는 y축(아래→위) 방향 주행
     # dx/dy > 0 → 차선이 오른쪽으로 꺾임 → 차가 좌측으로 치우침
@@ -348,23 +377,17 @@ def compute_lane_metrics(left_poly, right_poly, h, w):
 # ================================================================
 #  디버그 이미지 생성
 # ================================================================
-def draw_debug(binary, left_poly, right_poly, center_x, center_y, lx, ly, rx, ry):
+def draw_debug(bev_bgr, binary, left_poly, right_poly, center_x, center_y, lx, ly, rx, ry):
     h, w = binary.shape
-    debug = cv2.cvtColor(binary, cv2.COLOR_GRAY2BGR)
 
-    # 검출된 픽셀 색칠
-    if len(lx) > 0:
-        debug[ly.astype(int), lx.astype(int)] = [0, 0, 255]   # 좌: 빨강
-    if len(rx) > 0:
-        debug[ry.astype(int), rx.astype(int)] = [0, 255, 0]    # 우: 초록
-
-    # 피팅 라인
+    # 왼쪽: BEV 컬러에 차선 오버레이
+    left_vis = bev_bgr.copy()
     plot_y = np.linspace(0, h - 1, 100).astype(int)
     if left_poly is not None:
         plot_lx = np.polyval(left_poly, plot_y).astype(int)
         for i in range(len(plot_y) - 1):
             if 0 <= plot_lx[i] < w and 0 <= plot_lx[i+1] < w:
-                cv2.line(debug,
+                cv2.line(left_vis,
                          (plot_lx[i],   plot_y[i]),
                          (plot_lx[i+1], plot_y[i+1]),
                          (0, 0, 255), 2)
@@ -372,17 +395,23 @@ def draw_debug(binary, left_poly, right_poly, center_x, center_y, lx, ly, rx, ry
         plot_rx = np.polyval(right_poly, plot_y).astype(int)
         for i in range(len(plot_y) - 1):
             if 0 <= plot_rx[i] < w and 0 <= plot_rx[i+1] < w:
-                cv2.line(debug,
+                cv2.line(left_vis,
                          (plot_rx[i],   plot_y[i]),
                          (plot_rx[i+1], plot_y[i+1]),
                          (0, 255, 0), 2)
+    cv2.circle(left_vis, (int(center_x), int(center_y)), 6, (255, 0, 255), -1)
+    cv2.line(left_vis, (w // 2, 0), (w // 2, h - 1), (255, 255, 0), 1)
+    cv2.putText(left_vis, "BEV", (5, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
 
-    # 중심점
-    cv2.circle(debug, (int(center_x), int(center_y)), 6, (255, 0, 255), -1)
-    # 이미지 중심선
-    cv2.line(debug, (w // 2, 0), (w // 2, h - 1), (255, 255, 0), 1)
+    # 오른쪽: 이진화 + 슬라이딩 윈도우 픽셀
+    right_vis = cv2.cvtColor(binary, cv2.COLOR_GRAY2BGR)
+    if len(lx) > 0:
+        right_vis[ly.astype(int), lx.astype(int)] = [0, 0, 255]
+    if len(rx) > 0:
+        right_vis[ry.astype(int), rx.astype(int)] = [0, 255, 0]
+    cv2.putText(right_vis, "Binary", (5, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
 
-    return debug
+    return np.hstack([left_vis, right_vis])
 
 
 # ================================================================
@@ -461,10 +490,10 @@ def image_callback(msg):
 
     # 7) 디버그 이미지
     if g_p["publish_debug"] and g_pub_debug_img.get_num_connections() > 0:
-        debug = draw_debug(binary, left_poly, right_poly, cx, cy, lx, ly, rx, ry)
-        from cv_bridge import CvBridge
-        bridge = CvBridge()
-        g_pub_debug_img.publish(bridge.cv2_to_compressed_imgmsg(debug, dst_format="jpeg"))
+        debug = draw_debug(bev, binary, left_poly, right_poly, cx, cy, lx, ly, rx, ry)
+        img_msg = _bridge.cv2_to_imgmsg(debug, encoding="bgr8")
+        img_msg.header.stamp = stamp
+        g_pub_debug_img.publish(img_msg)
 
     g_frame_count += 1
 
@@ -491,8 +520,8 @@ def main():
                                           Float32, queue_size=1)
     g_pub_lane_detected  = rospy.Publisher("/perception/lane_detected",
                                           Bool, queue_size=1)
-    g_pub_debug_img      = rospy.Publisher("/perception/debug/compressed",
-                                          CompressedImage, queue_size=1)
+    g_pub_debug_img      = rospy.Publisher("/perception/debug",
+                                          Image, queue_size=1)
 
     # 서브스크라이버
     rospy.Subscriber("/camera/color/image_raw/compressed",
