@@ -1,0 +1,46 @@
+# ============================================================
+#  camera_lane.yaml
+# ============================================================
+
+# ─────────────── Perception ───────────────
+camera_lane_perception:
+  roi_top_y_ratio:     0.60
+  roi_left_top_ratio:  0.10
+  roi_right_top_ratio: 0.80
+  roi_left_bot_ratio: -0.45
+  roi_right_bot_ratio: 1.40
+
+  hsv_h_low:   0
+  hsv_h_high:  180
+  hsv_s_low:   0
+  hsv_s_high:  40
+  hsv_v_low:   200
+  hsv_v_high:  255
+
+  clahe_clip_limit: 2.5
+  clahe_grid_size:  8
+  morph_kernel_size: 3
+  morph_iterations:  1
+
+  num_windows:     12
+  window_margin:   80
+  minpix_recenter: 50
+  min_lane_sep:    80
+  lane_width_px:   340.0
+
+  xm_per_pix: 0.03
+  ym_per_pix: 0.05
+
+  poly_order:      2
+  min_lane_points: 4
+  poly_alpha:      0.4
+  ema_alpha:       0.3
+  publish_debug:   true
+
+
+# ─────────────── Control ───────────────
+lane_control:
+  base_speed:    0.3
+  kp:            0.01
+  kd:            0.005
+  max_steering:  0.5
