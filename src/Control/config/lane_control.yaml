@@ -1,8 +1,8 @@
 #config/lane_control.yaml
 
 # ── Stanley 게인 ──
-k_heading: 0.7              # heading error 비례 게인
-k_cte:     1.2              # cross-track error 게인
+k_heading: -0.7              # heading error 비례 게인
+k_cte:     -1.2              # cross-track error 게인
 k_ff:      0.1              # curvature feedforward 게인
 k_d:       0.0              # lateral 미분 게인 (안정 확인 후 천천히 올릴 것)
 
