@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 lane_control.py
 - 인지 노드에서 lateral_offset 받아서 PD 조향
