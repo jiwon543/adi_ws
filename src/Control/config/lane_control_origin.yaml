@@ -1,22 +1,20 @@
- # ── PID 게인 ──
-kp: -0.005                  # lateral offset [px] → angular.z (음수: lateral>0=좌측치우침→우회전)
-ki: 0.0                     # 적분 (초기엔 0 권장)
-kd: -0.002                  # 미분 (kp와 부호 맞춤)
-i_max: 50.0                 # 적분 windup 제한
+# PID 게인
+kp:            0.01
+ki:            0.0           # 정상상태 오차 있을 때만 소량 (0.0001~)
+kd:            0.005
+i_max:         50.0          # 적분 windup 제한
+max_steering:  0.5
 
-# ── 조향 제한 ──
-max_angular: 0.5            # rad/s
+# 속도
+base_speed:    0.3
 
-# ── 직진 속도 ──
-v_base: 0.1              # m/s
+# 곡률 감속 (curvature 단위: 1/m)
+v_min_curve:      0.12
+curv_slow_thresh: 0.003
+curv_slow_gain:   50.0
 
-# ── 곡률 감속 ──
-v_min_curve:      0.1     # 급커브 최저 속도
-curv_slow_thresh: 0.5     # 감속 시작 곡률
-curv_slow_gain:   0.15     # 감속 비례 계수
+# 미검출 정지
+lost_timeout:  1.0
 
-# ── 미검출 처리 ──
-lost_timeout: 1.0           # 초
-
-# ── 제어 주기 ──
-control_rate: 30.0          # Hz
+# 제어 주기
+control_rate:  30.0

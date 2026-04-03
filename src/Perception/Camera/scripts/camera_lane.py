@@ -2,7 +2,8 @@
 """
 camera_lane_perception.py
 - BEV 기반 차선 인식 (인지 전용)
-- 퍼블리시: center_point_px, lateral_offset, curvature, heading_error, lane_detected
+- 퍼블리시: center_point_px, lateral_offset, curvature, heading_error, lane_detected 
+       이 때, lateral_offset은 px 기준. curvature, heading_error는 m 기준임.
 - CLAHE 전처리 + HSV 이진화 + 슬라이딩 윈도우 + 2차 다항식 피팅
 - CUDA 가속 (가능 시), 전부 rosparam으로 튜닝 가능
 """
@@ -331,26 +332,17 @@ def compute_lane_metrics(left_poly, right_poly, h, w):
         # 중심선 다항식 = 평균
         ref_poly = (np.array(left_poly) + np.array(right_poly)) / 2.0
 
-    # x = a*y^2 + b*y + c  →  dx/dy = 2*a*y + b,  d2x/dy2 = 2*a
-    #order = len(ref_poly) - 1
-    #if order >= 2:
-        #a = ref_poly[0]
-        #b = ref_poly[1]
-
-        #dxdy  = 2.0 * a * y_eval_bottom + b
-        #d2xdy = 2.0 * a
-        #denom = (1.0 + dxdy**2) ** 1.5
-        #curvature = d2xdy / denom if abs(denom) > 1e-9 else 0.0
-    #else:
-        #b = ref_poly[0] if order >= 1 else 0.0
-        #dxdy = b
-        #curvature = 0.0
-
     xm_per_pix = g_p["xm_per_pix"]
     ym_per_pix = g_p["ym_per_pix"]
-
-    a = ref_poly[0]
-    b = ref_poly[1]
+    if len(ref_poly) < 3:
+        a = 0.0
+        b = ref_poly[0]
+    else:
+        a = ref_poly[0]
+        b = ref_poly[1]
+        
+    #a = ref_poly[0]
+    #b = ref_poly[1]
 
     # 노이즈 제거 (중요)
     if abs(a) < 1e-6:
