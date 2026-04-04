@@ -146,11 +146,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/root/adi_ws/build/gtest/cmake_install.cmake")
-  include("/root/adi_ws/build/bringup/limo_bringup/cmake_install.cmake")
-  include("/root/adi_ws/build/Control/cmake_install.cmake")
-  include("/root/adi_ws/build/Decision/cmake_install.cmake")
-  include("/root/adi_ws/build/Moondream/cmake_install.cmake")
-  include("/root/adi_ws/build/Perception/cmake_install.cmake")
+  include("/root/adi_ws/build/control/cmake_install.cmake")
+  include("/root/adi_ws/build/decision/cmake_install.cmake")
+  include("/root/adi_ws/build/moondream/cmake_install.cmake")
+  include("/root/adi_ws/build/perception/cmake_install.cmake")
 
 endif()
 

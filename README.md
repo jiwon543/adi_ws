@@ -93,3 +93,19 @@ cd docker-noetic
 
 - `ros1/` 디렉토리: LIMO 하드웨어에 기존 탑재되어 있던 ROS 패키지 전체 (참고/보관용)
   → 상세 패키지 설명: [`ros1/README.txt`](ros1/README.txt)
+
+### 가제보 시뮬레이션
+(수정 중)
+
+source ~/adi_ws/ros1/catkin_ws/devel/setup.bash
+
+- 리모 urdf + turtlebot world 사용
+roslaunch limo_gazebo_sim limo_ackerman.launch \
+  world_name:=/opt/ros/noetic/share/turtlebot3_gazebo/worlds/turtlebot3_autorace_2020.world \
+  gui:=false
+
+
+roslaunch limo_gazebo_sim limo_ackerman.launch \
+  world_name:=$HOME/adi_ws/ros1/catkin_ws/src/limo_description/worlds/limo_autorace.world \
+  x:=0.0 y:=-1.7 \
+  gui:=false

@@ -1,0 +1,8 @@
+prefix=/root/adi_ws/ros1/catkin_ws/devel
+
+Name: urdf_geometry_parser
+Description: Description of urdf_geometry_parser
+Version: 0.1.0
+Cflags: -I/root/adi_ws/ros1/catkin_ws/src/ugv_gazebo_sim/ranger_mini/urdf_geometry_parser/include
+Libs: -L${prefix}/lib -lurdf_geometry_parser
+Requires: roscpp urdf

@@ -28,18 +28,29 @@ COLORS = [
 EPS = 0.3 # Neighbor (m)
 MIN_SAMPLES = 5 # Num. of Minimum Point
 
+# ROI Parameters (front angle range in degrees)
+ROI_ANGLE_MIN = -90.0  # deg
+ROI_ANGLE_MAX =  90.0  # deg
+
+# Distance filter
+ROI_RANGE_MAX = 5.0  # m
+
 # ======================
 #      Core Func.
 # ======================
 
-# Convert Polar -> Cartesian
+# Convert Polar -> Cartesian (with front-angle ROI filter)
 def polar_to_cartesain(ranges, angle_min, angle_increment):
     # Vector Calculation using Numpy
     ranges = np.array(ranges)
     angles = angle_min + np.arange(len(ranges)) * angle_increment
 
-    # Filtering Valid Points
-    valid = (ranges > 0.01) & np.isfinite(ranges)
+    # ROI: front angle range only
+    roi_min = np.deg2rad(ROI_ANGLE_MIN)
+    roi_max = np.deg2rad(ROI_ANGLE_MAX)
+
+    # Filtering Valid Points within ROI
+    valid = (ranges > 0.01) & (ranges <= ROI_RANGE_MAX) & np.isfinite(ranges) & (angles >= roi_min) & (angles <= roi_max)
     r, a = ranges[valid], angles[valid]
 
     return np.column_stack((r * np.cos(a), r * np.sin(a)))
@@ -105,12 +116,15 @@ def scan_callback(msg):
 #         Main
 # ======================
 def main():
-    global cluster_pub, marker_pub, EPS, MIN_SAMPLES
+    global cluster_pub, marker_pub, EPS, MIN_SAMPLES, ROI_ANGLE_MIN, ROI_ANGLE_MAX, ROI_RANGE_MAX
 
     rospy.init_node('lidar_perception')
 
     EPS = rospy.get_param('~eps', EPS)
     MIN_SAMPLES = int(rospy.get_param('~min_samples', MIN_SAMPLES))
+    ROI_ANGLE_MIN = float(rospy.get_param('~roi_angle_min', ROI_ANGLE_MIN))
+    ROI_ANGLE_MAX = float(rospy.get_param('~roi_angle_max', ROI_ANGLE_MAX))
+    ROI_RANGE_MAX = float(rospy.get_param('~roi_range_max', ROI_RANGE_MAX))
 
     cluster_pub = rospy.Publisher('/lidar/clusters', PointCloud, queue_size=1)
     marker_pub = rospy.Publisher('/lidar/cluster_markers', MarkerArray, queue_size=1)

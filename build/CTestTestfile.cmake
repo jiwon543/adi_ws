@@ -5,8 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("bringup/limo_bringup")
-subdirs("Control")
-subdirs("Decision")
-subdirs("Moondream")
-subdirs("Perception")
+subdirs("control")
+subdirs("decision")
+subdirs("moondream")
+subdirs("perception")

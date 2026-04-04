@@ -1,0 +1,8 @@
+prefix=/root/adi_ws/ros1/catkin_ws/devel
+
+Name: ranger_delta_description
+Description: Description of ranger_delta_description
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

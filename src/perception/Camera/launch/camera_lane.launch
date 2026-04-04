@@ -3,8 +3,8 @@
 <!--rqt_image_view /perception/debug/compressed-->
 
 <launch>
-    <node name="camera_lane_perception" pkg="Perception" type="camera_lane.py" output="screen">
-        <rosparam file="$(find Perception)/Camera/config/camera_lane.yaml"/>
+    <node name="camera_lane_perception" pkg="perception" type="camera_lane.py" output="screen">
+        <rosparam file="$(find perception)/Camera/config/camera_lane.yaml"/>
     </node>
     <node name="rqt_image_view" pkg="rqt_image_view" type="rqt_image_view" args="/perception/debug/compressed"/>
 </launch>

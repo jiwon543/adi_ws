@@ -1,4 +1,11 @@
 #cofig/lidar_clustering.yaml
 
-eps: 0.3
-min_samples: 5
+eps: 0.1
+min_samples: 7
+
+# Front-angle ROI (degrees)
+roi_angle_min: -70.0
+roi_angle_max:  70.0
+
+# Distance ROI (meters)
+roi_range_max: 1.5
