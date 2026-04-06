@@ -12,7 +12,7 @@ from geometry_msgs.msg import Twist
 # ── Global State ──
 steering = 0.0
 speed = 0.3
-drive_enabled = True
+#drive_enabled = True
 
 pub_cmd = None
 
@@ -26,10 +26,10 @@ def speed_callback(msg):
     global speed
     speed = msg.data
 
-
-def drive_enabled_callback(msg):
-    global drive_enabled
-    drive_enabled = msg.data
+# decision node 사용할 경우 주석 해제
+#def drive_enabled_callback(msg):
+#    global drive_enabled
+#    drive_enabled = msg.data
 
 
 def timer_callback(event):
@@ -54,7 +54,7 @@ def main():
 
     rospy.Subscriber('/limo/steering_offset', Float32, steering_callback, queue_size=1)
     rospy.Subscriber('/limo/lane_speed', Float32, speed_callback, queue_size=1)
-    rospy.Subscriber('/limo/drive_enabled', Bool, drive_enabled_callback, queue_size=1)
+    # rospy.Subscriber('/limo/drive_enabled', Bool, drive_enabled_callback, queue_size=1)
 
     rospy.Timer(rospy.Duration(1.0 / rate_hz), timer_callback)
 

@@ -133,7 +133,7 @@ def _infer_with_scores(pil_img, prompt, device):
         outputs = model.text_model.generate(
             **inputs,
             image_embeds=enc_image,
-            max_new_tokens=config.get("max_new_tokens", 25),
+            max_new_tokens=config.get("max_new_tokens", 50),
             do_sample=False,
             output_scores=True,
             return_dict_in_generate=True,
@@ -155,13 +155,20 @@ def _infer_with_scores(pil_img, prompt, device):
 
 def _infer_answer_question(pil_img, prompt):
     """Moondream2 공식 API. confidence 정보 없으므로 1.0 반환."""
+    max_tokens = config.get("max_new_tokens", 25)
     with torch.inference_mode():
         raw_text = model.answer_question(
             model.encode_image(pil_img),
             prompt,
             tokenizer,
-            max_new_tokens=config.get("max_new_tokens", 25),
+            max_new_tokens=max_tokens,
         )
+    # Moondream2 일부 revision에서 max_new_tokens 미적용 →
+    # 토큰 수 초과 시 수동 truncation (파서 false positive 방지)
+    words = raw_text.strip().split()
+    if len(words) > max_tokens * 2:
+        raw_text = " ".join(words[: max_tokens * 2])
+        rospy.logwarn(f"[VLM] answer truncated to {max_tokens*2} words")
     return raw_text.strip(), 1.0
 
 
@@ -184,17 +191,17 @@ def _infer_answer_question(pil_img, prompt):
 MISSION_RULES = [
     {
         "mission":  "cone_avoidance",
-        "must_any": ["cone"],
+        "must_any": ["cone", "traffic cone"],
         "must_all": [],
         "must_not": [],
-        "priority": 1,
+        "priority": 2,
     },
     {
         "mission":  "crosswalk_stop",
         "must_any": ["crosswalk", "pedestrian", "zebra"],
         "must_all": [],
-        "must_not": ["cone"],
-        "priority": 2,
+        "must_not": [],
+        "priority": 1,
     },
     {
         "mission":  "sign_left",
@@ -292,9 +299,16 @@ def image_callback(msg: CompressedImage):
     t0          = time.time()
 
     try:
-        # [1] Preprocess  (384×384 = SigLIP 네이티브 해상도)
+        # [1] Preprocess
+        #   ① ROI 크롭: 이미지 하단 N%만 사용 → 먼 물체(상단) 물리적 제거
+        #   ② 384×384 리사이즈 (SigLIP 네이티브 해상도)
         np_arr  = np.frombuffer(msg.data, np.uint8)
         cv_img  = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+
+        h, w    = cv_img.shape[:2]
+        roi_top = config.get("roi_top_ratio", 0.60)   # 상단 40% 버림
+        cv_img  = cv_img[int(h * roi_top):, :]         # 하단 60%만 남김
+
         pil_img = PILImage.fromarray(cv2.cvtColor(cv_img, cv2.COLOR_BGR2RGB))
         pil_img = pil_img.resize((384, 384), PILImage.LANCZOS)
 
@@ -375,7 +389,7 @@ def main():
     global model, tokenizer, config, mission_pub, activator
 
     # Config
-    config_path = os.path.join(os.path.dirname(__file__), "prompt.json")
+    config_path = os.path.join(os.path.dirname(__file__), "prompt_v2.json")
     with open(config_path) as f:
         config = json.load(f)
 

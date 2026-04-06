@@ -1,0 +1,10 @@
+roi_top : 300
+roi_bottom : 450
+lane_offset : 180
+img_width : 640
+img_height : 480
+
+kp : 0.01
+kd : 0.005
+max_steering : 0.5
+prev_error : 0

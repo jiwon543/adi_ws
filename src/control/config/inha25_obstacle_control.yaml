@@ -1,0 +1,10 @@
+# ── Global State ──
+gap_angle: 0.0
+min_front_dist: 10.0
+
+lane_steering: 0.0
+lane_speed: 0.25
+avoid_speed: 0.2
+stop_distance: 0.2
+max_steering: 0.5
+steering_gain: 0.02

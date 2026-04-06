@@ -1,13 +1,10 @@
 {
   "model": "vikhyatk/moondream2",
-
-  "prompt": "Describe what objects or markings are directly on or near the road ahead of this small autonomous car. Focus on traffic cones, road surface markings, pedestrian crossings, and directional signs.",
-
+  "prompt": "You are the vision system of a small autonomous race car. The car drives through missions one at a time: orange cones, crosswalks, or turn signs. Only report an object if it appears large in the image, meaning it is close and needs immediate action. If objects are small or far away, say 'clear road'. What is immediately ahead?",
   "infer_interval": 0.5,
   "max_new_tokens": 25,
-
-  "confidence_threshold": 0.55,
-
-  "buffer_window": 5,
-  "buffer_threshold": 3
+  "confidence_threshold": 0.5,
+  "buffer_window": 4,
+  "buffer_threshold": 2,
+  "roi_top_ratio": 0.30
 }

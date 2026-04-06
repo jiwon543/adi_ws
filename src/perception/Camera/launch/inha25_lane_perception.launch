@@ -1,0 +1,9 @@
+<!--launch/camera_lane.launch-->
+<!--카메라 차선 인식 단독 실행 런치 파일-->
+<!--rqt_image_view /perception/debug/compressed-->
+
+<launch>
+    <node name="camera_lane_perception" pkg="perception" type="inha25_lane_perception.py" output="screen">
+        <rosparam file="$(find perception)/Camera/config/inha25_lane_perception.yaml"/>
+    </node>
+</launch>
