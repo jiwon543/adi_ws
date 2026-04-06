@@ -56,9 +56,10 @@ def load_params() -> None:
     # 원거리 콘 gap 조향
     g_p["avoid_gain"]      = float(p.get("avoid_gain",      1.5))   # gap 반발 게인
     g_p["avoid_speed"]     = float(p.get("avoid_speed",     0.2))   # 원거리 회피 전진 속도
+    g_p["steering_bias"]   = float(p.get("steering_bias",   0.0))   # 조향 오프셋 보정 (왼쪽 치우침 → 음수)
 
     # 최대 조향각 (AVOID_REVERSE/STOP에서도 사용)
-    g_p["max_steering"]    = float(p.get("max_steering",    0.5))
+    g_p["max_steering"]    = float(p.get("max_steering",    0.52))
 
     # 콘 클리어 판정 → mission_done 퍼블리시
     g_p["cone_clear_sec"]  = float(p.get("cone_clear_sec",  1.5))   # 이 시간 콘 없으면 클리어
@@ -89,19 +90,20 @@ def compute_gap_steering(cones: list) -> float:
     left_cones  = [(x, y) for x, y in cones if y >= 0]
     right_cones = [(x, y) for x, y in cones if y <  0]
 
+    # x(전방거리)가 가장 가까운 콘만 사용 — 먼 콘이 계산을 방해하지 않도록
     if left_cones and right_cones:
-        inner_left_y  = min(y for _, y in left_cones)
-        inner_right_y = max(y for _, y in right_cones)
-        gap_y = (inner_left_y + inner_right_y) / 2.0
-        # gap이 왼쪽(양수) → 왼쪽으로 가야 함 → angular.z 양수
-        steering = g_p["avoid_gain"] * gap_y          # 부호 수정: - → +
+        nearest_left  = min(left_cones,  key=lambda c: c[0])
+        nearest_right = min(right_cones, key=lambda c: c[0])
+        gap_y = (nearest_left[1] + nearest_right[1]) / 2.0
+        steering = g_p["avoid_gain"] * gap_y
     elif left_cones:
-        nearest_y = min(y for _, y in left_cones)     # 양수
-        steering  = -g_p["avoid_gain"] * nearest_y    # 음수 → 오른쪽 ✓
+        nearest_y = min(left_cones, key=lambda c: c[0])[1]   # 가장 가까운 왼쪽 콘
+        steering  = -g_p["avoid_gain"] * nearest_y            # 오른쪽으로
     else:
-        nearest_y = max(y for _, y in right_cones)    # 음수
-        steering  = -g_p["avoid_gain"] * nearest_y    # 양수 → 왼쪽 ✓
+        nearest_y = min(right_cones, key=lambda c: c[0])[1]  # 가장 가까운 오른쪽 콘
+        steering  = -g_p["avoid_gain"] * nearest_y            # 왼쪽으로
 
+    steering += g_p["steering_bias"]
     return float(np.clip(steering, -g_p["max_steering"], g_p["max_steering"]))
 
 # ── 콜백 ──────────────────────────────────────────────────────
