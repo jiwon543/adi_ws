@@ -16,6 +16,8 @@ from cv_bridge import CvBridge
 
 # ── Global State ──
 bridge = CvBridge()
+_vis_frame_count = 0
+VIS_SKIP = 5  # 5프레임에 1번만 시각화 퍼블리시
 
 LANE_LOW = np.array([0, 180, 0])
 LANE_HIGH = np.array([180, 255, 60])
@@ -96,7 +98,7 @@ def draw_visualization(img, left_x, right_x, lane_center_x):
 
 
 def image_callback(msg):
-    global img_width, img_height, prev_error
+    global img_width, img_height, prev_error, _vis_frame_count
     try:
         np_arr = np.frombuffer(msg.data, np.uint8)
         img = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
@@ -119,8 +121,10 @@ def image_callback(msg):
         pub_right_x.publish(Int32(data=right_x))
         pub_steering.publish(Float32(data=steering))
 
-        vis = draw_visualization(img, left_x, right_x, lane_center_x)
-        pub_image.publish(bridge.cv2_to_imgmsg(vis, "bgr8"))
+        _vis_frame_count += 1
+        if _vis_frame_count % VIS_SKIP == 0:
+            vis = draw_visualization(img, left_x, right_x, lane_center_x)
+            pub_image.publish(bridge.cv2_to_imgmsg(vis, "bgr8"))
     except Exception as e:
         rospy.logerr(f"[perception] {e}")
 

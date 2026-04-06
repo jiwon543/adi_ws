@@ -1,8 +1,0 @@
-<!--launch/lane_control.launch-->
-<!--차선 제어 단독 실행 런치 파일-->
-
-<launch>
-    <node name="lane_control" pkg="control" type="inha25_lane_control_node.py" output="screen">
-        <rosparam file="$(find control)/config/inha25_lane_control.yaml"/>
-    </node>
-</launch>

@@ -1,10 +1,9 @@
 <!--launch/camera_lane.launch-->
 <!--카메라 차선 인식 단독 실행 런치 파일-->
-<!--rqt_image_view /perception/debug/compressed-->
+<!--디버그 이미지 확인: rqt_image_view /perception/debug-->
 
 <launch>
     <node name="camera_lane_perception" pkg="perception" type="camera_lane.py" output="screen">
         <rosparam file="$(find perception)/Camera/config/camera_lane.yaml"/>
     </node>
-    <node name="rqt_image_view" pkg="rqt_image_view" type="rqt_image_view" args="/perception/debug/compressed"/>
 </launch>

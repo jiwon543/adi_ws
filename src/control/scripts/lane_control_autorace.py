@@ -120,7 +120,7 @@ def compute_speed():
 #  제어 루프 (타이머)
 # ================================================================
 def control_loop(event):
-    global g_err_prev
+    global g_err_prev, g_err_sum
 
     cmd = Twist()
 

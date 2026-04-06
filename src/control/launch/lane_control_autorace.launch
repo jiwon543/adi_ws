@@ -1,0 +1,8 @@
+<!--launch/lane_control_autorace.launch-->
+<!--차선 제어 (PID, camera_lane.py 인지 노드와 쌍으로 사용)-->
+
+<launch>
+    <node name="lane_control" pkg="control" type="lane_control_autorace.py" output="screen">
+        <rosparam file="$(find control)/config/lane_control_autorace.yaml"/>
+    </node>
+</launch>

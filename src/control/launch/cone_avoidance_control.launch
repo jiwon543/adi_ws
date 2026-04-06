@@ -1,0 +1,8 @@
+<!--launch/cone_avoidance_control.launch-->
+<!--콘 회피 제어 (lidar_clustering + camera_lane 쌍으로 사용)-->
+
+<launch>
+    <node name="cone_avoidance_control" pkg="control" type="cone_avoidance_control.py" output="screen">
+        <rosparam file="$(find control)/config/cone_avoidance_control.yaml"/>
+    </node>
+</launch>

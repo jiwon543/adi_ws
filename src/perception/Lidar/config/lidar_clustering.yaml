@@ -1,11 +1,12 @@
-#cofig/lidar_clustering.yaml
+# config/lidar_clustering_debug.yaml
+# 디버깅용 — 감지 범위 넓히고, 클러스터링 조건 완화
 
-eps: 0.1
-min_samples: 7
+eps: 0.15          # 0.1 → 클러스터 묶이는 반경 넓힘 (포인트 수 적어도 묶임)
+min_samples: 3     # 7  → 최소 포인트 수 낮춤 (노이즈 많이 잡히지만 놓치지 않음)
 
 # Front-angle ROI (degrees)
-roi_angle_min: -70.0
-roi_angle_max:  70.0
+roi_angle_min: -90.0   # -90  → 측면까지 확장
+roi_angle_max:  80.0   # 80   → 우측 후방까지 확장
 
 # Distance ROI (meters)
-roi_range_max: 1.5
+roi_range_max: 1.5      # 0.8  → 원거리까지 확장
