@@ -28,6 +28,7 @@ g_err_sum    = 0.0
 # 외부 플래그
 g_stop_flag      = False
 g_parking_active = False
+g_mission        = "LANE_FOLLOW"   # /decision/mission 구독
 
 # 파라미터
 g_p = {}
@@ -63,6 +64,9 @@ def load_params():
     # 제어 주기
     g_p["control_rate"] = float(p.get("control_rate", 30.0))
 
+    # 디버그 모드: True면 /decision/mission 무시하고 항상 동작
+    g_p["debug_mode"] = bool(p.get("debug_mode", False))
+
     rospy.loginfo("[control] kp=%.4f  ki=%.4f  kd=%.4f  base_speed=%.2f",
                   g_p["kp"], g_p["ki"], g_p["kd"], g_p["base_speed"])
 
@@ -85,6 +89,10 @@ def cb_detected(msg):
         g_last_detect_time = rospy.Time.now()
 
 # inha2025에서 나온 detection node 살려놨음
+def cb_mission(msg):
+    global g_mission
+    g_mission = msg.data.strip()
+
 def cb_stop(msg):
     global g_stop_flag
     g_stop_flag = msg.data
@@ -121,6 +129,9 @@ def compute_speed():
 # ================================================================
 def control_loop(event):
     global g_err_prev, g_err_sum
+
+    if not g_p["debug_mode"] and g_mission != "LANE_FOLLOW":
+        return
 
     cmd = Twist()
 
@@ -183,6 +194,7 @@ def main():
     rospy.Subscriber("/perception/lane_detected",  Bool,    cb_detected,  queue_size=1)
     rospy.Subscriber("/limo/traffic_stop",         Bool,    cb_stop,      queue_size=1)
     rospy.Subscriber("/parking/state",             String,  cb_parking,   queue_size=1)
+    rospy.Subscriber("/decision/mission",          String,  cb_mission,   queue_size=1)
 
     rate = g_p["control_rate"]
     rospy.Timer(rospy.Duration(1.0 / rate), control_loop)

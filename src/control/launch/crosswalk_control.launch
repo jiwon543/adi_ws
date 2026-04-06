@@ -1,0 +1,8 @@
+<!--launch/crosswalk_control.launch-->
+<!--횡단보도 정지 제어 (decision/mission == CROSSWALK 일 때 동작)-->
+
+<launch>
+    <node name="crosswalk_control" pkg="control" type="crosswalk_control.py" output="screen">
+        <rosparam file="$(find control)/config/crosswalk_control.yaml"/>
+    </node>
+</launch>

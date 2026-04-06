@@ -1,0 +1,8 @@
+<!--launch/decision_node.launch-->
+<!--Decision Node: VLM 힌트 + 센서 검증 → /decision/mission 퍼블리시-->
+
+<launch>
+    <node name="decision_node" pkg="decision" type="decision_node.py" output="screen">
+        <rosparam file="$(find decision)/config/decision_node.yaml"/>
+    </node>
+</launch>

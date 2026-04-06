@@ -1,0 +1,7 @@
+# crosswalk_control.yaml
+
+stop_duration: 3.0    # 정지 유지 시간 [s]
+control_rate:  20.0   # 제어 주기 [Hz]
+
+# ── 디버그 ──
+debug_mode: false     # true: decision node 없이 단독 실행

@@ -20,3 +20,6 @@ lost_timeout: 1.0
 
 # ── 제어 주기 ──
 control_rate: 25.0
+
+# ── 디버그 ──
+debug_mode: false   # true: decision node 없이 단독 실행

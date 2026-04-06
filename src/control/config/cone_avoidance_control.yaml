@@ -1,7 +1,7 @@
 # config/cone_avoidance_control.yaml
 
 # ── 콘 감지 범위 ──
-avoid_dist:    2.0     # 전방 감지 한계 [m] — 이 거리 이내 콘만 처리
+avoid_dist:    1.5     # 전방 감지 한계 [m] — 이 거리 이내 콘만 처리
 lateral_limit: 0.8     # 좌우 감지 폭 [m] — 이 폭 바깥 콘은 무시
 stop_dist:     0.1    # [m] — 이 거리 미만 콘 → 강제 회피 FSM 진입
 
@@ -15,15 +15,11 @@ avoid_gain:   1.5      # gap 중심 반발 게인
 avoid_speed:  0.2      # 콘 감지 시 전진 속도 [m/s]
 max_steering: 0.5      # 최대 조향각 [rad]
 
-# ── 차선 PID (콘 없을 때) ──
-kp: 0.01
-ki: 0.0
-kd: 0.005
-i_max: 50.0
-
-# ── 정상 주행 ──
-base_speed:   0.3      # 차선 추종 속도 [m/s]
-lost_timeout: 1.0      # 차선 미검출 후 정지까지 대기 [s]
+# ── 콘 클리어 판정 ──
+cone_clear_sec: 1.5    # 이 시간 동안 콘 없으면 CONE_AVOID_DONE 퍼블리시 [s]
 
 # ── 제어 주기 ──
 control_rate: 30.0     # [Hz]
+
+# ── 디버그 ──
+debug_mode: false      # true: decision node 없이 단독 실행

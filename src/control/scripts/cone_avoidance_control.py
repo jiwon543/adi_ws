@@ -10,14 +10,14 @@ cone_avoidance_control.py  (rev-2)
   5. 원거리 콘: gap 중심 조향 유지 (기존 py 로직)
   6. 로그 통일 (throttle 레이어별 분리)
 
-구독: /lidar/clusters, /perception/lateral_offset, /perception/lane_detected
-퍼블리시: /cmd_vel
+구독: /lidar/clusters, /decision/mission
+퍼블리시: /cmd_vel, /decision/mission_done
 """
 
 import rospy
 import numpy as np
 from sensor_msgs.msg import PointCloud
-from std_msgs.msg import Float32, Bool
+from std_msgs.msg import String
 from geometry_msgs.msg import Twist
 
 # ── 회피 FSM 상태 ──────────────────────────────────────────────
@@ -27,18 +27,14 @@ AVOID_STOP    = 2   # 제동 + 조향 유지
 
 # ── 전역 상태 ─────────────────────────────────────────────────
 g_cones: list            = []
-g_lateral: float         = 0.0
-g_detected: bool         = False
-g_last_detect_time       = None   # ros::Time | None
-
-g_err_prev: float        = 0.0
-g_err_sum:  float        = 0.0
+g_mission: str           = ""     # /decision/mission
 
 g_avoid_state: int       = AVOID_NONE
-g_avoid_left:  bool      = True   # True → 왼쪽 장애물 → 오른쪽으로 회피
-g_avoid_start_time       = None   # ros::Time | None
+g_avoid_left:  bool      = True
+g_avoid_start_time       = None
 
 g_pub_cmd                = None
+g_pub_done               = None   # /decision/mission_done
 g_p: dict                = {}
 
 
@@ -48,9 +44,9 @@ def load_params() -> None:
     p = rospy.get_param("~", {})
 
     # 콘 감지 범위
-    g_p["avoid_dist"]      = float(p.get("avoid_dist",      1.2))   # 전방 감지 한계 [m]
-    g_p["lateral_limit"]   = float(p.get("lateral_limit",   0.6))   # 좌우 감지 폭 [m]
-    g_p["stop_dist"]       = float(p.get("stop_dist",       0.35))  # 이 거리 미만 → 강제 회피 FSM 진입
+    g_p["avoid_dist"]      = float(p.get("avoid_dist",      1.5))   # 전방 감지 한계 [m]
+    g_p["lateral_limit"]   = float(p.get("lateral_limit",   0.8))   # 좌우 감지 폭 [m]
+    g_p["stop_dist"]       = float(p.get("stop_dist",       0.1))   # 이 거리 미만 → 강제 회피 FSM 진입
 
     # 회피 FSM (cpp avoid_hold_sec / avoid_stop_sec 대응)
     g_p["avoid_hold_sec"]  = float(p.get("avoid_hold_sec",  0.5))   # REVERSE 유지 시간 [s]
@@ -64,16 +60,13 @@ def load_params() -> None:
     # 최대 조향각 (AVOID_REVERSE/STOP에서도 사용)
     g_p["max_steering"]    = float(p.get("max_steering",    0.5))
 
-    # 차선 PID
-    g_p["kp"]              = float(p.get("kp",              0.01))
-    g_p["ki"]              = float(p.get("ki",              0.0))
-    g_p["kd"]              = float(p.get("kd",              0.005))
-    g_p["i_max"]           = float(p.get("i_max",           50.0))
+    # 콘 클리어 판정 → mission_done 퍼블리시
+    g_p["cone_clear_sec"]  = float(p.get("cone_clear_sec",  1.5))   # 이 시간 콘 없으면 클리어
 
-    # 정상 주행 속도 / 차선 소실 타임아웃
-    g_p["base_speed"]      = float(p.get("base_speed",      0.3))
-    g_p["lost_timeout"]    = float(p.get("lost_timeout",    1.0))
     g_p["control_rate"]    = float(p.get("control_rate",    30.0))
+
+    # 디버그 모드: True면 /decision/mission 무시하고 항상 동작
+    g_p["debug_mode"]      = bool(p.get("debug_mode",      False))
 
     rospy.loginfo("[cone_ctrl] params loaded: %s", g_p)
 
@@ -117,22 +110,27 @@ def cb_clusters(msg) -> None:
     g_cones = filter_cones(msg.points)
 
 
-def cb_lateral(msg) -> None:
-    global g_lateral
-    g_lateral = msg.data
+def cb_mission(msg) -> None:
+    global g_mission, g_avoid_state, g_avoid_start_time
+    prev = g_mission
+    g_mission = msg.data.strip()
+    if g_mission == "CONE_AVOID" and prev != "CONE_AVOID":
+        g_avoid_state      = AVOID_NONE
+        g_avoid_start_time = None
+        rospy.loginfo("[cone_ctrl] mission activated")
 
 
-def cb_detected(msg) -> None:
-    global g_detected, g_last_detect_time
-    g_detected = msg.data
-    if g_detected:
-        g_last_detect_time = rospy.Time.now()
+# 콘 클리어 타이머
+_cone_clear_since = None
 
 
 # ── 제어 루프 ─────────────────────────────────────────────────
 def control_loop(event) -> None:
-    global g_err_prev, g_err_sum
     global g_avoid_state, g_avoid_left, g_avoid_start_time
+    global _cone_clear_since
+
+    if not g_p["debug_mode"] and g_mission != "CONE_AVOID":
+        return
 
     now   = rospy.Time.now()
     cmd   = Twist()
@@ -193,11 +191,8 @@ def control_loop(event) -> None:
                 elapsed, cmd.angular.z
             )
         else:
-            # 회피 완료 → PID 상태 초기화 후 NONE 복귀
             g_avoid_state = AVOID_NONE
-            g_err_prev    = 0.0
-            g_err_sum     = 0.0
-            rospy.loginfo("[cone_ctrl] AVOID complete → LANE_FOLLOW")
+            rospy.loginfo("[cone_ctrl] AVOID complete → gap steering")
 
         g_pub_cmd.publish(cmd)
         return
@@ -206,6 +201,7 @@ def control_loop(event) -> None:
     # 4) 원거리 콘: gap 중심 조향으로 저속 전진 (stop_dist 이상)
     # ─────────────────────────────────────────────────────────
     if cones:
+        _cone_clear_since = None   # 콘 감지되면 클리어 타이머 리셋
         steering      = compute_gap_steering(cones)
         cmd.linear.x  = g_p["avoid_speed"]
         cmd.angular.z = steering
@@ -217,56 +213,33 @@ def control_loop(event) -> None:
         return
 
     # ─────────────────────────────────────────────────────────
-    # 5) 차선 추종 PID
-    # 원본 버그 수정: detected=False 여도 lost_timeout 이내면 마지막 offset으로 주행
+    # 5) 콘 없음 → 클리어 타이머
     # ─────────────────────────────────────────────────────────
-    lane_lost = False
-    if not g_detected:
-        if g_last_detect_time is None:
-            lane_lost = True
-        elif (now - g_last_detect_time).to_sec() > g_p["lost_timeout"]:
-            lane_lost = True
+    if _cone_clear_since is None:
+        _cone_clear_since = now
+    elif (now - _cone_clear_since).to_sec() >= g_p["cone_clear_sec"]:
+        rospy.loginfo("[cone_ctrl] cones cleared → CONE_AVOID_DONE")
+        g_pub_done.publish(String(data="CONE_AVOID_DONE"))
+        _cone_clear_since = None
 
-    if lane_lost:
-        # 차선 완전 소실 → 정지
-        g_pub_cmd.publish(cmd)
-        rospy.logwarn_throttle(1.0, "[cone_ctrl] lane LOST — stopping")
-        return
-
-    error      = g_lateral
-    derivative = error - g_err_prev
-    g_err_sum  = float(np.clip(
-        g_err_sum + error, -g_p["i_max"], g_p["i_max"]
-    ))
-
-    steering = float(np.clip(
-        g_p["kp"] * error + g_p["ki"] * g_err_sum + g_p["kd"] * derivative,
-        -g_p["max_steering"], g_p["max_steering"]
-    ))
-    g_err_prev = error
-
-    cmd.linear.x  = g_p["base_speed"]
-    cmd.angular.z = -steering   # lateral_offset 부호에 맞춰 반전
-
+    # 콘이 없을 때는 저속 직진
+    cmd.linear.x  = g_p["avoid_speed"]
+    cmd.angular.z = 0.0
     g_pub_cmd.publish(cmd)
-    rospy.loginfo_throttle(
-        0.5, "[cone_ctrl][LANE] err=%.3f  steer=%.3f  spd=%.2f",
-        error, steering, cmd.linear.x
-    )
 
 
 # ── main ──────────────────────────────────────────────────────
 def main() -> None:
-    global g_pub_cmd
+    global g_pub_cmd, g_pub_done
 
     rospy.init_node("cone_avoidance_control")
     load_params()
 
-    g_pub_cmd = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
+    g_pub_cmd  = rospy.Publisher("/cmd_vel",               Twist,  queue_size=1)
+    g_pub_done = rospy.Publisher("/decision/mission_done", String, queue_size=1)
 
-    rospy.Subscriber("/lidar/clusters",            PointCloud, cb_clusters, queue_size=1)
-    rospy.Subscriber("/perception/lateral_offset", Float32,    cb_lateral,  queue_size=1)
-    rospy.Subscriber("/perception/lane_detected",  Bool,       cb_detected, queue_size=1)
+    rospy.Subscriber("/lidar/clusters",   PointCloud, cb_clusters, queue_size=1)
+    rospy.Subscriber("/decision/mission", String,     cb_mission,  queue_size=1)
 
     rospy.Timer(rospy.Duration(1.0 / g_p["control_rate"]), control_loop)
 
