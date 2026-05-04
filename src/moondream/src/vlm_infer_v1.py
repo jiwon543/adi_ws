@@ -71,16 +71,9 @@ MISSION_RULES = [
         "enabled":  False,       # ← 비활성 (나중에 True로 복원)
     },
     {
-        "mission":  "sign_left",
-        "must_any": ["sign", "arrow", "turn"],
-        "must_all": ["left"],
-        "must_not": ["cone", "crosswalk", "right"],
-    },
-    {
-        "mission":  "sign_right",
-        "must_any": ["sign", "arrow", "turn"],
-        "must_all": ["right"],
-        "must_not": ["cone", "crosswalk", "left"],
+        "mission":  "emergency_stop",
+        "must_any": ["car", "emergency", "stop", "obstacle", "hazard"],
+        "must_not": ["cone", "crosswalk"],
     },
 ]
 
@@ -91,8 +84,6 @@ def parse_mission(raw_text: str) -> str:
         if not rule.get("enabled", True):
             continue
         if not any(kw in text for kw in rule["must_any"]):
-            continue
-        if rule.get("must_all") and not all(kw in text for kw in rule["must_all"]):
             continue
         if any(kw in text for kw in rule["must_not"]):
             continue
@@ -167,7 +158,7 @@ def warmup():
 def main():
     global model, config, mission_pub
 
-    config_path = os.path.join(os.path.dirname(__file__), "prompt.json")
+    config_path = os.path.join(os.path.dirname(__file__), "prompt_v1.json")
     with open(config_path) as f:
         config = json.load(f)
 

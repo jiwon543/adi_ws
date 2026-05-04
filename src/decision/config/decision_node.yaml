@@ -1,24 +1,28 @@
-# config/decision_node.yaml
+# decision_node.yaml
 
-# ── VLM 힌트 ──
-vlm_hint_timeout: 3.0      # VLM 힌트 유효 시간 [s] (이후 만료)
+# ── VLM 힌트 유효 시간 ──
+vlm_hint_timeout: 3.0      # VLM 힌트 만료 시간 [s]
 
 # ── 검증 타임아웃 ──
-verify_timeout: 2.0        # 센서 확인까지 대기 시간 [s] (초과 시 LANE_FOLLOW 복귀)
+verify_timeout: 2.0        # LiDAR 검증 대기 시간 [s] (초과 → LANE_FOLLOW 복귀)
 
-# ── 콘 검증 ──
-cone_dist_thresh:   1.5    # 전방 감지 거리 [m]
-cone_lateral_limit: 0.8    # 좌우 감지 폭 [m]
-cone_min_clusters:  2      # 최소 클러스터 수 (이 이상 → 콘 확인)
-cone_clear_dist:    2.0    # 이 거리 이상 클러스터 없으면 콘 클리어
+# ── 콘 검증 (VLM AND LiDAR) ──
+# cone_verify_mode: "distance" → 콘이 cone_trigger_dist 이내로 접근하면 활성
+#                   "count"    → 전방 cone_dist_thresh 내 클러스터 cone_min_clusters 이상이면 활성
+cone_verify_mode:   "distance"
+cone_lateral_limit: 0.8    # 좌우 감지 폭 [m] (공통)
+cone_clear_dist:    2.0    # 이 거리 내 클러스터 없으면 콘 클리어 판정
 
-# ── 횡단보도 검증 ──
-yellow_thresh: 800         # 노란 픽셀 수 임계값 (camera_lane.py에서 퍼블리시)
+# distance 모드용
+cone_trigger_dist:  1.0    # 콘 접근 트리거 거리 [m]
 
-# ── Emergency 검증 ──
-emergency_dist:      0.8   # 전방 거리 [m]
-emergency_y_thresh:  0.35  # 중앙 폭 [m] (|y| < 이 값이면 정면 장애물)
-emergency_min_count: 1     # 클러스터 수
+# count 모드용
+cone_dist_thresh:   1.5    # 전방 탐색 거리 [m]
+cone_min_clusters:  2      # 최소 클러스터 수
+
+# ── Emergency 검증 (VLM AND LiDAR) ──
+emergency_dist:     0.8    # 전방 감지 거리 [m]
+emergency_y_thresh: 0.35   # 중앙 폭 [m] (|y| < 이 값 → 정면 장애물)
 
 # ── 퍼블리시 주기 ──
 decision_rate: 10.0        # [Hz]

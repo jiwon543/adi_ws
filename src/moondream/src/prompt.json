@@ -1,10 +1,14 @@
 {
-  "model": "vikhyatk/moondream2",
-  "infer_interval": 0.5,
-  "prompt": "Look at this image from a small autonomous car on a race track. Are there orange traffic cones blocking the path directly ahead? Answer only 'yes' or 'no'.",
-  "mission_map": {
-    "yes": "obstacle_avoidance",
-    "no": "normal_drive",
-    "default": "normal_drive"
-  }
+    "model": "vikhyatk/moondream2",
+    "revision": "2025-01-09",
+    "prompt": "What objects or obstacles are on the road ahead of the vehicle? Cone? Crosswalk? Obstacle? Or nothing, just the road?",
+    "max_new_tokens": 30,
+    "infer_interval": 0.5,
+    "force_mission": "normal_drive",
+    "missions": {
+        "normal_drive":   { "enabled": true },
+        "cone_avoidance": { "enabled": false },
+        "crosswalk_stop": { "enabled": false },
+        "obstacle_stop":  { "enabled": false }
+    }
 }

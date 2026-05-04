@@ -13,7 +13,7 @@ reverse_speed: -0.1    # 후진 속도 [m/s] (음수)
 # ── 원거리 콘 gap 조향 ──
 avoid_gain:    3.0      # gap 중심 반발 게인
 avoid_speed:   0.2      # 콘 감지 시 전진 속도 [m/s]
-max_steering:  0.52     # 최대 조향각 [rad] (하드웨어 한계 0.5236)
+max_steering:  0.45     # 최대 조향각 [rad] (하드웨어 한계 0.5236)
 steering_bias: 0.0      # 조향 오프셋 보정 [rad] — 왼쪽 치우침이면 음수(예: -0.1)
 
 # ── 콘 클리어 판정 ──

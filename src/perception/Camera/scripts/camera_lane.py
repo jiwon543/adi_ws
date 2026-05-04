@@ -15,7 +15,7 @@ from sensor_msgs.msg import CompressedImage, Image
 from cv_bridge import CvBridge
 _bridge = CvBridge()
 from geometry_msgs.msg import PointStamped
-from std_msgs.msg import Float32, Bool
+from std_msgs.msg import Float32, Bool, Int32
 
 # ────────────────── CUDA 가용성 확인 ──────────────────
 try:
@@ -30,6 +30,7 @@ g_pub_curvature      = None
 g_pub_heading_error  = None
 g_pub_lane_detected  = None
 g_pub_debug_img      = None
+g_pub_yellow_count   = None
 
 # ────────────────── 파라미터 (rosparam 로드) ──────────────────
 g_p = {}
@@ -103,6 +104,14 @@ def load_params():
 
     # 디버그 이미지 퍼블리시
     g_p["publish_debug"] = bool(p.get("publish_debug", True))
+
+    # HSV 노란색 (횡단보도 감지용)
+    g_p["yellow_h_low"]  = int(p.get("yellow_h_low",  15))
+    g_p["yellow_h_high"] = int(p.get("yellow_h_high", 35))
+    g_p["yellow_s_low"]  = int(p.get("yellow_s_low",  100))
+    g_p["yellow_s_high"] = int(p.get("yellow_s_high", 255))
+    g_p["yellow_v_low"]  = int(p.get("yellow_v_low",  100))
+    g_p["yellow_v_high"] = int(p.get("yellow_v_high", 255))
 
     # 최소 차선 포인트 수 (이 이하면 미검출 판정)
     g_p["min_lane_points"] = int(p.get("min_lane_points", 4))
@@ -480,7 +489,14 @@ def image_callback(msg):
     g_pub_heading_error.publish(Float32(data=float(heading)))
     g_pub_lane_detected.publish(Bool(data=detected))
 
-    # 7) 디버그 이미지
+    # 7) 노란색 픽셀 카운트 (횡단보도 감지, BEV 이미지 기준)
+    bev_hsv = cv2.cvtColor(bev, cv2.COLOR_BGR2HSV)
+    yellow_lower = np.array([g_p["yellow_h_low"],  g_p["yellow_s_low"],  g_p["yellow_v_low"]])
+    yellow_upper = np.array([g_p["yellow_h_high"], g_p["yellow_s_high"], g_p["yellow_v_high"]])
+    yellow_mask  = cv2.inRange(bev_hsv, yellow_lower, yellow_upper)
+    g_pub_yellow_count.publish(Int32(data=int(np.count_nonzero(yellow_mask))))
+
+    # 8) 디버그 이미지
     if g_p["publish_debug"] and g_pub_debug_img.get_num_connections() > 0:
         debug = draw_debug(bev, binary, left_poly, right_poly, cx, cy, lx, ly, rx, ry)
         img_msg = _bridge.cv2_to_imgmsg(debug, encoding="bgr8")
@@ -496,7 +512,7 @@ def image_callback(msg):
 def main():
     global g_pub_center_point, g_pub_lateral_offset
     global g_pub_curvature, g_pub_heading_error
-    global g_pub_lane_detected, g_pub_debug_img
+    global g_pub_lane_detected, g_pub_debug_img, g_pub_yellow_count
 
     rospy.init_node("camera_lane_perception")
     load_params()
@@ -514,6 +530,8 @@ def main():
                                           Bool, queue_size=1)
     g_pub_debug_img      = rospy.Publisher("/perception/debug",
                                           Image, queue_size=1)
+    g_pub_yellow_count   = rospy.Publisher("/perception/yellow_pixel_count",
+                                          Int32, queue_size=1)
 
     # 서브스크라이버
     rospy.Subscriber("/camera/color/image_raw/compressed",

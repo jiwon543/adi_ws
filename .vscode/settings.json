@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit"
+    "cmake.sourceDirectory": "/root/adi_ws/ros1/catkin_ws/src/agilex_pure_pursuit",
+    "remote.autoForwardPorts": false
 }
