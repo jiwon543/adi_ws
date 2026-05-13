@@ -62,6 +62,29 @@ cd src/Moondream/src/test
 python3.10 infer_webcam.py
 ```
 
+#### VLM 레이턴시 측정 환경 (참고용 — venv 삭제됨)
+
+`src/moondream/src/latency_measure/` 에서 레이턴시 측정 실험 시 사용했던 Python 가상환경(vlm_env) 구성.
+재현 시 `python3.10 -m venv vlm_env` 후 아래 버전으로 설치.
+
+| 패키지 | 버전 |
+|---|---|
+| torch | 2.4.1+cu121 |
+| torchvision | 0.19.1+cu121 |
+| torchaudio | 2.4.1+cu121 |
+| transformers | 4.47.0 |
+| accelerate | 1.13.0 |
+| huggingface_hub | 0.36.2 |
+| numpy | 2.2.6 |
+
+```bash
+# 재설치 시
+python3.10 -m venv vlm_env
+source vlm_env/bin/activate
+pip install torch==2.4.1+cu121 torchvision==0.19.1+cu121 torchaudio==2.4.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+pip install transformers==4.47.0 accelerate==1.13.0 huggingface_hub==0.36.2 numpy==2.2.6
+```
+
 ### `src/bringup` — 센서 브링업
 LIMO 로봇 실행에 필요한 드라이버 및 런치 파일 모음
 

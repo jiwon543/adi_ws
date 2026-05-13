@@ -1,0 +1,12 @@
+# config/obstacle_stop_control.yaml
+
+# ── 장애물 감지 범위 ──
+# decision_node.yaml의 emergency_dist/emergency_y_thresh와 일치시켜야 함
+obstacle_dist:     0.8    # 전방 감지 거리 [m]
+obstacle_y_thresh: 0.35   # 좌우 폭 [m] — 이 폭 안 장애물만 비상 정지 대상
+
+# ── 클리어 판정 ──
+clear_sec: 1.0            # 장애물 사라진 후 이 시간 경과하면 DONE 퍼블리시 [s]
+
+# ── 제어 주기 ──
+control_rate: 20.0        # [Hz]

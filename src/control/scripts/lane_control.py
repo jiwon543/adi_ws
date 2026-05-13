@@ -13,11 +13,13 @@ lane_control.py
 
 import rospy
 import numpy as np
-from std_msgs.msg import Float32, Bool
+from std_msgs.msg import Float32, Bool, String
 from geometry_msgs.msg import Twist
 
 # ────────────────── 전역 상태 ──────────────────
 g_pub_cmd = None
+
+g_mission = ""   # /decision/mission — 빈 값이면 제어 안 함
 
 # 최신 인지 값
 g_lateral   = 0.0
@@ -92,6 +94,10 @@ def cb_detected(msg):
     if g_detected:
         g_last_detect_time = rospy.Time.now()
 
+def cb_mission(msg):
+    global g_mission
+    g_mission = msg.data.strip()
+
 
 # ================================================================
 #  Stanley 조향 계산
@@ -156,6 +162,9 @@ def compute_speed(curvature):
 def control_loop(event):
     global g_prev_time
 
+    if g_mission != "LANE_FOLLOW":
+        return
+
     now = rospy.Time.now()
 
     # dt 계산
@@ -207,6 +216,7 @@ def main():
     rospy.Subscriber("/perception/heading_error",  Float32, cb_heading,   queue_size=1)
     rospy.Subscriber("/perception/curvature",      Float32, cb_curvature, queue_size=1)
     rospy.Subscriber("/perception/lane_detected",  Bool,    cb_detected,  queue_size=1)
+    rospy.Subscriber("/decision/mission",          String,  cb_mission,   queue_size=1)
 
     # 제어 타이머
     rate = g_p["control_rate"]

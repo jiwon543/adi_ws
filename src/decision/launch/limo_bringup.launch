@@ -1,0 +1,23 @@
+<!--
+  limo_bringup.launch
+  리모(limo) 전체 스택 일괄 실행
+  실행 순서: perception → decision → control (roslaunch가 병렬 기동)
+
+  로컬(노트북)에서 vlm_node는 별도로 run_vlm.sh로 실행
+-->
+<launch>
+
+  <!-- ── Perception ───────────────────────────────────────── -->
+  <include file="$(find perception)/Camera/launch/camera_lane.launch"/>
+  <include file="$(find perception)/Lidar/launch/lidar_clustering.launch"/>
+
+  <!-- ── Decision ─────────────────────────────────────────── -->
+  <include file="$(find decision)/launch/decision_node.launch"/>
+
+  <!-- ── Control ──────────────────────────────────────────── -->
+  <include file="$(find control)/launch/lane_control.launch"/>
+  <include file="$(find control)/launch/cone_avoidance_control.launch"/>
+  <include file="$(find control)/launch/crosswalk_control.launch"/>
+  <include file="$(find control)/launch/obstacle_stop_control.launch"/>
+
+</launch>

@@ -15,7 +15,6 @@ import json
 import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import PointCloud
-from geometry_msgs.msg import Twist
 
 # ── 미션 / 검증 상태 상수 ────────────────────────────────────────
 LANE_FOLLOW    = "LANE_FOLLOW"
@@ -43,7 +42,7 @@ g_vlm_hint_time = None
 g_clusters      = []        # [(x, y), ...]
 
 g_pub_mission   = None
-g_pub_cmd       = None
+g_vlm_ready     = False   # VLM 첫 메시지 수신 전까지 미션 퍼블리시 차단
 g_p             = {}
 
 
@@ -97,7 +96,10 @@ def transition(new_state):
 
 # ── 콜백 ────────────────────────────────────────────────────────
 def cb_vlm(msg):
-    global g_vlm_hint, g_vlm_hint_time
+    global g_vlm_hint, g_vlm_hint_time, g_vlm_ready
+    if not g_vlm_ready:
+        g_vlm_ready = True
+        rospy.loginfo("[decision] VLM 연결 확인 → 미션 활성화")
     try:
         candidate = json.loads(msg.data).get("candidate", "normal_drive")
     except (json.JSONDecodeError, AttributeError):
@@ -126,11 +128,17 @@ def cb_mission_done(msg):
         transition(LANE_FOLLOW)
     elif done == "CROSSWALK_DONE" and g_state == CROSSWALK:
         transition(LANE_FOLLOW)
+    elif done == "EMERGENCY_STOP_DONE" and g_state == EMERGENCY_STOP:
+        transition(LANE_FOLLOW)
 
 
 # ── FSM 루프 ─────────────────────────────────────────────────────
 def decision_loop(event):
     global g_state, g_vrf_start, g_vlm_hint, g_vlm_hint_time
+
+    if not g_vlm_ready:
+        rospy.logwarn_throttle(5.0, "[decision] VLM 미연결 — 대기 중")
+        return
 
     now = rospy.Time.now()
 
@@ -177,13 +185,9 @@ def decision_loop(event):
     elif g_state == CROSSWALK:
         pass  # crosswalk_control이 yellow pixel 감지 후 CROSSWALK_DONE 퍼블리시
 
-    # EMERGENCY_STOP
+    # EMERGENCY_STOP — 정지/복귀는 obstacle_stop_control이 담당
     elif g_state == EMERGENCY_STOP:
-        g_pub_cmd.publish(Twist())
-        if not emergency_in_front():
-            rospy.loginfo("[decision] emergency cleared → LANE_FOLLOW")
-            transition(LANE_FOLLOW)
-            return
+        pass
 
     pub_state = g_state if not g_state.startswith("_VRF") else LANE_FOLLOW
     g_pub_mission.publish(String(data=pub_state))
@@ -191,13 +195,12 @@ def decision_loop(event):
 
 # ── main ─────────────────────────────────────────────────────────
 def main():
-    global g_pub_mission, g_pub_cmd
+    global g_pub_mission
 
     rospy.init_node("decision_node")
     load_params()
 
     g_pub_mission = rospy.Publisher("/decision/mission", String, queue_size=1)
-    g_pub_cmd     = rospy.Publisher("/cmd_vel",          Twist,  queue_size=1)
 
     rospy.Subscriber("/vlm/mission",           String,     cb_vlm,          queue_size=1)
     rospy.Subscriber("/lidar/clusters",        PointCloud, cb_clusters,     queue_size=1)
