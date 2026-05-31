@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-lane_control.py
+lane_control.py (fixed)
 - Stanley 조향 제어 + 곡률 feedforward + 속도 적응
-- 구독: lateral_offset, heading_error, curvature, lane_detected
+- 구독: lateral_offset, heading_error, curvature, lane_detected, /decision/mission
 - 퍼블리시: /cmd_vel (Twist)
--
-- Stanley 공식:
--   δ = θ_heading + arctan(K_cte * e_lateral / v)
-- + feedforward: K_ff * curvature
-- + 속도: 곡률 클수록 감속
+
+수정사항:
+  - LANE_FOLLOW 아닌 미션에서 정지 cmd 발행 → 미션 전환 시 마지막 속도로 이탈하는 문제 해결
+    (단, 해당 미션 컨트롤러가 자체 cmd_vel을 퍼블리시하면 그게 덮어씀 → 정상 동작)
+  - shutdown hook: Ctrl+C 시 zero twist 발행
 """
 
 import rospy
@@ -19,7 +19,8 @@ from geometry_msgs.msg import Twist
 # ────────────────── 전역 상태 ──────────────────
 g_pub_cmd = None
 
-g_mission = ""   # /decision/mission — 빈 값이면 제어 안 함
+g_mission      = "LANE_FOLLOW"
+g_mission_prev = "LANE_FOLLOW"   # 미션 전환 감지용 (zero cmd 한 번만 발행)
 
 # 최신 인지 값
 g_lateral   = 0.0
@@ -43,32 +44,19 @@ def load_params():
     global g_p
     p = rospy.get_param("~", {})
 
-    # Stanley gains
-    g_p["k_heading"]  = float(p.get("k_heading",  1.0))   # heading error 게인
-    g_p["k_cte"]      = float(p.get("k_cte",      0.008)) # cross-track 게인 (px 단위이므로 작게)
-    g_p["k_ff"]       = float(p.get("k_ff",        0.5))   # curvature feedforward 게인
-    g_p["k_d"]        = float(p.get("k_d",         0.0))   # lateral 미분 게인 (옵션)
-
-    # softening 속도 (Stanley arctan 분모, 0 나눗셈 방지)
-    g_p["v_min"]      = float(p.get("v_min",      0.1))   # m/s
-
-    # 조향 제한
-    g_p["max_steer"]  = float(p.get("max_steer",  0.50))  # rad
-
-    # 속도 제어
-    g_p["v_base"]     = float(p.get("v_base",     0.3))  # m/s 기본 속도
-    g_p["v_min_curve"] = float(p.get("v_min_curve", 0.12)) # 급커브 최저 속도
-    g_p["curv_slow_thresh"] = float(p.get("curv_slow_thresh", 0.003))  # 감속 시작 곡률
-    g_p["curv_slow_gain"]   = float(p.get("curv_slow_gain",   50.0))   # 곡률→감속 비례 계수
-
-    # 미검출 시 정지 타임아웃 (초)
+    g_p["k_heading"]  = float(p.get("k_heading",  1.0))
+    g_p["k_cte"]      = float(p.get("k_cte",      0.008))
+    g_p["k_ff"]       = float(p.get("k_ff",       0.5))
+    g_p["k_d"]        = float(p.get("k_d",        0.0))
+    g_p["v_min"]      = float(p.get("v_min",      0.1))
+    g_p["max_steer"]  = float(p.get("max_steer",  0.50))
+    g_p["v_base"]     = float(p.get("v_base",     0.3))
+    g_p["v_min_curve"] = float(p.get("v_min_curve", 0.12))
+    g_p["curv_slow_thresh"] = float(p.get("curv_slow_thresh", 0.003))
+    g_p["curv_slow_gain"]   = float(p.get("curv_slow_gain",   50.0))
     g_p["lost_timeout"] = float(p.get("lost_timeout", 1.0))
-
-    # 제어 주기 (Hz)
     g_p["control_rate"] = float(p.get("control_rate", 30.0))
-
-    # lateral offset → meter 변환 계수 (BEV px → 실제 m, 캘리브 필요)
-    g_p["px_to_m"] = float(p.get("px_to_m", 0.0103))
+    g_p["px_to_m"]      = float(p.get("px_to_m", 0.0103))
 
     rospy.loginfo("[control] params loaded: %s", g_p)
 
@@ -95,7 +83,8 @@ def cb_detected(msg):
         g_last_detect_time = rospy.Time.now()
 
 def cb_mission(msg):
-    global g_mission
+    global g_mission, g_mission_prev
+    g_mission_prev = g_mission
     g_mission = msg.data.strip()
 
 
@@ -112,18 +101,12 @@ def compute_stanley_steer(lateral_px, heading_rad, curvature, dt):
     v_min = g_p["v_min"]
     v     = max(g_p["v_base"], v_min)
 
-    # Stanley: δ = k_h * θ + arctan(k_cte * e / v)
-    #cte_term = np.arctan2(k_cte * lateral_px, v)
-    
-    # px - to - m 변환
     lateral_m = lateral_px * g_p["px_to_m"]
-    
-    # Stanley terms
-    cte_term = np.arctan2(k_cte * lateral_m, v)
-    heading_term = k_h * heading_rad
-    ff_term = k_ff * curvature
 
-    # 미분항 (lateral 변화율) — m 단위로 계산해야 함
+    cte_term     = np.arctan2(k_cte * lateral_m, v)
+    heading_term = k_h * heading_rad
+    ff_term      = k_ff * curvature
+
     d_term = 0.0
     if dt > 1e-6 and k_d > 0:
         d_term = k_d * (lateral_m - g_prev_lateral) / dt
@@ -131,7 +114,6 @@ def compute_stanley_steer(lateral_px, heading_rad, curvature, dt):
 
     steer = heading_term + cte_term + ff_term + d_term
 
-    # 제한
     max_s = g_p["max_steer"]
     steer = np.clip(steer, -max_s, max_s)
     return steer
@@ -162,12 +144,16 @@ def compute_speed(curvature):
 def control_loop(event):
     global g_prev_time
 
+    # LANE_FOLLOW가 아닌 경우: 미션 전환 시점에만 한 번 zero cmd 발행.
+    # 이후에는 퍼블리시하지 않아야 미션 컨트롤러의 cmd_vel과 충돌하지 않음.
     if g_mission != "LANE_FOLLOW":
+        if g_mission_prev == "LANE_FOLLOW":
+            g_pub_cmd.publish(Twist())
+        g_prev_time = None  # dt 리셋
         return
 
     now = rospy.Time.now()
 
-    # dt 계산
     dt = 0.0
     if g_prev_time is not None:
         dt = (now - g_prev_time).to_sec()
@@ -180,23 +166,27 @@ def control_loop(event):
         if g_last_detect_time is not None:
             elapsed = (now - g_last_detect_time).to_sec()
             if elapsed > g_p["lost_timeout"]:
-                # 정지
                 g_pub_cmd.publish(cmd)
                 return
         else:
-            # 한 번도 검출 안 됨
             g_pub_cmd.publish(cmd)
             return
 
-    # Stanley 조향
     steer = compute_stanley_steer(g_lateral, g_heading, g_curvature, dt)
-
-    # 속도
     speed = compute_speed(g_curvature)
 
     cmd.linear.x  = speed
     cmd.angular.z = steer
     g_pub_cmd.publish(cmd)
+
+
+# ================================================================
+#  shutdown
+# ================================================================
+def on_shutdown():
+    rospy.loginfo("[control] shutdown — zero cmd_vel")
+    if g_pub_cmd is not None:
+        g_pub_cmd.publish(Twist())
 
 
 # ================================================================
@@ -208,17 +198,16 @@ def main():
     rospy.init_node("lane_control")
     load_params()
 
-    # 퍼블리셔
     g_pub_cmd = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
 
-    # 서브스크라이버
     rospy.Subscriber("/perception/lateral_offset", Float32, cb_lateral,   queue_size=1)
     rospy.Subscriber("/perception/heading_error",  Float32, cb_heading,   queue_size=1)
     rospy.Subscriber("/perception/curvature",      Float32, cb_curvature, queue_size=1)
     rospy.Subscriber("/perception/lane_detected",  Bool,    cb_detected,  queue_size=1)
     rospy.Subscriber("/decision/mission",          String,  cb_mission,   queue_size=1)
 
-    # 제어 타이머
+    rospy.on_shutdown(on_shutdown)
+
     rate = g_p["control_rate"]
     rospy.Timer(rospy.Duration(1.0 / rate), control_loop)
 

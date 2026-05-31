@@ -1,0 +1,11 @@
+﻿group,image_name,image_path,max_tokens,n,mean_ms,std_ms,min_ms,max_ms
+simple,simple_01.png,./test_images/simple/simple_01.png,30,1,607.546035,0.000000,607.546035,607.546035
+simple,simple_02.png,./test_images/simple/simple_02.png,30,1,611.814767,0.000000,611.814767,611.814767
+simple,simple_03.png,./test_images/simple/simple_03.png,30,1,613.939901,0.000000,613.939901,613.939901
+simple,simple_04.png,./test_images/simple/simple_04.png,30,1,611.775333,0.000000,611.775333,611.775333
+simple,simple_05.png,./test_images/simple/simple_05.png,30,1,610.928742,0.000000,610.928742,610.928742
+complex,complex_01.jpg,./test_images/complex/complex_01.jpg,30,1,530.779377,0.000000,530.779377,530.779377
+complex,complex_02.jpg,./test_images/complex/complex_02.jpg,30,1,535.175579,0.000000,535.175579,535.175579
+complex,complex_03.jpg,./test_images/complex/complex_03.jpg,30,1,535.881475,0.000000,535.881475,535.881475
+complex,complex_04.jpg,./test_images/complex/complex_04.jpg,30,1,609.375022,0.000000,609.375022,609.375022
+complex,complex_5.jpg,./test_images/complex/complex_5.jpg,30,1,534.120216,0.000000,534.120216,534.120216

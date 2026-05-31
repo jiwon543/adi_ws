@@ -110,6 +110,12 @@ def scan_callback(msg):
     if np.any(labels != -1):
         cluster_pub.publish(make_pointcloud(points, labels))
         marker_pub.publish(make_markers(points, labels))
+    else:
+        # 클러스터 없을 때도 빈 PointCloud 퍼블리시 → 구독자의 stale 데이터 방지
+        empty_pc = PointCloud()
+        empty_pc.header.frame_id = "laser_link"
+        empty_pc.header.stamp = rospy.Time.now()
+        cluster_pub.publish(empty_pc)
 
 
 # ======================

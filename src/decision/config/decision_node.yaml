@@ -7,11 +7,8 @@ vlm_hint_timeout: 3.0      # VLM 힌트 만료 시간 [s]
 verify_timeout: 2.0        # LiDAR 검증 대기 시간 [s] (초과 → LANE_FOLLOW 복귀)
 
 # ── 콘 검증 (VLM AND LiDAR) ──
-# cone_verify_mode: "distance" → 콘이 cone_trigger_dist 이내로 접근하면 활성
-#                   "count"    → 전방 cone_dist_thresh 내 클러스터 cone_min_clusters 이상이면 활성
 cone_verify_mode:   "distance"
-cone_lateral_limit: 0.8    # 좌우 감지 폭 [m] (공통)
-cone_clear_dist:    2.0    # 이 거리 내 클러스터 없으면 콘 클리어 판정
+cone_lateral_limit: 0.8    # 좌우 감지 폭 [m]
 
 # distance 모드용
 cone_trigger_dist:  1.0    # 콘 접근 트리거 거리 [m]
@@ -22,7 +19,10 @@ cone_min_clusters:  2      # 최소 클러스터 수
 
 # ── Emergency 검증 (VLM AND LiDAR) ──
 emergency_dist:     0.8    # 전방 감지 거리 [m]
-emergency_y_thresh: 0.35   # 좌우 n [m] 안에 있는 장애물만 비상 정지 대상으로 봄. 이보다 옆에 있는 건 비켜갈 수 있다 판단, 무시
+emergency_y_thresh: 0.35   # 좌우 폭 [m]
+
+# ── 미션 재진입 쿨다운 ──
+mission_cooldown: 5.0      # 미션 완료 후 같은 미션 재진입까지 대기 [s]
 
 # ── 퍼블리시 주기 ──
 decision_rate: 10.0        # [Hz]

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-obstacle_stop_control.py
+obstacle_stop_control.py (fixed)
 /decision/mission == "EMERGENCY_STOP" 일 때:
   전방 장애물 감지 → 정지 유지
   장애물 사라지고 clear_sec 초 경과 → EMERGENCY_STOP_DONE 퍼블리시
 
-구독: /decision/mission, /lidar/clusters
-퍼블리시: /cmd_vel, /decision/mission_done
+수정사항:
+  - shutdown hook 추가
 """
 
 import rospy
@@ -70,7 +70,7 @@ def control_loop(event):
         _clear_since = None
         return
 
-    # 장애물 있는 동안 정지 유지
+    # 정지 유지
     g_pub_cmd.publish(Twist())
 
     if obstacle_in_front():
@@ -80,10 +80,17 @@ def control_loop(event):
         if _clear_since is None:
             _clear_since = now
         elif (now - _clear_since).to_sec() >= g_p["clear_sec"]:
-            rospy.loginfo("[obstacle_stop] 장애물 해소 → EMERGENCY_STOP_DONE")
+            rospy.loginfo("[obstacle_stop] 장애물 해소 -> EMERGENCY_STOP_DONE")
             g_pub_done.publish(String(data="EMERGENCY_STOP_DONE"))
             g_done       = True
             _clear_since = None
+
+
+# ── shutdown ─────────────────────────────────────────────────────
+def on_shutdown():
+    rospy.loginfo("[obstacle_stop] shutdown — zero cmd_vel")
+    if g_pub_cmd is not None:
+        g_pub_cmd.publish(Twist())
 
 
 # ── main ─────────────────────────────────────────────────────────
@@ -99,6 +106,7 @@ def main():
     rospy.Subscriber("/decision/mission", String,     cb_mission,  queue_size=1)
     rospy.Subscriber("/lidar/clusters",   PointCloud, cb_clusters, queue_size=1)
 
+    rospy.on_shutdown(on_shutdown)
     rospy.Timer(rospy.Duration(1.0 / g_p["control_rate"]), control_loop)
 
     rospy.loginfo("[obstacle_stop] node ready")
