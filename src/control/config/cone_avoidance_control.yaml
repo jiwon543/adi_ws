@@ -17,10 +17,13 @@ max_steering:  0.45     # 최대 조향각 [rad] (하드웨어 한계 0.5236)
 steering_bias: 0.0      # 조향 오프셋 보정 [rad] — 왼쪽 치우침이면 음수(예: -0.1)
 
 # ── 콘 클리어 판정 ──
-cone_clear_sec: 1.0    # 이 시간 동안 콘 없으면 CONE_AVOID_DONE 퍼블리시 [s]
+# exit_y_thresh: 정면 경로(좁은 폭)에 클러스터 없어야 클리어 판정
+# 벽은 옆에 있으므로 lateral_limit 보다 훨씬 좁게 설정하여 벽 제외
+cone_clear_sec:  1.0   # 이 시간 동안 경로 클리어 상태면 DONE 퍼블리시 [s]
+exit_y_thresh:   0.35  # 경로 클리어 판정 좌우 폭 [m] — 벽 제외용 (lateral_limit 보다 좁게)
 
 # ── 제어 주기 ──
 control_rate: 30.0     # [Hz]
 
 # ── 디버그 ──
-debug_mode: true      # true: decision node 없이 단독 실행
+debug_mode: false     # true: decision node 없이 단독 실행

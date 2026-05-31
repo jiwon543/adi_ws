@@ -47,6 +47,7 @@ def load_params():
     g_p["steering_bias"]   = float(p.get("steering_bias",   0.0))
     g_p["max_steering"]    = float(p.get("max_steering",    0.52))
     g_p["cone_clear_sec"]  = float(p.get("cone_clear_sec",  1.5))
+    g_p["exit_y_thresh"]   = float(p.get("exit_y_thresh",   0.35))
     g_p["control_rate"]    = float(p.get("control_rate",    30.0))
     g_p["debug_mode"]      = bool(p.get("debug_mode",      False))
 
@@ -151,24 +152,28 @@ def control_loop(event):
 
     # 4) 원거리 콘: gap 중심 조향
     if cones:
-        _cone_clear_since = None
         steering      = compute_gap_steering(cones)
         cmd.linear.x  = g_p["avoid_speed"]
         cmd.angular.z = steering
         g_pub_cmd.publish(cmd)
-        return
 
-    # 5) 콘 없음 → 클리어 타이머
-    if _cone_clear_since is None:
-        _cone_clear_since = now
-    elif (now - _cone_clear_since).to_sec() >= g_p["cone_clear_sec"]:
-        rospy.loginfo("[cone_ctrl] cones cleared -> CONE_AVOID_DONE")
-        g_pub_done.publish(String(data="CONE_AVOID_DONE"))
+    # 5) 클리어 판정: 정면 경로(exit_y_thresh 이내)에 콘 없으면 타이머 시작
+    # 벽은 lateral_limit 이내지만 exit_y_thresh 바깥에 있으므로 무시됨
+    path_cones = [c for c in cones if abs(c[1]) < g_p["exit_y_thresh"]]
+    if path_cones:
         _cone_clear_since = None
+    else:
+        if _cone_clear_since is None:
+            _cone_clear_since = now
+        elif (now - _cone_clear_since).to_sec() >= g_p["cone_clear_sec"]:
+            rospy.loginfo("[cone_ctrl] path clear -> CONE_AVOID_DONE")
+            g_pub_done.publish(String(data="CONE_AVOID_DONE"))
+            _cone_clear_since = None
 
-    cmd.linear.x  = g_p["avoid_speed"]
-    cmd.angular.z = 0.0
-    g_pub_cmd.publish(cmd)
+    if not cones:
+        cmd.linear.x  = g_p["avoid_speed"]
+        cmd.angular.z = 0.0
+        g_pub_cmd.publish(cmd)
 
 
 # ── shutdown ─────────────────────────────────────────────────

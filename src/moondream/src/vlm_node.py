@@ -40,25 +40,27 @@ g_last_infer  = 0.0
 # crosswalk가 최우선 (거리가 있어도 미리 감지해야 하므로)
 MISSION_RULES = [
     {
-        "mission":  "crosswalk_stop",
-        "must_any": ["crosswalk", "pedestrian crossing", "zebra crossing",
-                     "crossing", "yellow line", "yellow strip",
-                     "painted line", "crosswalk marking"],
-        "must_not": ["cone", "no crossing"],
+        # 1순위 EMERGENCY_STOP — "cone" 키워드 없음 (콘과 구분)
+        "mission":  "obstacle_stop",
+        "must_any": ["obstacle", "barrier", "blocked", "debris", "box",
+                     "rock", "fallen", "object", "vehicle", "person",
+                     "animal", "toy", "truck", "car", "van", "bus"],
+        "must_not": ["cone", "cones", "traffic cone", "orange cone"],
     },
     {
-        "mission":  "cone_avoidance",
-        "must_any": ["cone", "cones", "traffic cone", "orange cone",
-                     "pylons", "pylon"],
+        # 2순위 CROSSWALK_STOP
+        "mission":  "crosswalk_stop",
+        "must_any": ["crosswalk", "crossing", "pedestrian", "zebra",
+                     "yellow stripe", "yellow marking", "yellow line",
+                     "striped"],
         "must_not": [],
     },
     {
-        "mission":  "obstacle_stop",
-        "must_any": ["car", "vehicle", "toy", "automobile", "truck",
-                     "parked", "blocking", "blocked", "obstruction",
-                     "obstacle", "box", "object on the road",
-                     "something blocking"],
-        "must_not": ["cone"],
+        # 3순위 CONE_AVOIDANCE
+        "mission":  "cone_avoidance",
+        "must_any": ["cone", "cones", "construction", "detour",
+                     "orange marker", "traffic cone"],
+        "must_not": [],
     },
 ]
 

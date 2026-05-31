@@ -7,22 +7,45 @@ vlm_hint_timeout: 3.0      # VLM 힌트 만료 시간 [s]
 verify_timeout: 2.0        # LiDAR 검증 대기 시간 [s] (초과 → LANE_FOLLOW 복귀)
 
 # ── 콘 검증 (VLM AND LiDAR) ──
-cone_verify_mode:   "distance"
-cone_lateral_limit: 0.8    # 좌우 감지 폭 [m]
+# count 모드: 클러스터 수로 판단 (벽=1개 클러스터, 콘=2개 이상으로 구분)
+cone_verify_mode:   "count"
+cone_lateral_limit: 0.7    # 좌우 감지 폭 [m] (벽 제외를 위해 좁힘)
 
-# distance 모드용
-cone_trigger_dist:  1.0    # 콘 접근 트리거 거리 [m]
+# distance 모드용 (미사용)
+cone_trigger_dist:  1.0
 
 # count 모드용
 cone_dist_thresh:   1.5    # 전방 탐색 거리 [m]
-cone_min_clusters:  2      # 최소 클러스터 수
+cone_min_clusters:  4      # 최소 클러스터 수 (벽=1, 콘=2+)
 
 # ── Emergency 검증 (VLM AND LiDAR) ──
-emergency_dist:     0.8    # 전방 감지 거리 [m]
-emergency_y_thresh: 0.35   # 좌우 폭 [m]
+emergency_dist:     0.20    # 전방 감지 거리 [m]
+emergency_y_thresh: 0.10   # 좌우 폭 [m]
 
 # ── 미션 재진입 쿨다운 ──
-mission_cooldown: 5.0      # 미션 완료 후 같은 미션 재진입까지 대기 [s]
+mission_cooldown: 7.0      # 미션 완료 후 같은 미션 재진입까지 대기 [s]
+
+# ── Crosswalk 황색 픽셀 검증 ──
+# VLM 이 crosswalk_stop 뱉으면 이 임계값 이상일 때만 CROSSWALK 진입
+yellow_thresh: 4000   # 노란 픽셀 수 임계값 
+
+# ── 황색 픽셀 HSV 디버깅 (camera_lane.py 의 yellow_* 파라미터와 동일하게 맞출 것) ──
+# camera_lane.py 에서 실제 검출에 사용 중인 값:
+#   H: 15 ~ 35  (노란색 hue)
+#   S: 100 ~ 255
+#   V: 100 ~ 255
+# 아래는 참고용 — 실제 튜닝은 camera_lane.launch 의 rosparam 으로 조정
+# yellow_h_low:  15
+# yellow_h_high: 35
+# yellow_s_low:  100
+# yellow_s_high: 255
+# yellow_v_low:  100
+# yellow_v_high: 255
+
+# ── 전방 근접 LiDAR 강제 Emergency (VLM 없이 직접 트리거) ──
+# lidar_emrg_force_y: cone_lateral_limit(0.7m) 보다 훨씬 좁게 설정 → 콘과 구분
+lidar_emrg_force_dist: 0.70   # 강제 트리거 거리 [m]
+lidar_emrg_force_y:    0.20   # 전방 폭 [m] (콘은 보통 이 바깥에 있음)
 
 # ── 퍼블리시 주기 ──
 decision_rate: 10.0        # [Hz]

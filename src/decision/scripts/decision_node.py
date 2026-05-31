@@ -14,7 +14,7 @@ Pub: /decision/mission (String)
 import json
 
 import rospy
-from std_msgs.msg import String
+from std_msgs.msg import String, Int32
 from sensor_msgs.msg import PointCloud
 from geometry_msgs.msg import Twist
 
@@ -24,8 +24,9 @@ CONE_AVOID     = "CONE_AVOID"
 CROSSWALK      = "CROSSWALK"
 EMERGENCY_STOP = "EMERGENCY_STOP"
 
-_VRF_CONE = "_VRF_CONE"
-_VRF_EMRG = "_VRF_EMRG"
+_VRF_CONE  = "_VRF_CONE"
+_VRF_EMRG  = "_VRF_EMRG"
+_VRF_CROSS = "_VRF_CROSS"
 
 VLM_MAP = {
     "normal_drive":   LANE_FOLLOW,
@@ -42,6 +43,7 @@ g_vlm_hint      = None
 g_vlm_hint_time = None
 
 g_clusters      = []        # [(x, y), ...]
+g_yellow_count  = 0         # /perception/yellow_pixel_count
 
 g_pub_mission   = None
 g_pub_cmd       = None      # shutdown 시 정지용
@@ -68,6 +70,11 @@ def load_params():
         "emergency_y_thresh": float(p.get("emergency_y_thresh", 0.35)),
         # 미션 재진입 방지 쿨다운 [s]
         "mission_cooldown":   float(p.get("mission_cooldown",   5.0)),
+        # 전방 근접 강제 emergency (VLM 없이 LiDAR 직접 트리거)
+        "lidar_emrg_force_dist": float(p.get("lidar_emrg_force_dist", 0.45)),
+        "lidar_emrg_force_y":    float(p.get("lidar_emrg_force_y",   0.28)),
+        # crosswalk 황색 픽셀 검증
+        "yellow_thresh":         int(p.get("yellow_thresh",           800)),
     }
     rospy.loginfo("[decision] params: %s", g_p)
 
@@ -98,6 +105,15 @@ def cone_lidar_ok():
 
 def emergency_in_front():
     d, lat = g_p["emergency_dist"], g_p["emergency_y_thresh"]
+    return any(0.05 < x < d and abs(y) < lat for x, y in g_clusters)
+
+
+def lidar_emergency_close():
+    """전방 근접 장애물 강제 트리거 (VLM 불필요).
+    cone_lateral_limit(0.7m) 보다 훨씬 좁은 정면 폭만 체크해 콘과 구분.
+    """
+    d   = g_p["lidar_emrg_force_dist"]
+    lat = g_p["lidar_emrg_force_y"]
     return any(0.05 < x < d and abs(y) < lat for x, y in g_clusters)
 
 
@@ -137,6 +153,11 @@ def cb_clusters(msg):
     g_clusters = [(pt.x, pt.y) for pt in msg.points]
 
 
+def cb_yellow(msg):
+    global g_yellow_count
+    g_yellow_count = msg.data
+
+
 def cb_mission_done(msg):
     global g_state
     done = msg.data.strip()
@@ -172,11 +193,19 @@ def decision_loop(event):
 
     # LANE_FOLLOW
     if g_state == LANE_FOLLOW:
-        if g_vlm_hint == CONE_AVOID and is_cooled_down(CONE_AVOID):
+        # ① LiDAR 전방 근접 강제 트리거 (최우선 — VLM 불필요)
+        #    cone_lateral_limit(0.7m) 보다 훨씬 좁은 정면만 체크해 콘과 구분
+        if lidar_emergency_close() and is_cooled_down(EMERGENCY_STOP):
+            rospy.logwarn("[decision] LiDAR 전방 %.2fm 이내 장애물 -> EMERGENCY_STOP 강제",
+                          g_p["lidar_emrg_force_dist"])
+            transition(EMERGENCY_STOP)
+        # ② VLM 기반 미션 전환
+        elif g_vlm_hint == CONE_AVOID and is_cooled_down(CONE_AVOID):
             g_state     = _VRF_CONE
             g_vrf_start = now
         elif g_vlm_hint == CROSSWALK and is_cooled_down(CROSSWALK):
-            transition(CROSSWALK)
+            g_state     = _VRF_CROSS
+            g_vrf_start = now
         elif g_vlm_hint == EMERGENCY_STOP and is_cooled_down(EMERGENCY_STOP):
             g_state     = _VRF_EMRG
             g_vrf_start = now
@@ -187,6 +216,16 @@ def decision_loop(event):
             transition(CONE_AVOID)
         elif (now - g_vrf_start).to_sec() > g_p["verify_timeout"]:
             rospy.loginfo("[decision] CONE verify timeout -> LANE_FOLLOW")
+            transition(LANE_FOLLOW)
+
+    # 검증: Crosswalk (VLM AND 황색 픽셀)
+    elif g_state == _VRF_CROSS:
+        if g_yellow_count >= g_p["yellow_thresh"]:
+            rospy.loginfo("[decision] yellow %d >= %d -> CROSSWALK",
+                          g_yellow_count, g_p["yellow_thresh"])
+            transition(CROSSWALK)
+        elif (now - g_vrf_start).to_sec() > g_p["verify_timeout"]:
+            rospy.loginfo("[decision] CROSSWALK verify timeout -> LANE_FOLLOW")
             transition(LANE_FOLLOW)
 
     # 검증: Emergency (VLM AND LiDAR)
@@ -231,9 +270,10 @@ def main():
     g_pub_mission = rospy.Publisher("/decision/mission", String, queue_size=1)
     g_pub_cmd     = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
 
-    rospy.Subscriber("/vlm/mission",           String,     cb_vlm,          queue_size=1)
-    rospy.Subscriber("/lidar/clusters",        PointCloud, cb_clusters,     queue_size=1)
-    rospy.Subscriber("/decision/mission_done", String,     cb_mission_done, queue_size=1)
+    rospy.Subscriber("/vlm/mission",                  String,     cb_vlm,          queue_size=1)
+    rospy.Subscriber("/lidar/clusters",               PointCloud, cb_clusters,     queue_size=1)
+    rospy.Subscriber("/decision/mission_done",         String,     cb_mission_done, queue_size=1)
+    rospy.Subscriber("/perception/yellow_pixel_count", Int32,      cb_yellow,       queue_size=1)
 
     rospy.on_shutdown(on_shutdown)
     rospy.Timer(rospy.Duration(1.0 / g_p["decision_rate"]), decision_loop)

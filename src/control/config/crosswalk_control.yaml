@@ -1,6 +1,5 @@
 # crosswalk_control.yaml
+# yellow_thresh 는 decision_node.yaml 에서만 관리 (단일 파라미터 위치)
 
-yellow_thresh: 800        # 노란 픽셀 수 임계값
-stop_duration: 3.0        # 정지 유지 시간 [s]
-approach_speed: 0.12      # 횡단보도 접근 속도 [m/s]
-control_rate:  20.0       # 제어 주기 [Hz]
+stop_duration: 3.0    # 정지 유지 시간 [s]
+control_rate:  20.0   # 제어 주기 [Hz]

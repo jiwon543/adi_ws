@@ -11,23 +11,17 @@ crosswalk_control.py (fixed)
 """
 
 import rospy
-from std_msgs.msg import String, Int32, Float32, Bool
+from std_msgs.msg import String
 from geometry_msgs.msg import Twist
 
 # ── 전역 상태 ────────────────────────────────────────────────────
-g_mission      = ""
-g_yellow_count = 0
-g_stop_start   = None
-g_done         = False
+g_mission    = ""
+g_stop_start = None
+g_done       = False
 
-g_pub_cmd      = None
-g_pub_done     = None
-g_p            = {}
-
-# perception 값 (저속 전진용 간이 조향)
-g_lateral  = 0.0
-g_heading  = 0.0
-g_detected = False
+g_pub_cmd    = None
+g_pub_done   = None
+g_p          = {}
 
 
 # ── 파라미터 로드 ────────────────────────────────────────────────
@@ -35,13 +29,10 @@ def load_params():
     global g_p
     p   = rospy.get_param("~", {})
     g_p = {
-        "yellow_thresh":  int(p.get("yellow_thresh",   800)),
         "stop_duration":  float(p.get("stop_duration", 3.0)),
-        "approach_speed": float(p.get("approach_speed", 0.12)),
         "control_rate":   float(p.get("control_rate",  20.0)),
     }
-    rospy.loginfo("[crosswalk] yellow_thresh=%d  stop=%.1fs  approach_spd=%.2f",
-                  g_p["yellow_thresh"], g_p["stop_duration"], g_p["approach_speed"])
+    rospy.loginfo("[crosswalk] stop=%.1fs", g_p["stop_duration"])
 
 
 # ── 콜백 ────────────────────────────────────────────────────────
@@ -51,27 +42,11 @@ def cb_mission(msg):
     g_mission = msg.data.strip()
 
     if g_mission == "CROSSWALK" and prev != "CROSSWALK":
-        g_stop_start = None
         g_done       = False
-        rospy.loginfo("[crosswalk] 시작 — yellow pixel 대기")
+        g_stop_start = rospy.Time.now()   # decision 이 이미 검증 완료 → 즉시 정지
+        rospy.loginfo("[crosswalk] CROSSWALK 진입 — 즉시 정지 시작")
 
 
-def cb_yellow(msg):
-    global g_yellow_count
-    g_yellow_count = msg.data
-
-
-def cb_lateral(msg):
-    global g_lateral
-    g_lateral = msg.data
-
-def cb_heading(msg):
-    global g_heading
-    g_heading = msg.data
-
-def cb_detected(msg):
-    global g_detected
-    g_detected = msg.data
 
 
 # ── 제어 루프 ────────────────────────────────────────────────────
@@ -81,28 +56,7 @@ def control_loop(event):
     if g_mission != "CROSSWALK" or g_done:
         return
 
-    cmd = Twist()
-
-    # 아직 yellow 미감지 → 저속 전진하면서 횡단보도 접근
-    if g_stop_start is None:
-        if g_yellow_count >= g_p["yellow_thresh"]:
-            g_stop_start = rospy.Time.now()
-            rospy.loginfo("[crosswalk] yellow %d >= %d -> 정지",
-                          g_yellow_count, g_p["yellow_thresh"])
-            # 정지 cmd
-            g_pub_cmd.publish(Twist())
-            return
-
-        # 저속 전진 + 간이 조향 (차선 이탈 방지)
-        if g_detected:
-            cmd.linear.x  = g_p["approach_speed"]
-            cmd.angular.z = -0.5 * g_heading  # 간이 heading 보정
-        else:
-            cmd.linear.x = g_p["approach_speed"]
-        g_pub_cmd.publish(cmd)
-        return
-
-    # yellow 감지 → 정지 유지
+    # 정지 유지 (stop_start 는 cb_mission 에서 즉시 설정됨)
     g_pub_cmd.publish(Twist())
 
     if (rospy.Time.now() - g_stop_start).to_sec() >= g_p["stop_duration"]:
@@ -128,11 +82,7 @@ def main():
     g_pub_cmd  = rospy.Publisher("/cmd_vel",               Twist,  queue_size=1)
     g_pub_done = rospy.Publisher("/decision/mission_done", String, queue_size=1)
 
-    rospy.Subscriber("/decision/mission",              String, cb_mission,  queue_size=1)
-    rospy.Subscriber("/perception/yellow_pixel_count", Int32,  cb_yellow,   queue_size=1)
-    rospy.Subscriber("/perception/lateral_offset",     Float32, cb_lateral, queue_size=1)
-    rospy.Subscriber("/perception/heading_error",      Float32, cb_heading, queue_size=1)
-    rospy.Subscriber("/perception/lane_detected",      Bool,    cb_detected, queue_size=1)
+    rospy.Subscriber("/decision/mission", String, cb_mission, queue_size=1)
 
     rospy.on_shutdown(on_shutdown)
     rospy.Timer(rospy.Duration(1.0 / g_p["control_rate"]), control_loop)

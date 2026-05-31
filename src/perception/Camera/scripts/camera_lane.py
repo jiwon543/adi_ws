@@ -31,6 +31,7 @@ g_pub_heading_error  = None
 g_pub_lane_detected  = None
 g_pub_debug_img      = None
 g_pub_yellow_count   = None
+g_pub_bev_img        = None   # BEV 컬러 이미지 (이진화 없이)
 
 # ────────────────── 파라미터 (rosparam 로드) ──────────────────
 g_p = {}
@@ -496,7 +497,25 @@ def image_callback(msg):
     yellow_mask  = cv2.inRange(bev_hsv, yellow_lower, yellow_upper)
     g_pub_yellow_count.publish(Int32(data=int(np.count_nonzero(yellow_mask))))
 
-    # 8) 디버그 이미지
+    # 8) BEV 컬러 이미지 (차선 오버레이 포함, 이진화 없음)
+    if g_pub_bev_img.get_num_connections() > 0:
+        bev_vis = bev.copy()
+        plot_y = np.linspace(0, bev.shape[0] - 1, 100).astype(int)
+        if left_poly is not None:
+            px = np.clip(np.polyval(left_poly, plot_y).astype(int), 0, bev.shape[1] - 1)
+            for i in range(len(plot_y) - 1):
+                cv2.line(bev_vis, (px[i], plot_y[i]), (px[i+1], plot_y[i+1]), (0, 0, 255), 2)
+        if right_poly is not None:
+            px = np.clip(np.polyval(right_poly, plot_y).astype(int), 0, bev.shape[1] - 1)
+            for i in range(len(plot_y) - 1):
+                cv2.line(bev_vis, (px[i], plot_y[i]), (px[i+1], plot_y[i+1]), (0, 255, 0), 2)
+        if detected:
+            cv2.circle(bev_vis, (int(cx), int(cy)), 6, (255, 0, 255), -1)
+        bev_msg = _bridge.cv2_to_imgmsg(bev_vis, encoding="bgr8")
+        bev_msg.header.stamp = stamp
+        g_pub_bev_img.publish(bev_msg)
+
+    # 9) 디버그 이미지 (BEV + 이진화 나란히)
     if g_p["publish_debug"] and g_pub_debug_img.get_num_connections() > 0:
         debug = draw_debug(bev, binary, left_poly, right_poly, cx, cy, lx, ly, rx, ry)
         img_msg = _bridge.cv2_to_imgmsg(debug, encoding="bgr8")
@@ -512,7 +531,7 @@ def image_callback(msg):
 def main():
     global g_pub_center_point, g_pub_lateral_offset
     global g_pub_curvature, g_pub_heading_error
-    global g_pub_lane_detected, g_pub_debug_img, g_pub_yellow_count
+    global g_pub_lane_detected, g_pub_debug_img, g_pub_yellow_count, g_pub_bev_img
 
     rospy.init_node("camera_lane_perception")
     load_params()
@@ -532,6 +551,8 @@ def main():
                                           Image, queue_size=1)
     g_pub_yellow_count   = rospy.Publisher("/perception/yellow_pixel_count",
                                           Int32, queue_size=1)
+    g_pub_bev_img        = rospy.Publisher("/perception/bev",
+                                          Image, queue_size=1)
 
     # 서브스크라이버
     rospy.Subscriber("/camera/color/image_raw/compressed",
