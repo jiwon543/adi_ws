@@ -2,7 +2,7 @@
     "model":    "vikhyatk/moondream2",
     "revision": "2025-01-09",
 
-    "prompt": "You are a car driver looking forward through the windshield.\nDescribe the hazard you see on the road ahead in short sentence.\nDo not start with 'visible:' Just describe what you see.",
+    "prompt": "You are looking forward through the windshield of a small self-driving car.\nIn one short sentence, describe what is on the road directly ahead of you.\nIf the road ahead is empty, just say 'clear road'.",
 
     "max_tokens":     30,
     "infer_interval": 0.5,

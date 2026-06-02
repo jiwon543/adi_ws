@@ -1,7 +1,7 @@
 # config/cone_avoidance_control.yaml
 
 # ── 콘 감지 범위 ──
-avoid_dist:    0.7     # 전방 감지 한계 [m] — 이 거리 이내 콘만 처리
+avoid_dist:    1.5     # 전방 감지 한계 [m] — decision cone_dist_thresh(1.5)와 일치시켜 조기 클리어(R3.5) 방지
 lateral_limit: 1.0     # 좌우 감지 폭 [m] — 이 폭 바깥 콘은 무시
 stop_dist:     0.05    # [m] — 이 거리 미만 콘 → 강제 회피 FSM 진입
 

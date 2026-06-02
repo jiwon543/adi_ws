@@ -41,10 +41,12 @@ g_last_infer  = 0.0
 MISSION_RULES = [
     {
         # 1순위 EMERGENCY_STOP — "cone" 키워드 없음 (콘과 구분)
+        # 주의: 포괄적 단어("object" 등)는 cone/crosswalk 를 가리므로 제외.
+        #       실제 비상정지는 LiDAR 강제경로가 담당하므로 VLM obstacle 힌트는 보수적으로 좁게.
         "mission":  "obstacle_stop",
         "must_any": ["obstacle", "barrier", "blocked", "debris", "box",
-                     "rock", "fallen", "object", "vehicle", "person",
-                     "animal", "toy", "truck", "car", "van", "bus"],
+                     "rock", "fallen", "person", "animal",
+                     "truck", "car", "van", "bus"],
         "must_not": ["cone", "cones", "traffic cone", "orange cone"],
     },
     {
