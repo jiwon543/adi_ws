@@ -104,7 +104,7 @@ VLM 힌트(필요)와 센서 검증(AND)을 모두 만족해야 미션 진입. �
   - 키워드 튜닝 시: **cone은 "cone/cones/orange marker/traffic cone", crosswalk는
     "crosswalk/crossing/zebra/yellow stripe/striped/yellow line"** 가 핵심. 이 둘만 잘 잡히면 데모 성립.
 - `max_tokens:30` 유지(자연 답변 13~18토큰이라 캡 안 걸림). 지연 줄이려면 16으로 낮춰 1회 검증 후 적용 가능
-  (trade-off 평가 결과: 16에서 정확도 유지하며 지연 ~20%↓). 상세 `src/moondream/src/tradeoff_eval/RESULTS.md`.
+  (실측: 16에서 정확도 유지하며 지연 ~20%↓).
 
 ---
 
@@ -149,13 +149,21 @@ VLM이 엉뚱하게 찍으면: `vlm_raw`(모델 원문)를 먼저 보고 → 원
 ## 8. 파일 지도
 
 ```
-run_limo.sh / run_vlm.sh / run_demo.sh   ← 실행(리모/노트북/rosbag)
+run_limo.sh                               ← [리모] 전체 스택 실행
+run_vlm.sh                                ← [노트북] VLM 노드 실행
+run_demo.sh / run_demo_v2.sh              ← [단일 PC] rosbag 재생 데모
 check_demo.sh / DEMO_CHECKLIST.md         ← 진단/현장절차
+
 src/moondream/src/vlm_node.py             ← ★VLM 노드(파서 포함)
 src/moondream/src/prompt_vlm_node.json    ← ★프롬프트/설정
-src/moondream/src/tradeoff_eval/          ← 속도-정확도 평가(DESIGN/CONCEPT/RESULTS)
+src/moondream/src/latency_measure/        ← 지연 측정 스크립트 + CSV 결과
+
 src/decision/scripts/decision_node.py     ← 미션 FSM
+src/decision/scripts/demo_viz_node_v2.py  ← 데모 시각화 (run_demo_v2.sh에서 사용)
+src/decision/scripts/demo_vlm_mock.py     ← VLM 없이 테스트할 때 쓰는 mock
 src/decision/config/decision_node.yaml    ← 검증 임계값(yellow_thresh, cone_min_clusters, lidar_emrg_*)
+src/decision/config/vlm_mock.yaml         ← mock 노드 설정
+
 src/perception/Camera/scripts/camera_lane.py     ← 차선+노란픽셀
 src/perception/Lidar/scripts/lidar_clustering.py ← DBSCAN 클러스터
 src/control/scripts/{lane,cone_avoidance,crosswalk,obstacle_stop}_control.py

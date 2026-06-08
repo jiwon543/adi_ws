@@ -67,6 +67,7 @@ adi_ws/
 ├── run_limo.sh             ← [리모] 전체 스택 실행 (perception+decision+control)
 ├── run_vlm.sh              ← [노트북] VLM 노드 실행
 ├── run_demo.sh             ← [단일 PC] rosbag 재생 데모 (현장 아님)
+├── run_demo_v2.sh          ← [단일 PC] rosbag 데모 + 시각화 오버레이 버전
 ├── check_demo.sh           ← 프리플라이트 자동 진단 (토픽/Hz/네트워크)
 ├── DEMO_CHECKLIST.md       ← 현장 실행 절차 + 리스크 체크리스트
 ├── src/
@@ -74,13 +75,15 @@ adi_ws/
 │   │   ├── Camera/         ← camera_lane.py (BEV 차선 인식 + 노란픽셀 카운트)
 │   │   └── Lidar/          ← lidar_clustering.py (DBSCAN 클러스터링)
 │   ├── decision/           ← decision_node.py (VLM+센서 검증 FSM)
+│   │                          demo_viz_node_v2.py (데모 시각화)
+│   │                          demo_vlm_mock.py (VLM mock, 디버깅용)
 │   ├── control/            ← lane / cone_avoidance / crosswalk / obstacle_stop 제어
 │   └── moondream/          ← VLM 모듈
 │       ├── src/vlm_node.py            ← 운영 추론 노드
 │       ├── src/prompt_vlm_node.json   ← 운영 프롬프트/설정
-│       └── src/tradeoff_eval/         ← 속도-정확도 trade-off 평가 (DESIGN/CONCEPT/RESULTS)
-├── docker-noetic/          ← ROS Noetic Docker 환경
-└── ros1/                   ← LIMO 기존 탑재 패키지 (센서 드라이버 등, 참고/보관용)
+│       └── src/latency_measure/       ← 지연 측정 스크립트 + 결과 CSV
+├── adilimo_ws/             ← LIMO 하드웨어 드라이버 (limo_base, bringup, YDLiDAR, Astra)
+└── docker-noetic/          ← ROS Noetic Docker 환경
 ```
 
 ---
@@ -121,11 +124,6 @@ adi_ws/
 - `/camera/color/image_raw/compressed` 구독 → ROI 크롭 → `query` → 키워드 우선순위 파싱(`parse_mission`)
 - 결과를 `/vlm/mission`(JSON: `candidate`, `vlm_raw`)으로 발행, 추론 주기 `infer_interval`(0.5s)
 - 설정: `src/moondream/src/prompt_vlm_node.json` (`prompt`, `max_tokens`, `roi_top_ratio`)
-
-### 속도–정확도 Trade-off 평가
-`src/moondream/src/tradeoff_eval/` — Moondream2의 출력 토큰 수(`max_tokens`)를 손잡이로
-지연(L_p95) vs 균형정확도(Acc_bal) 곡선을 측정. 미션 허용시간 안 최적 동작점을 찾는 평가.
-설계·개념·결과는 해당 폴더의 `DESIGN.md` / `CONCEPT.md` / `RESULTS.md` 참고.
 
 ---
 
@@ -168,5 +166,5 @@ source devel/setup.bash
 ## 참고
 
 - 현장 실행 상세 절차 및 트러블슈팅: [`DEMO_CHECKLIST.md`](DEMO_CHECKLIST.md)
-- LIMO 기존 탑재 패키지: [`ros1/README.txt`](ros1/README.txt)
 - Docker 환경: `docker-noetic/`
+- LIMO 하드웨어 드라이버 패키지: `adilimo_ws/`
