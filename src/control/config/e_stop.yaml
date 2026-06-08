@@ -1,4 +1,0 @@
-# config/e_stop.yaml
-
-stop_distance: 0.5    # [m] — 이 거리 미만 장애물 → 긴급 정지
-drive_speed: 0.3      # [m/s] — 정상 주행 속도

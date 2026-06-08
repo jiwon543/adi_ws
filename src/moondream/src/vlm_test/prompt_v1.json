@@ -1,8 +1,0 @@
-{
-  "model": "vikhyatk/moondream2",
-  "revision": "2025-01-09",
-
-  "prompt": "You are the vision system of a small autonomous race car. The car drives through missions one at a time: crosswalks, orange cones, or emergency stops. Only report an object if it appears large in the image, meaning it is close to under 1 meter and needs immediate action. If objects are small or far away, say 'clear road'. What is immediately ahead?",
-  "max_tokens": 30,
-  "infer_interval": 0.5
-}
