@@ -26,8 +26,8 @@ bash -c "$SETUP && roscore" &
 PIDS+=($!)
 sleep 3
 
-echo "[2] demo.launch..."
-bash -c "$SETUP && roslaunch decision demo.launch" &
+echo "[2] demo_v2.launch..."
+bash -c "$SETUP && roslaunch decision demo_v2.launch" &
 PIDS+=($!)
 sleep 4
 
@@ -50,7 +50,7 @@ PIDS+=($!)
 sleep 2
 
 echo "[5] rqt_image_view..."
-bash -c "$SETUP && rqt_image_view /demo/viz" &
+bash -c "$SETUP && rqt_image_view /demo/viz_v2" &
 PIDS+=($!)
 
 echo ""

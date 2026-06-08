@@ -80,7 +80,7 @@ VLM 힌트(필요)와 센서 검증(AND)을 모두 만족해야 미션 진입. �
 
 파일: `src/moondream/src/vlm_node.py`, 설정: `src/moondream/src/prompt_vlm_node.json`
 - 모델 `vikhyatk/moondream2` rev `2025-01-09`, FP16, greedy, GPU(`device_map cuda`)
-- 흐름: `/camera/...compressed` → ROI 크롭(`roi_top_ratio:0.5`) → `encode_image` → `query`
+- 흐름: `/camera/...compressed` → ROI 크롭(`roi_top_ratio:0.2`) → `encode_image` → `query`
   → `parse_mission()` 키워드 파싱 → `/vlm/mission` 발행. 추론 주기 `infer_interval:0.5s`.
 - 시작 시 warmup 1회(수십 초 모델 로딩 후). `[VLM] Ready` 로그 후 동작.
 
@@ -89,14 +89,13 @@ VLM 힌트(필요)와 센서 검증(AND)을 모두 만족해야 미션 진입. �
 - **closed-set 강제 금지**: "Choose one: crosswalk/cone/obstacle/lane" 식으로 라벨을 강제하면
   Moondream2가 할루시네이션으로 붕괴(실측: strict 프롬프트 → 거의 모든 장면 "cone", Acc 40% 고정).
   → **open-ended 서술 + 키워드 파서** 구조를 반드시 유지.
-- **현재 프롬프트**(최적화 적용본):
+- **현재 프롬프트**(최적화 적용본, `prompt_vlm_node.json` 기준):
   ```
   You are looking forward through the windshield of a small self-driving car.
   In one short sentence, describe what is on the road directly ahead of you.
-  If the road ahead is empty, just say 'clear road'.
   ```
   - 이전 버전의 "Describe **the hazard**"는 위험물 존재를 전제해 빈 차선서도 위험물을 발명 → 제거함.
-  - `'clear road'` 탈출구로 false positive 감소(파서 `clear_phrases`가 normal_drive로 매핑).
+  - 빈 차선 응답("clear road" 등)은 파서 `clear_phrases`가 normal_drive로 매핑해 처리.
 - **파서**(`MISSION_RULES`, 우선순위 obstacle > crosswalk > cone):
   - obstacle `must_any`에서 포괄어 `object/vehicle/toy` 제거 → cone/crosswalk 가림 방지
     (obstacle 힌트는 무동작이므로 좁혀도 안전).
