@@ -158,7 +158,6 @@ check_demo.sh / DEMO_CHECKLIST.md         ← 진단/현장절차
 
 src/moondream/src/vlm_node.py             ← ★VLM 노드(파서 포함)
 src/moondream/src/prompt_vlm_node.json    ← ★프롬프트/설정
-src/moondream/src/latency_measure/        ← 지연 측정 스크립트 + CSV 결과
 presentation/                             ← 종설 최종발표 슬라이드 PNG (슬라이드 6~13)
 
 src/decision/scripts/decision_node.py     ← 미션 FSM
