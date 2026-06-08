@@ -21,6 +21,8 @@ import os
 import json
 import time
 
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
+
 import rospy
 import cv2
 import numpy as np
@@ -137,8 +139,13 @@ def image_cb(msg):
         g_pub.publish(out)
         rospy.loginfo("[VLM] %-16s | '%s'", candidate, vlm_raw)
 
+    except torch.cuda.OutOfMemoryError:
+        torch.cuda.empty_cache()
+        rospy.logwarn("[VLM] OOM — cache cleared, skipping frame")
     except Exception as e:
         rospy.logerr("[VLM] %s", e)
+    finally:
+        torch.cuda.empty_cache()
 
 
 # ── 워밍업 ───────────────────────────────────────────────────────

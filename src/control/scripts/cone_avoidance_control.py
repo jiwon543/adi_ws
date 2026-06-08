@@ -158,7 +158,6 @@ def control_loop(event):
         g_pub_cmd.publish(cmd)
 
     # 5) 클리어 판정: 정면 경로(exit_y_thresh 이내)에 콘 없으면 타이머 시작
-    # 벽은 lateral_limit 이내지만 exit_y_thresh 바깥에 있으므로 무시됨
     path_cones = [c for c in cones if abs(c[1]) < g_p["exit_y_thresh"]]
     if path_cones:
         _cone_clear_since = None

@@ -63,13 +63,15 @@ VLM 힌트(필요)와 센서 검증(AND)을 모두 만족해야 미션 진입. �
 | 미션 | VLM 힌트 | 센서 검증 (AND) | 동작(control) | 복귀(DONE) |
 |---|---|---|---|---|
 | CROSSWALK | crosswalk_stop | `yellow_pixel_count ≥ yellow_thresh(4000)` | 3초 정지 | 정지 완료 |
-| CONE_AVOID | cone_avoidance | 1.5m·±0.7m 클러스터 ≥ `cone_min_clusters(4)` | gap 중심 조향 회피 | 정면 경로 클리어 1s |
-| EMERGENCY_STOP | obstacle_stop *또는* **LiDAR 강제** | 전방 0.70m·±0.20m 클러스터 (VLM 불필요) | 정지 유지 | 장애물 해소 1s |
+| CONE_AVOID | cone_avoidance | 전방 2.0m·±0.8m 안 클러스터 1개 이상 (`distance` 모드) | gap 중심 조향 회피 | 정면 클리어 0.2s |
+| EMERGENCY_STOP | obstacle_stop *또는* **LiDAR 강제** | 전방 0.90m·±0.20m 클러스터 (VLM 불필요) | 정지 유지 | 장애물 해소 1s |
 | LANE_FOLLOW | (기본) | — | Stanley 차선 추종 | — |
 
 **핵심 설계 포인트 (디버깅 시 반드시 인지):**
+- **VLM 미연결 시 `WAIT` 발행** → 차량 정지. 기존 LANE_FOLLOW 유지에서 변경됨 (VLM 없이 주행 방지).
 - **비상정지는 VLM이 아니라 LiDAR가 트리거**한다. LANE_FOLLOW에서 `lidar_emergency_close()`
-  (0.70m·±0.20m, 좁은 정면)가 **최우선·무조건** 검사 → VLM이 obstacle을 못 봐도 멈춘다.
+  (0.90m·±0.20m, 좁은 정면)가 **최우선** 검사 → VLM이 obstacle을 못 봐도 멈춘다.
+  단, **VLM이 cone_avoidance 힌트 중일 때는 LiDAR emergency 스킵** → 콘 구간 진입 시 오발동 방지.
 - decision의 VLM-emergency 검증 경로(`emergency_dist:0.20`)는 너무 좁아 **사실상 죽은 코드**.
   즉 **VLM의 obstacle_stop 힌트는 실질적으로 무동작**. → 파서에서 obstacle 키워드를 좁혀도 손해 없음.
 - 따라서 VLM이 실제로 작동시키는 미션은 **cone_avoidance와 crosswalk_stop 둘뿐**.
@@ -137,14 +139,12 @@ VLM이 엉뚱하게 찍으면: `vlm_raw`(모델 원문)를 먼저 보고 → 원
 ## 7. 알려진 리스크 (우선순위순) — 상세는 DEMO_CHECKLIST.md
 
 - **R1 🔴 ROS 네트워킹**: 노트북↔리모 `ROS_IP` 미설정/hostname → VLM 토픽 안 흐름.
-  증상: 리모에 `[decision] VLM 미연결 — LANE_FOLLOW 유지` 반복, 미션 전부 스킵.
+  증상: 리모에 `[decision] VLM 미연결 — 정지 대기 중` 반복, 차량 정지 상태 유지.
 - **R2 🔴 카메라 compressed 토픽**: `/camera/color/image_raw/compressed` 없으면 VLM·차선 둘 다 정지.
   `rostopic hz`로 확인. 없으면 리모서 `image_transport republish`.
-- **R3 🟡 `cone_min_clusters:4`**: 동시에 4개 클러스터 안 잡히면 콘 회피 미발동. 현장 실측 후 조정.
-- **R3.5 🟠 (수정 완료)**: cone_control `avoid_dist`를 0.7→1.5로 올려 decision 트리거(1.5m)와 정합
-  (콘 조기 클리어 방지). 현장 1회 검증 권장.
-- **R4 🟡 콘 구간 비상정지 오발동**: 콘이 정면 0.70m·±0.20m 들면 비상정지가 콘회피보다 먼저 걸릴 수 있음.
-- **R5/R6 🟢**: VLM-emergency 죽은 경로(무해), 노드 못 찾으면 `chmod +x` 후 `catkin_make`.
+- **R3 🟡 콘 검증 distance 모드**: 전방 2.0m·±0.8m 안 클러스터 1개 이상이어야 진입. 현장에서 `cone_trigger_dist`/`cone_lateral_limit` 실측 후 조정.
+- **R4 🟢 (완화됨)**: 콘 구간 비상정지 오발동 → VLM `cone_avoidance` 힌트 중 LiDAR emergency 스킵 로직으로 방어.
+- **R5 🟢**: VLM-emergency 죽은 경로(무해), 노드 못 찾으면 `chmod +x` 후 `catkin_make`.
 
 ---
 

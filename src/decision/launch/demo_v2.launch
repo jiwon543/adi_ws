@@ -1,0 +1,28 @@
+<launch>
+
+  <!-- use_sim_time: rosbag play 의 clock 옵션과 함께 사용 -->
+  <param name="/use_sim_time" value="true"/>
+
+  <!-- Perception -->
+  <include file="$(find perception)/Camera/launch/camera_lane.launch"/>
+  <include file="$(find perception)/Lidar/launch/lidar_clustering.launch"/>
+
+  <!-- Decision -->
+  <include file="$(find decision)/launch/decision_node.launch"/>
+
+  <!-- Control -->
+  <include file="$(find control)/launch/lane_control.launch"/>
+  <include file="$(find control)/launch/cone_avoidance_control.launch"/>
+  <include file="$(find control)/launch/crosswalk_control.launch"/>
+  <include file="$(find control)/launch/obstacle_stop_control.launch"/>
+
+  <!-- Demo viz v2: Camera | BEV+LiDAR | Debug panel -->
+  <node name="demo_viz_v2" pkg="decision" type="demo_viz_node_v2.py" output="screen">
+    <param name="save_video"  value="false"/>
+    <param name="output_path" value="/root/adi_ws/demo_output_v2.mp4"/>
+    <param name="fps"         value="20.0"/>
+    <param name="width"       value="1280"/>
+    <param name="height"      value="720"/>
+  </node>
+
+</launch>

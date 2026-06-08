@@ -5,8 +5,8 @@ eps: 0.1          # 0.1 → 클러스터 묶이는 반경 넓힘 (포인트 수 
 min_samples: 4     # 7  → 최소 포인트 수 낮춤 (노이즈 많이 잡히지만 놓치지 않음)
 
 # Front-angle ROI (degrees)
-roi_angle_min: -90.0   # -90  → 우측 측면
-roi_angle_max:  90.0   # 80   → 좌측 측면
+roi_angle_min: -40.0   # 전방 80° FOV — 측면 넘어간 콘 즉시 소멸 → cone exit 빠름
+roi_angle_max:  40.0
 
 # Distance ROI (meters)
 roi_range_max: 1.5      # [m]

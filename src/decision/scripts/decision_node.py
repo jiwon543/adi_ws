@@ -70,6 +70,7 @@ def load_params():
         "emergency_y_thresh": float(p.get("emergency_y_thresh", 0.35)),
         # 미션 재진입 방지 쿨다운 [s]
         "mission_cooldown":   float(p.get("mission_cooldown",   5.0)),
+        "crosswalk_cooldown": float(p.get("crosswalk_cooldown", 10.0)),
         # 전방 근접 강제 emergency (VLM 없이 LiDAR 직접 트리거)
         "lidar_emrg_force_dist": float(p.get("lidar_emrg_force_dist", 0.45)),
         "lidar_emrg_force_y":    float(p.get("lidar_emrg_force_y",   0.28)),
@@ -87,8 +88,9 @@ def is_cooled_down(mission):
     """최근에 완료된 미션이면 쿨다운 기간 동안 재진입 차단"""
     if mission not in _mission_done_times:
         return True
-    elapsed = (rospy.Time.now() - _mission_done_times[mission]).to_sec()
-    return elapsed > g_p["mission_cooldown"]
+    elapsed  = (rospy.Time.now() - _mission_done_times[mission]).to_sec()
+    cooldown = g_p["crosswalk_cooldown"] if mission == CROSSWALK else g_p["mission_cooldown"]
+    return elapsed > cooldown
 
 
 # ── LiDAR 검증 헬퍼 ──────────────────────────────────────────────
@@ -180,10 +182,10 @@ def decision_loop(event):
 
     now = rospy.Time.now()
 
-    # VLM 미연결이어도 LANE_FOLLOW는 계속 퍼블리시
+    # VLM 미연결 시 정지 (lane_control이 WAIT 받으면 zero Twist 발행 후 침묵)
     if not g_vlm_ready:
-        g_pub_mission.publish(String(data=LANE_FOLLOW))
-        rospy.logwarn_throttle(5.0, "[decision] VLM 미연결 — LANE_FOLLOW 유지")
+        g_pub_mission.publish(String(data="WAIT"))
+        rospy.logwarn_throttle(5.0, "[decision] VLM 미연결 — 정지 대기 중")
         return
 
     # VLM 힌트 만료
@@ -194,8 +196,9 @@ def decision_loop(event):
     # LANE_FOLLOW
     if g_state == LANE_FOLLOW:
         # ① LiDAR 전방 근접 강제 트리거 (최우선 — VLM 불필요)
-        #    cone_lateral_limit(0.7m) 보다 훨씬 좁은 정면만 체크해 콘과 구분
-        if lidar_emergency_close() and is_cooled_down(EMERGENCY_STOP):
+        #    단, VLM이 cone_avoidance 힌트 중일 때는 스킵 → 콘 구간 진입을 obstacle로 오인 방지
+        if lidar_emergency_close() and is_cooled_down(EMERGENCY_STOP) \
+                and g_vlm_hint != CONE_AVOID:
             rospy.logwarn("[decision] LiDAR 전방 %.2fm 이내 장애물 -> EMERGENCY_STOP 강제",
                           g_p["lidar_emrg_force_dist"])
             transition(EMERGENCY_STOP)

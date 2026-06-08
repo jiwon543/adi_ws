@@ -12,18 +12,18 @@ roi_right_bot_ratio: 1.20    # 하단 우측 (1 초과 = 프레임 바깥까지 
 # ── HSV 하얀 차선 범위 ──
 hsv_h_low:  0
 hsv_s_low:  0
-hsv_v_low:  180
+hsv_v_low:  168             # 흰 차선: 그림자 허용하되 밝은 회색 도로면 제외
 
 hsv_h_high: 179
-hsv_s_high: 60
+hsv_s_high: 45              # 60→45: 채도 낮아야 진짜 흰색 (밝은 회색은 S가 더 높음)
 hsv_v_high: 255
 
 # ── CLAHE (조명 보정) ──
-clahe_clip_limit: 1.3       # 2.5→1.5: 반사광 과증폭 방지
+clahe_clip_limit: 2.0       # 1.3→2.0: 조명 변화 대비 향상 (반사 과증폭 없는 범위)
 clahe_grid_size:  8         # 타일 크기 (4~16)
 
 # ── 모폴로지 ──
-morph_kernel_size: 4
+morph_kernel_size: 3        # 4→3: 가는 차선 픽셀 침식 방지
 morph_iterations:  1
 
 # ── 슬라이딩 윈도우 ──

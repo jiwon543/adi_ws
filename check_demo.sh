@@ -67,7 +67,8 @@ done
 # ── 3. 의사결정/VLM 연결 ──────────────────────────────
 echo ""
 echo "── 3) 의사결정·VLM 파이프라인 ──"
-have_topic "/vlm/mission";       chk "VLM /vlm/mission 발행 (★노트북 VLM 연결 증거)" $?
+VLM_HZ=$(hz_of /vlm/mission)
+[ -n "$VLM_HZ" ] && (( $(echo "$VLM_HZ > 0" | bc -l) )); chk "VLM /vlm/mission 데이터 실제 수신 (토픽 등록만으론 부족, 메시지 흐름 확인)" $?
 have_topic "/decision/mission";  chk "decision /decision/mission 발행" $?
 echo "  최근 decision/mission 상태:"
 timeout 3 rostopic echo -n1 /decision/mission 2>/dev/null | sed 's/^/    /' || echo "    (수신 없음)"

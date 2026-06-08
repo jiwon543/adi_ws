@@ -131,6 +131,11 @@ RUN rosdep update || true
 # ROS setup
 RUN echo "source /opt/ros/noetic/setup.bash" >> /root/.bashrc
 
+# Claude code 설치 (로컬 사용자 권한으로 설치)
+RUN curl -fsSL https://claude.ai/install.sh | bash
+ENV PATH="/root/.local/bin:${PATH}"
+
+
 # 작업공간 기본 위치
 WORKDIR /root/adi_ws
 
