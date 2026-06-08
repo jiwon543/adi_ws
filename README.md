@@ -83,6 +83,7 @@ adi_ws/
 │       ├── src/prompt_vlm_node.json   ← 운영 프롬프트/설정
 │       └── src/latency_measure/       ← 지연 측정 스크립트 + 결과 CSV
 ├── adilimo_ws/             ← LIMO 하드웨어 드라이버 (limo_base, bringup, YDLiDAR, Astra)
+├── presentation/           ← 종설 최종발표 슬라이드 PNG (VLM 지연·trade-off 평가 결과 포함)
 └── docker-noetic/          ← ROS Noetic Docker 환경
 ```
 
@@ -125,6 +126,28 @@ adi_ws/
 - 결과를 `/vlm/mission`(JSON: `candidate`, `vlm_raw`)으로 발행, 추론 주기 `infer_interval`(0.5s)
 - 설정: `src/moondream/src/prompt_vlm_node.json` (`prompt`, `max_tokens`, `roi_top_ratio`)
 
+### 성능 측정 결과 (RTX 4050 Laptop, WiFi 5GHz, 500 샘플)
+
+| 항목 | 평균 | 표준편차 |
+|---|---|---|
+| **VLM 추론 시간** | **576 ms** (91%) | 44 ms |
+| 네트워크 시간 | 55 ms | 40 ms |
+| 총 지연 (카메라→결과) | 631 ms | 60 ms |
+
+- 추론 시간 분포가 **이중봉(bi-modal)** → 디코더 토큰 생성 수가 지연 변동의 주요인
+- 인코더(SigLIP)는 입력 해상도 고정이므로 지연 안정적; **디코더(Phi-1.5)는 출력 토큰 수에 선형 비례**
+
+### `max_tokens` 최적화 (Latency–Accuracy Trade-off)
+
+90장(cone/crosswalk/obstacle 각 30장) 대상, `max_tokens` 2~50 스윕 실험:
+
+- **너무 적으면**: 답변 잘림 → crosswalk 파싱 실패("striped" 같은 후미 키워드 미생성)
+- **너무 많으면**: 정확도 이득 없이 지연만 증가
+
+→ **최적값: `max_tokens = 12`** (cone 30/30, crosswalk 30/30, obstacle은 LiDAR가 커버)
+
+ROSBAG 재생으로 ROS 파이프라인 전체 검증 완료. 상세 슬라이드: `presentation/`
+
 ---
 
 ## 주요 토픽 레퍼런스
@@ -159,7 +182,8 @@ source devel/setup.bash
 
 - **Gazebo 시뮬레이션**: LIMO URDF + autorace world 기반 시뮬레이션 환경(`limo_gazebo_sim`)을 시도했으나
   통합 난이도로 보류. 향후 실차 주행 전 미션 로직을 시뮬레이터에서 검증하는 파이프라인으로 확장 예정.
-- 운영 노트북 기준 trade-off 곡선 재측정 및 미션 허용시간(T_budget) 기반 동작점 확정.
+- **더 경량화된 VLM**: 현재 576ms 추론 지연(RTX 4050 기준)을 줄이기 위해 소형 모델 또는 양자화 적용 검토.
+- **온보드 추론**: 노트북 없이 LIMO 탑재 Jetson Orin Nano에서 직접 추론 → 네트워크 지연 제거.
 
 ---
 

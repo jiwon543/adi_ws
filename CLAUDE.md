@@ -103,8 +103,11 @@ VLM 힌트(필요)와 센서 검증(AND)을 모두 만족해야 미션 진입. �
   - obstacle `must_not`: cone 계열(콘과 구분).
   - 키워드 튜닝 시: **cone은 "cone/cones/orange marker/traffic cone", crosswalk는
     "crosswalk/crossing/zebra/yellow stripe/striped/yellow line"** 가 핵심. 이 둘만 잘 잡히면 데모 성립.
-- `max_tokens:30` 유지(자연 답변 13~18토큰이라 캡 안 걸림). 지연 줄이려면 16으로 낮춰 1회 검증 후 적용 가능
-  (실측: 16에서 정확도 유지하며 지연 ~20%↓).
+- **`max_tokens:12` (확정)**: 지연-정확도 trade-off 실험(90장, 2~50 범위 스윕)으로 결정한 최적값.
+  - 12 미만: 답변 잘림 → crosswalk 파싱 실패("striped" 같은 후미 키워드 미생성).
+  - 12 초과: 정확도 추가 이득 없이 지연만 증가(디코더가 토큰 수에 선형 비례).
+  - 실측 지연(500샘플): 총 631ms = 추론 576ms(91%) + 네트워크 55ms. 이중봉 분포 → 디코더가 변동 주요인.
+  - ROSBAG ROS 파이프라인 검증 완료. 상세: `presentation/` 슬라이드 11~13.
 
 ---
 
@@ -157,6 +160,7 @@ check_demo.sh / DEMO_CHECKLIST.md         ← 진단/현장절차
 src/moondream/src/vlm_node.py             ← ★VLM 노드(파서 포함)
 src/moondream/src/prompt_vlm_node.json    ← ★프롬프트/설정
 src/moondream/src/latency_measure/        ← 지연 측정 스크립트 + CSV 결과
+presentation/                             ← 종설 최종발표 슬라이드 PNG (슬라이드 6~13)
 
 src/decision/scripts/decision_node.py     ← 미션 FSM
 src/decision/scripts/demo_viz_node_v2.py  ← 데모 시각화 (run_demo_v2.sh에서 사용)
