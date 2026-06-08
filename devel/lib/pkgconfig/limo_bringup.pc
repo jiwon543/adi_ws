@@ -1,8 +1,0 @@
-prefix=/root/adi_ws/devel
-
-Name: limo_bringup
-Description: Description of limo_bringup
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

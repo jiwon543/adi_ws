@@ -3,3 +3,13 @@
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Catkin build artifacts
+build/
+devel/
+.catkin_workspace
+
+# Large archives / installers
+*.zip
+*.tgz
+Python-3.10.14/
