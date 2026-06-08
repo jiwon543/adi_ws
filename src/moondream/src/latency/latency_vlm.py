@@ -86,7 +86,7 @@ def image_callback(msg: CompressedImage):
             result = model.query(
                 encoded,
                 config["prompt"],
-                settings={"max_tokens": config.get("max_new_tokens", 30)},
+                settings={"max_tokens": config.get("max_tokens", 12)},
             )
 
         t1 = rospy.Time.now()
@@ -111,6 +111,7 @@ def image_callback(msg: CompressedImage):
 
         payload = json.dumps({
             "candidate": candidate,
+            "vlm_raw": vlm_raw,
             "image_stamp": image_stamp,
             "infer_time_ms": round(vlm_ms, 1),
         })

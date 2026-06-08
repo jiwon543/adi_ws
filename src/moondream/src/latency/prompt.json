@@ -1,0 +1,10 @@
+{
+    "model":    "vikhyatk/moondream2",
+    "revision": "2025-01-09",
+
+    "prompt": "You are looking forward through the windshield of a small self-driving car.\nIn one short sentence, describe what is on the road directly ahead of you.",
+
+    "max_tokens":     12,
+    "infer_interval": 0.5,
+    "input_size":     384
+}
