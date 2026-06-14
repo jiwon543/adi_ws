@@ -178,15 +178,6 @@ source devel/setup.bash
 
 ---
 
-## Future Work
-
-- **Gazebo 시뮬레이션**: LIMO URDF + autorace world 기반 시뮬레이션 환경(`limo_gazebo_sim`)을 시도했으나
-  통합 난이도로 보류. 향후 실차 주행 전 미션 로직을 시뮬레이터에서 검증하는 파이프라인으로 확장 예정.
-- **더 경량화된 VLM**: 현재 576ms 추론 지연(RTX 4050 기준)을 줄이기 위해 소형 모델 또는 양자화 적용 검토.
-- **온보드 추론**: 노트북 없이 LIMO 탑재 Jetson Orin Nano에서 직접 추론 → 네트워크 지연 제거.
-
----
-
 ## 참고
 
 - 현장 실행 상세 절차 및 트러블슈팅: [`DEMO_CHECKLIST.md`](DEMO_CHECKLIST.md)
